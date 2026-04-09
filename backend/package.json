@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:prod": "node index-production.js",
+    "dev": "nodemon index.js",
+    "build": "echo 'Build completed'",
+    "render-build": "npm install",
+    "test": "echo 'No tests specified' && exit 0"
+  },
+  "keywords": [],
+  "author": "KasWebtech",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@airwallex/node-sdk": "^2.0.0-beta.4",
+    "axios": "^1.13.2",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.19",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.1.1",
+    "node-bigcommerce": "github:bigcommerce/node-bigcommerce"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
