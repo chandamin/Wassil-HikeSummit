@@ -259,7 +259,7 @@ router.get('/cart', async (req, res) => {
     console.log('Redirecting to React app:', reactUrl.toString());
     return res.redirect(reactUrl.toString());
   } catch (err) {
-    console.error('Server error:', err);
+    console.error('Server error:', err, err.cause);
     const reactUrl = new URL(FRONTEND_CHECKOUT_URL);
     reactUrl.searchParams.append('error', 'server_error');
     return res.redirect(reactUrl.toString());

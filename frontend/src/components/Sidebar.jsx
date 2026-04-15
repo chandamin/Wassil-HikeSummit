@@ -65,7 +65,7 @@ function Sidebar({ environment = 'sandbox', setEnvironment, collapsed, onToggle 
   <div className="shrink-0 px-4 pt-6 pb-2">
     {!collapsed ? (
       <>
-        <h1 className="text-white text-xl font-bold">Nomade Horizon</h1>
+        <h1 className="text-white text-xl font-bold">Hike Summit</h1>
         <p className="text-gray-400 text-sm">Subscriptions At Convenience</p>
       </>
     ) : (

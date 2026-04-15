@@ -95,9 +95,9 @@ const ThankYouStep = ({
                 An email will be sent containing information about your purchase.
                 If you have any questions about your purchase, email us at{" "}
                 <span className="break-all">
-                  help@nomade-horizon.com
+                  help@hike-summit.com
                 </span>{" "}
-                or call us at +44 330 054 5774.
+                or call us at +44 20 3885 0312.
               </p>
 
               <p>

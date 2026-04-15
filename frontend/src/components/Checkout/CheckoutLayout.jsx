@@ -919,7 +919,7 @@ export default function CheckoutLayout({
 
                   <div className="nr-wrranty-text pt-[15px] relative">
                     {/* <p className="text-[13px]">
-                      By checking this box, I activate my 30-day free trial to the VIP CLUB, giving me access to exclusive benefits on Nomade-Horizon. After the trial, the subscription renews automatically at £12.99/month. This membership is non-binding and can be cancelled at any time by contacting support. Consult the {" "}
+                      By checking this box, I activate my 30-day free trial to the VIP CLUB, giving me access to exclusive benefits on Hike-Summit. After the trial, the subscription renews automatically at £12.99/month. This membership is non-binding and can be cancelled at any time by contacting support. Consult the {" "}
                       <a
                         href="https://hike-summit.com/vip-club/"
                         target="_blank"
@@ -932,7 +932,7 @@ export default function CheckoutLayout({
                     </p> */}
 
                     <p className="text-[13px]">
-                      En cochant cette case, j'active mon essai gratuit de 30 jours au CLUB VIP, ce qui me donne accès à des avantages exclusifs sur Nomade-Horizon. À l'issue de la période d'essai, l'abonnement se renouvelle automatiquement au tarif de 12,99€ par mois. Cet abonnement est sans engagement et peut être résilié à tout moment en contactant le service client. Consultez les conditions générales du {" "}
+                      En cochant cette case, j'active mon essai gratuit de 30 jours au CLUB VIP, ce qui me donne accès à des avantages exclusifs sur Hike-Summit. À l'issue de la période d'essai, l'abonnement se renouvelle automatiquement au tarif de 12,99€ par mois. Cet abonnement est sans engagement et peut être résilié à tout moment en contactant le service client. Consultez les conditions générales du {" "}
                       /club-vip
                       {" "}pour plus d'informations.
                     </p>
@@ -988,11 +988,11 @@ export default function CheckoutLayout({
             <div className="nr-contact-info">
               <div className="nr-info-item flex gap-[8px] align-middle pb-[16px]">
                 <img src="../images/phone-icon.webp" alt="phone" className="h-[24px] w-[24px] object-contain" />
-                <p className="text-[15px] text-[#747474]">+44 330 054 5774</p>
+                <p className="text-[15px] text-[#747474]">+44 20 3885 0312</p>
               </div>
               <div className="nr-info-item flex gap-[8px] align-middle">
                 <img src="../images/email-icon.webp" alt="email" className="h-[24px] w-[24px] object-contain" />
-                <p className="text-[15px] text-[#747474]">help@nomade-horizon.com</p>
+                <p className="text-[15px] text-[#747474]">help@hike-summit.com</p>
               </div>
             </div>
           </div>
@@ -1027,12 +1027,12 @@ export default function CheckoutLayout({
 
               <div className="nr-wrranty-text pt-[15px] relative">
                 {/* <p className="text-[13px]">
-                  By checking this box, I activate my 30-day free trial to the VIP CLUB, giving me access to exclusive benefits on Nomade-Horizon. After the trial, the subscription renews automatically at £12.99/month. This membership is non-binding and can be cancelled at any time by contacting support. Consult the {" "}
+                  By checking this box, I activate my 30-day free trial to the VIP CLUB, giving me access to exclusive benefits on Hike-Summit. After the trial, the subscription renews automatically at £12.99/month. This membership is non-binding and can be cancelled at any time by contacting support. Consult the {" "}
                   vip-club 
                   policy for more information.
                 </p> */}
                 <p className="text-[13px]">
-                En cochant cette case, j'active mon essai gratuit de 30 jours au CLUB VIP, ce qui me donne accès à des avantages exclusifs sur Nomade-Horizon. À l'issue de la période d'essai, l'abonnement se renouvelle automatiquement au tarif de 12,99€ par mois. Cet abonnement est sans engagement et peut être résilié à tout moment en contactant le service client. Consultez les conditions générales du {" "}
+                En cochant cette case, j'active mon essai gratuit de 30 jours au CLUB VIP, ce qui me donne accès à des avantages exclusifs sur Hike-Summit. À l'issue de la période d'essai, l'abonnement se renouvelle automatiquement au tarif de 12,99€ par mois. Cet abonnement est sans engagement et peut être résilié à tout moment en contactant le service client. Consultez les conditions générales du {" "}
                 /club-vip
                 {" "}pour plus d'informations.
               </p>
@@ -1071,7 +1071,7 @@ export default function CheckoutLayout({
             {/* First Review */}
             {/* <div className="nr-review-outer-wr">
               <div className="nr-review-wr bg-[#f4f4f4] p-[15px] rounded-[12px] mt-[17px] relative before:absolute before:content-[''] before:w-[30px] before:h-[30px] before:bg-[#f4f4f4] before:left-[35px] before:bottom-[-5px] before:rotate-[45deg]">
-                <p className="text-[14px] text-center">"Nomade Horizon est mon magasin en ligne favoris. Il y a beaucoup de produits innovants à très bon prix. J'achète régulièrement sur ce site et en suis très satisfait. Je le recommande totalement"</p>
+                <p className="text-[14px] text-center">"Hike Summit est mon magasin en ligne favoris. Il y a beaucoup de produits innovants à très bon prix. J'achète régulièrement sur ce site et en suis très satisfait. Je le recommande totalement"</p>
               </div>
               <div className="flex justify-between w-100 mt-[13px] mb-[26px]">
                 <p className="text-[14px] font-[600]">Nicolas D. - Paris</p>
@@ -1081,7 +1081,7 @@ export default function CheckoutLayout({
             {/* Second Review */}
             {/* <div className="nr-review-outer-wr border-b">
               <div className="nr-review-wr bg-[#f4f4f4] p-[15px] rounded-[12px] mt-[17px] relative before:absolute before:content-[''] before:w-[30px] before:h-[30px] before:bg-[#f4f4f4] before:left-[35px] before:bottom-[-5px] before:rotate-[45deg]">
-                <p className="text-[14px] text-center">"Très bonne boutique, large choix, on y trouve tout à tout petit prix. Je recommande totalement Nomade Horizon pour son sérieux."</p>
+                <p className="text-[14px] text-center">"Très bonne boutique, large choix, on y trouve tout à tout petit prix. Je recommande totalement Hike Summit pour son sérieux."</p>
               </div>
               <div className="flex justify-between w-100 mt-[13px] mb-[26px]">
                 <p className="text-[14px] font-[600]">Marie P. - Marseille</p>

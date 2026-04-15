@@ -55,7 +55,7 @@ export default function Login() {
       <div className="w-full max-w-sm">
         {/* Logo */}
         <div className="text-center mb-8">
-          <h1 className="text-white text-3xl font-bold">Nomade Horizon</h1>
+          <h1 className="text-white text-3xl font-bold">Hike Summit</h1>
           <p className="text-gray-400 text-sm mt-1">Subscriptions At Convenience</p>
         </div>
 

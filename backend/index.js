@@ -36,6 +36,8 @@ const allowedOrigins = [
   'https://apicheckout.nomade-horizon.com',
   'https://nomade-horizon.com',
   'https://hike-summit.com',
+  'https://checkout.hike-summit.com',
+  'http://api.hike-summit.com',
   /https:\/\/[a-z0-9-]+\.ngrok-free\.dev$/,
 ].filter(Boolean);
 

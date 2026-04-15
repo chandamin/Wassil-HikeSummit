@@ -1,2 +1,1272 @@
 [2026-04-09T10:20:11.192Z] MongoDB connected
 [2026-04-09T10:20:11.200Z] Server running on port 4000
+[2026-04-10T04:10:22.291Z] MongoDB connected
+[2026-04-10T04:10:22.299Z] Server running on port 4000
+[2026-04-10T04:29:53.352Z] api cart-data called
+[2026-04-10T04:29:55.314Z] ERROR: Cart fetch failed: 404 {"status":404,"type":"https://developer.bigcommerce.com/api-docs/getting-started/api-status-codes"}
+[2026-04-10T04:29:55.430Z] api cart-data called
+[2026-04-10T04:29:55.850Z] ERROR: Cart fetch failed: 404 {"status":404,"type":"https://developer.bigcommerce.com/api-docs/getting-started/api-status-codes"}
+[2026-04-10T09:40:53.879Z] api cart called
+[2026-04-10T09:40:53.901Z] Fetching cart: c38de48a-f096-400d-b491-f8116230601e
+[2026-04-10T09:40:54.923Z] Cart found: [object Object]
+[2026-04-10T09:40:54.932Z] Redirecting to React app: http://localhost:5173/checkout?cartId=c38de48a-f096-400d-b491-f8116230601e&cartData=%257B%2522id%2522%253A%2522c38de48a-f096-400d-b491-f8116230601e%2522%252C%2522lineItems%2522%253A%257B%2522physicalItems%2522%253A%255B%257B%2522id%2522%253A%2522081f76cc-a489-4b71-9c1e-e30a00a5d9db%2522%252C%2522product_id%2522%253A209%252C%2522name%2522%253A%2522Test%2520Product%2520-2%2522%252C%2522quantity%2522%253A6%252C%2522extendedSalePrice%2522%253A144%252C%2522extendedListPrice%2522%253A144%252C%2522list_price%2522%253A24%252C%2522sale_price%2522%253A24%252C%2522imageUrl%2522%253A%2522https%253A%252F%252Fcdn11.bigcommerce.com%252Fs-eapn6crf58%252Fproducts%252F209%252Fimages%252F411%252Fdemo-sign-cubes__12531.1763473021.220.290.jpg%253Fc%253D1%2522%252C%2522options%2522%253A%255B%257B%2522name%2522%253A%2522Color%2522%252C%2522nameId%2522%253A149%252C%2522value%2522%253A%2522Green%2522%252C%2522valueId%2522%253A%2522178%2522%257D%255D%257D%255D%252C%2522digitalItems%2522%253A%255B%255D%257D%252C%2522cartAmount%2522%253A129.6%252C%2522discountAmount%2522%253A14.4%252C%2522taxAmount%2522%253A0%252C%2522grandTotal%2522%253A129.6%252C%2522currency%2522%253A%257B%2522code%2522%253A%2522EUR%2522%257D%252C%2522customerId%2522%253A0%252C%2522coupons%2522%253A%255B%255D%257D
+[2026-04-10T09:40:56.691Z] api cart-data called
+[2026-04-10T09:40:57.181Z] api cart-data called
+[2026-04-10T11:58:08.155Z] ERROR: MongoDB connection error Error: queryTxt EREFUSED subscriptioncheckout.8wa7ndm.mongodb.net
+[2026-04-10T12:56:20.171Z] ERROR: MongoDB connection error Error: querySrv EREFUSED _mongodb._tcp.subscriptioncheckout.8wa7ndm.mongodb.net
+[2026-04-10T12:57:03.373Z] ERROR: MongoDB connection error Error: querySrv EREFUSED _mongodb._tcp.subscriptioncheckout.8wa7ndm.mongodb.net
+[2026-04-10T12:59:30.370Z] ERROR: MongoDB connection error Error: queryTxt EREFUSED subscriptioncheckout.8wa7ndm.mongodb.net
+[2026-04-10T13:02:41.542Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/SubscriptionData
+[2026-04-10T13:02:50.498Z] MongoDB connected
+[2026-04-10T13:02:50.519Z] Server running on port 4000
+[2026-04-10T13:03:12.228Z] MongoDB connected
+[2026-04-10T13:03:12.236Z] Server running on port 4000
+[2026-04-10T13:04:50.779Z] MongoDB connected
+[2026-04-10T13:04:50.799Z] Server running on port 4000
+[2026-04-10T13:12:38.264Z] MongoDB connected
+[2026-04-10T13:12:38.279Z] Server running on port 4000
+[2026-04-10T13:14:39.026Z] api cart called
+[2026-04-10T13:14:39.027Z] Fetching cart: c38de48a-f096-400d-b491-f8116230601e
+[2026-04-10T13:14:49.684Z] ERROR: Server error: TypeError: fetch failed
+[2026-04-10T13:15:13.777Z] api cart called
+[2026-04-10T13:15:13.777Z] Fetching cart: c38de48a-f096-400d-b491-f8116230601e
+[2026-04-10T13:15:24.438Z] ERROR: Server error: TypeError: fetch failed
+[2026-04-10T13:15:54.388Z] ERROR: MongoDB connection error Error: queryTxt EREFUSED subscriptioncheckout.8wa7ndm.mongodb.net
+[2026-04-10T13:16:08.606Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-10T13:16:20.582Z] ERROR: MongoDB connection error Error: querySrv EREFUSED _mongodb._tcp.subscriptioncheckout.8wa7ndm.mongodb.net
+[2026-04-10T13:17:26.553Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-10T13:18:03.012Z] MongoDB connected
+[2026-04-10T13:18:03.026Z] Server running on port 4000
+[2026-04-10T13:18:21.758Z] api cart called
+[2026-04-10T13:18:21.758Z] Fetching cart: c38de48a-f096-400d-b491-f8116230601e
+[2026-04-10T13:18:32.404Z] ERROR: Server error: TypeError: fetch failed
+[2026-04-10T13:25:51.806Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-10T13:25:53.565Z] MongoDB connected
+[2026-04-10T13:25:53.582Z] Server running on port 4000
+[2026-04-10T13:27:16.392Z] api cart called
+[2026-04-10T13:27:16.392Z] Fetching cart: c38de48a-f096-400d-b491-f8116230601e
+[2026-04-10T13:27:17.390Z] ERROR: Cart fetch failed: 403 {"status":403,"title":"You don't have a required scope to access the endpoint","type":"https://developer.bigcommerce.com/api-docs/getting-started/api-status-codes","errors":{}}
+[2026-04-10T13:28:36.156Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-10T13:28:36.188Z] ERROR: MongoDB connection error Error: queryTxt EREFUSED subscriptioncheckout.8wa7ndm.mongodb.net
+[2026-04-10T13:28:44.534Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-10T13:28:53.561Z] ERROR: MongoDB connection error Error: querySrv EREFUSED _mongodb._tcp.subscriptioncheckout.8wa7ndm.mongodb.net
+[2026-04-10T13:29:06.938Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-10T13:29:09.867Z] ERROR: MongoDB connection error Error: querySrv EREFUSED _mongodb._tcp.subscriptioncheckout.8wa7ndm.mongodb.net
+[2026-04-10T13:30:18.947Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-10T13:30:31.844Z] MongoDB connected
+[2026-04-10T13:30:31.864Z] Server running on port 4000
+[2026-04-10T13:30:47.580Z] api cart called
+[2026-04-10T13:30:47.581Z] Fetching cart: c38de48a-f096-400d-b491-f8116230601e
+[2026-04-10T13:30:49.045Z] ERROR: Cart fetch failed: 403 {"status":403,"title":"You don't have a required scope to access the endpoint","type":"https://developer.bigcommerce.com/api-docs/getting-started/api-status-codes","errors":{}}
+[2026-04-10T13:31:46.717Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-10T13:31:48.904Z] MongoDB connected
+[2026-04-10T13:31:48.915Z] Server running on port 4000
+[2026-04-10T13:32:01.483Z] api cart called
+[2026-04-10T13:32:01.489Z] Fetching cart: c38de48a-f096-400d-b491-f8116230601e
+[2026-04-10T13:32:03.141Z] Cart found: [object Object]
+[2026-04-10T13:32:03.144Z] Redirecting to React app: http://localhost:5173/checkout?cartId=c38de48a-f096-400d-b491-f8116230601e&cartData=%257B%2522id%2522%253A%2522c38de48a-f096-400d-b491-f8116230601e%2522%252C%2522lineItems%2522%253A%257B%2522physicalItems%2522%253A%255B%257B%2522id%2522%253A%2522081f76cc-a489-4b71-9c1e-e30a00a5d9db%2522%252C%2522product_id%2522%253A209%252C%2522name%2522%253A%2522Test%2520Product%2520-2%2522%252C%2522quantity%2522%253A12%252C%2522extendedSalePrice%2522%253A288%252C%2522extendedListPrice%2522%253A288%252C%2522list_price%2522%253A24%252C%2522sale_price%2522%253A24%252C%2522imageUrl%2522%253A%2522https%253A%252F%252Fcdn11.bigcommerce.com%252Fs-eapn6crf58%252Fproducts%252F209%252Fimages%252F411%252Fdemo-sign-cubes__12531.1763473021.220.290.jpg%253Fc%253D1%2522%252C%2522options%2522%253A%255B%257B%2522name%2522%253A%2522Color%2522%252C%2522nameId%2522%253A149%252C%2522value%2522%253A%2522Green%2522%252C%2522valueId%2522%253A%2522178%2522%257D%255D%257D%255D%252C%2522digitalItems%2522%253A%255B%255D%257D%252C%2522cartAmount%2522%253A259.2%252C%2522discountAmount%2522%253A28.8%252C%2522taxAmount%2522%253A0%252C%2522grandTotal%2522%253A259.2%252C%2522currency%2522%253A%257B%2522code%2522%253A%2522EUR%2522%257D%252C%2522customerId%2522%253A0%252C%2522coupons%2522%253A%255B%255D%257D
+[2026-04-10T13:32:04.084Z] api cart-data called
+[2026-04-10T13:32:04.585Z] api cart-data called
+[2026-04-10T13:32:12.123Z] Search Customer by Email [object Object]
+[2026-04-10T13:32:12.123Z] Searching customer by email (decoded): test111@gmail.com
+[2026-04-10T13:32:13.344Z] Customer found: 41
+[2026-04-10T13:32:13.346Z] Email Search result: {"data":[{"id":41,"authentication":{"force_password_reset":false},"company":"","customer_group_id":1,"email":"test111@gmail.com","first_name":"test","last_name":"test","notes":"","phone":"","registration_ip_address":"","tax_exempt_category":"","date_created":"2026-02-04T13:49:33Z","date_modified":"2026-02-04T13:49:33Z","accepts_product_review_abandoned_cart_emails":false,"origin_channel_id":1,"channel_ids":null}],"meta":{"pagination":{"total":1,"count":1,"per_page":50,"current_page":1,"total_pages":1},"cursor_pagination":{"count":1,"per_page":50,"start_cursor":"eyJpZCI6NDF9","end_cursor":"eyJpZCI6NDF9","links":{}}}}
+[2026-04-10T13:32:15.018Z] Customer search results: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2026-04-10T13:32:15.019Z]  Found existing Airwallex customer: bcus_hkdmh4dffhgrjyz9b10
+[2026-04-10T13:32:15.177Z] Search Customer by Email [object Object]
+[2026-04-10T13:32:15.177Z] Searching customer by email (decoded): test111@gmail.com
+[2026-04-10T13:32:15.396Z] Customer found: 41
+[2026-04-10T13:32:15.398Z] Email Search result: {"data":[{"id":41,"authentication":{"force_password_reset":false},"company":"","customer_group_id":1,"email":"test111@gmail.com","first_name":"test","last_name":"test","notes":"","phone":"","registration_ip_address":"","tax_exempt_category":"","date_created":"2026-02-04T13:49:33Z","date_modified":"2026-02-04T13:49:33Z","accepts_product_review_abandoned_cart_emails":false,"origin_channel_id":1,"channel_ids":null}],"meta":{"pagination":{"total":1,"count":1,"per_page":50,"current_page":1,"total_pages":1},"cursor_pagination":{"count":1,"per_page":50,"start_cursor":"eyJpZCI6NDF9","end_cursor":"eyJpZCI6NDF9","links":{}}}}
+[2026-04-10T13:32:24.065Z] ================================================================================
+[2026-04-10T13:32:24.066Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-10T13:32:24.066Z] 🕒 Timestamp: 2026-04-10T13:32:24.066Z
+[2026-04-10T13:32:24.067Z] 📥 Incoming body: {
+  "cartId": "c38de48a-f096-400d-b491-f8116230601e",
+  "address": {
+    "firstName": "test",
+    "lastName": "test test",
+    "address1": "560 Mission Street",
+    "city": "San Francisco",
+    "postalCode": "94105",
+    "countryCode": "FR",
+    "stateOrProvince": "San Francisco",
+    "phone": ""
+  }
+}
+[2026-04-10T13:32:24.067Z] 🔎 Extracted inputs: [object Object]
+[2026-04-10T13:32:24.067Z] ✅ Validation passed
+[2026-04-10T13:32:24.068Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e
+[2026-04-10T13:32:25.465Z] 📡 Checkout response status: 200
+[2026-04-10T13:32:25.466Z] 📡 Checkout raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":288,"discount_amount":28.8,"manual_discount_amount":0,"cart_amount_inc_tax":259.2,"cart_amount_ex_tax":259.2,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":28.8}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":12,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":28.8}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":288,"extended_sale_price":288,"comparison_price":24,"extended_comparison_price":288,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-10T13:31:59+00:00"},"billing_address":{},"consignments":[{"id":"69d37dacab8a2","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"Test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"address":{"first_name":"Test","last_name":"test test","email":"","company":"","add
+[2026-04-10T13:32:25.467Z] ✅ Checkout JSON parsed successfully
+[2026-04-10T13:32:25.467Z] 🧾 Checkout summary: [object Object]
+[2026-04-10T13:32:25.468Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-10T13:32:25.469Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "test",
+      "last_name": "test test",
+      "address1": "560 Mission Street",
+      "city": "San Francisco",
+      "state_or_province": "San Francisco",
+      "postal_code": "94105",
+      "country_code": "FR",
+      "phone": ""
+    },
+    "line_items": [
+      {
+        "item_id": "081f76cc-a489-4b71-9c1e-e30a00a5d9db",
+        "quantity": 12
+      }
+    ]
+  }
+]
+[2026-04-10T13:32:25.470Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e/consignments?include=consignments.available_shipping_options
+[2026-04-10T13:32:26.160Z] 📡 Consignments response status: 200
+[2026-04-10T13:32:26.168Z] 📡 Consignments raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":288,"discount_amount":28.8,"manual_discount_amount":0,"cart_amount_inc_tax":259.2,"cart_amount_ex_tax":259.2,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":28.8}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":12,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":28.8}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":288,"extended_sale_price":288,"comparison_price":24,"extended_comparison_price":288,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-10T13:32:26+00:00"},"billing_address":{},"consignments":[{"id":"69d8fbe9e7e2c","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"available_shipping_options":[{"id":"4dcbf24f457dd67d5f89bcf374e0bc9b","type":"freeshipping","description":"Free Shipping","image_url":"","cost":0,"transit_time":"","additional_description":"","cost_after_discount":0},{"id":"8d74c159ada9257e3631dae799791ecd","type":"shipping_flatrate","description":"Delivery + Insurance (Protection against loss, breakage, and theft)","image_url":"","cost":2,"transit_time":"","additional_description":"","cost_after_discount":2}]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":288,"subtotal_ex_tax":288,"grand_total":259.2,"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-10T13:32:26+00:00","customer_message":"","staff_note":"","version":15,"total_discount":28.8,"fees":[]},"meta":{}}
+[2026-04-10T13:32:26.169Z] ✅ Consignments JSON parsed successfully
+[2026-04-10T13:32:26.170Z] 📋 Consignments summary: [object Object]
+[2026-04-10T13:32:26.184Z] 🚚 Raw available shipping options from BigCommerce: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "type": "freeshipping",
+    "description": "Free Shipping",
+    "image_url": "",
+    "cost": 0,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 0
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "type": "shipping_flatrate",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "image_url": "",
+    "cost": 2,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 2
+  }
+]
+[2026-04-10T13:32:26.194Z] ✅ Final mapped shipping options: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "description": "Free Shipping",
+    "cost": 0,
+    "type": "freeshipping",
+    "isRecommended": false,
+    "raw": {
+      "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+      "type": "freeshipping",
+      "description": "Free Shipping",
+      "image_url": "",
+      "cost": 0,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 0
+    }
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "cost": 2,
+    "type": "shipping_flatrate",
+    "isRecommended": false,
+    "raw": {
+      "id": "8d74c159ada9257e3631dae799791ecd",
+      "type": "shipping_flatrate",
+      "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+      "image_url": "",
+      "cost": 2,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 2
+    }
+  }
+]
+[2026-04-10T13:32:26.196Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "c38de48a-f096-400d-b491-f8116230601e",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 2
+}
+[2026-04-10T13:32:26.197Z] ================================================================================
+[2026-04-10T13:32:28.281Z] Saving customer address - START
+[2026-04-10T13:32:28.281Z] Saving address for customer: 41
+[2026-04-10T13:32:28.282Z] Address data received: [object Object]
+[2026-04-10T13:32:28.556Z] Get addresses response status: 200
+[2026-04-10T13:32:28.558Z] Get addresses raw response: [{"id":32,"customer_id":41,"first_name":"Test","last_name":"test test","company":"","street_1":"560 Mission Street","street_2":"","city":"San Francisco","state":"San Francisco","zip":"94105","country"
+[2026-04-10T13:32:28.558Z] Parsed existing addresses: 1
+[2026-04-10T13:32:28.559Z] Updating existing address: 32
+[2026-04-10T13:32:28.559Z] Address data to save to BigCommerce: [object Object]
+[2026-04-10T13:32:28.559Z] Making request to BigCommerce API: [object Object]
+[2026-04-10T13:32:28.862Z] BigCommerce response status: 200
+[2026-04-10T13:32:28.864Z] BigCommerce raw response: {"id":32,"customer_id":41,"first_name":"test","last_name":"test test","company":"","street_1":"560 Mission Street","street_2":"","city":"San Francisco","state":"San Francisco","zip":"94105","country":"France","country_iso2":"FR","phone":"","address_type":"residential","form_fields":null}
+[2026-04-10T13:32:28.865Z] Address saved successfully: 32
+[2026-04-10T13:32:28.866Z] Saving customer address - SUCCESS
+[2026-04-10T13:32:29.769Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-10T13:32:29.920Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 259.2,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-10T13:32:30.239Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "c2ad9046-83fb-4578-8d20-940daa25ad1b",
+  "amount": 259.2,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-10T13:32:30.614Z]  PaymentIntent created: {
+  "id": "int_hkdmhjl4jhhh83j8d0g"
+}
+[2026-04-10T13:32:30.618Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmhjl4jhhh83j8d0g",
+  "request_id": "c2ad9046-83fb-4578-8d20-940daa25ad1b",
+  "amount": 259.2,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-10T13:32:30+0000",
+  "updated_at": "2026-04-10T13:32:30+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWhqbDRqaGhoODNqOGQwZyIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NTgzMTU1MCwiaWF0IjoxNzc1ODI3OTUwfQ.3tq_i3WKinPGmyHv7RMrfrFKU0yAQmQhvKQ60X7ibeU",
+  "return_url": "http://localhost:5173",
+  "original_amount": 259.2,
+  "original_currency": "EUR"
+}
+[2026-04-13T04:10:47.979Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-13T04:10:50.701Z] MongoDB connected
+[2026-04-13T04:10:50.708Z] Server running on port 4000
+[2026-04-13T04:18:22.114Z] ================================================================================
+[2026-04-13T04:18:22.116Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-13T04:18:22.116Z] 🕒 Timestamp: 2026-04-13T04:18:22.116Z
+[2026-04-13T04:18:22.117Z] 📥 Incoming body: {
+  "cartId": "c38de48a-f096-400d-b491-f8116230601e",
+  "address": {
+    "firstName": "test",
+    "lastName": "test test",
+    "address1": "560 Mission Street",
+    "city": "San Francisco",
+    "postalCode": "94105",
+    "countryCode": "FR",
+    "stateOrProvince": "San Francisco",
+    "phone": ""
+  }
+}
+[2026-04-13T04:18:22.118Z] 🔎 Extracted inputs: [object Object]
+[2026-04-13T04:18:22.118Z] ✅ Validation passed
+[2026-04-13T04:18:22.118Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e
+[2026-04-13T04:18:24.241Z] 📡 Checkout response status: 200
+[2026-04-13T04:18:24.244Z] 📡 Checkout raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":288,"discount_amount":28.8,"manual_discount_amount":0,"cart_amount_inc_tax":259.2,"cart_amount_ex_tax":259.2,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":28.8}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":12,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":28.8}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":288,"extended_sale_price":288,"comparison_price":24,"extended_comparison_price":288,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-10T13:32:26+00:00"},"billing_address":{},"consignments":[{"id":"69d8fbe9e7e2c","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"","add
+[2026-04-13T04:18:24.247Z] ✅ Checkout JSON parsed successfully
+[2026-04-13T04:18:24.247Z] 🧾 Checkout summary: [object Object]
+[2026-04-13T04:18:24.249Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-13T04:18:24.261Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "test",
+      "last_name": "test test",
+      "address1": "560 Mission Street",
+      "city": "San Francisco",
+      "state_or_province": "San Francisco",
+      "postal_code": "94105",
+      "country_code": "FR",
+      "phone": ""
+    },
+    "line_items": [
+      {
+        "item_id": "081f76cc-a489-4b71-9c1e-e30a00a5d9db",
+        "quantity": 12
+      }
+    ]
+  }
+]
+[2026-04-13T04:18:24.267Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e/consignments?include=consignments.available_shipping_options
+[2026-04-13T04:18:25.053Z] 📡 Consignments response status: 200
+[2026-04-13T04:18:25.230Z] 📡 Consignments raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":288,"discount_amount":28.8,"manual_discount_amount":0,"cart_amount_inc_tax":259.2,"cart_amount_ex_tax":259.2,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":28.8}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":12,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":28.8}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":288,"extended_sale_price":288,"comparison_price":24,"extended_comparison_price":288,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T04:18:32+00:00"},"billing_address":{},"consignments":[{"id":"69dc6e9816408","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"available_shipping_options":[{"id":"4dcbf24f457dd67d5f89bcf374e0bc9b","type":"freeshipping","description":"Free Shipping","image_url":"","cost":0,"transit_time":"","additional_description":"","cost_after_discount":0},{"id":"8d74c159ada9257e3631dae799791ecd","type":"shipping_flatrate","description":"Delivery + Insurance (Protection against loss, breakage, and theft)","image_url":"","cost":2,"transit_time":"","additional_description":"","cost_after_discount":2}]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":288,"subtotal_ex_tax":288,"grand_total":259.2,"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T04:18:32+00:00","customer_message":"","staff_note":"","version":16,"total_discount":28.8,"fees":[]},"meta":{}}
+[2026-04-13T04:18:25.293Z] ✅ Consignments JSON parsed successfully
+[2026-04-13T04:18:25.444Z] 📋 Consignments summary: [object Object]
+[2026-04-13T04:18:25.580Z] 🚚 Raw available shipping options from BigCommerce: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "type": "freeshipping",
+    "description": "Free Shipping",
+    "image_url": "",
+    "cost": 0,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 0
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "type": "shipping_flatrate",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "image_url": "",
+    "cost": 2,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 2
+  }
+]
+[2026-04-13T04:18:25.645Z] ✅ Final mapped shipping options: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "description": "Free Shipping",
+    "cost": 0,
+    "type": "freeshipping",
+    "isRecommended": false,
+    "raw": {
+      "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+      "type": "freeshipping",
+      "description": "Free Shipping",
+      "image_url": "",
+      "cost": 0,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 0
+    }
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "cost": 2,
+    "type": "shipping_flatrate",
+    "isRecommended": false,
+    "raw": {
+      "id": "8d74c159ada9257e3631dae799791ecd",
+      "type": "shipping_flatrate",
+      "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+      "image_url": "",
+      "cost": 2,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 2
+    }
+  }
+]
+[2026-04-13T04:18:25.679Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "c38de48a-f096-400d-b491-f8116230601e",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 2
+}
+[2026-04-13T04:18:25.741Z] ================================================================================
+[2026-04-13T04:24:51.160Z] api cart called
+[2026-04-13T04:24:51.161Z] Fetching cart: c38de48a-f096-400d-b491-f8116230601e
+[2026-04-13T04:24:51.761Z] Cart found: [object Object]
+[2026-04-13T04:24:51.766Z] Redirecting to React app: http://localhost:5173/checkout?cartId=c38de48a-f096-400d-b491-f8116230601e&cartData=%257B%2522id%2522%253A%2522c38de48a-f096-400d-b491-f8116230601e%2522%252C%2522lineItems%2522%253A%257B%2522physicalItems%2522%253A%255B%257B%2522id%2522%253A%2522081f76cc-a489-4b71-9c1e-e30a00a5d9db%2522%252C%2522product_id%2522%253A209%252C%2522name%2522%253A%2522Test%2520Product%2520-2%2522%252C%2522quantity%2522%253A13%252C%2522extendedSalePrice%2522%253A312%252C%2522extendedListPrice%2522%253A312%252C%2522list_price%2522%253A24%252C%2522sale_price%2522%253A24%252C%2522imageUrl%2522%253A%2522https%253A%252F%252Fcdn11.bigcommerce.com%252Fs-eapn6crf58%252Fproducts%252F209%252Fimages%252F411%252Fdemo-sign-cubes__12531.1763473021.220.290.jpg%253Fc%253D1%2522%252C%2522options%2522%253A%255B%257B%2522name%2522%253A%2522Color%2522%252C%2522nameId%2522%253A149%252C%2522value%2522%253A%2522Green%2522%252C%2522valueId%2522%253A%2522178%2522%257D%255D%257D%255D%252C%2522digitalItems%2522%253A%255B%255D%257D%252C%2522cartAmount%2522%253A280.8%252C%2522discountAmount%2522%253A31.2%252C%2522taxAmount%2522%253A0%252C%2522grandTotal%2522%253A280.8%252C%2522currency%2522%253A%257B%2522code%2522%253A%2522EUR%2522%257D%252C%2522customerId%2522%253A0%252C%2522coupons%2522%253A%255B%255D%257D
+[2026-04-13T04:24:52.586Z] api cart-data called
+[2026-04-13T04:24:53.022Z] api cart-data called
+[2026-04-13T04:25:05.230Z] Search Customer by Email [object Object]
+[2026-04-13T04:25:05.231Z] Searching customer by email (decoded): test111@gmail.com
+[2026-04-13T04:25:06.441Z] Customer found: 41
+[2026-04-13T04:25:06.443Z] Email Search result: {"data":[{"id":41,"authentication":{"force_password_reset":false},"company":"","customer_group_id":1,"email":"test111@gmail.com","first_name":"test","last_name":"test","notes":"","phone":"","registration_ip_address":"","tax_exempt_category":"","date_created":"2026-02-04T13:49:33Z","date_modified":"2026-02-04T13:49:33Z","accepts_product_review_abandoned_cart_emails":false,"origin_channel_id":1,"channel_ids":null}],"meta":{"pagination":{"total":1,"count":1,"per_page":50,"current_page":1,"total_pages":1},"cursor_pagination":{"count":1,"per_page":50,"start_cursor":"eyJpZCI6NDF9","end_cursor":"eyJpZCI6NDF9","links":{}}}}
+[2026-04-13T04:25:07.887Z] Customer search results: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2026-04-13T04:25:07.887Z]  Found existing Airwallex customer: bcus_hkdmh4dffhgrjyz9b10
+[2026-04-13T04:25:08.045Z] Search Customer by Email [object Object]
+[2026-04-13T04:25:08.046Z] Searching customer by email (decoded): test111@gmail.com
+[2026-04-13T04:25:08.271Z] Customer found: 41
+[2026-04-13T04:25:08.272Z] Email Search result: {"data":[{"id":41,"authentication":{"force_password_reset":false},"company":"","customer_group_id":1,"email":"test111@gmail.com","first_name":"test","last_name":"test","notes":"","phone":"","registration_ip_address":"","tax_exempt_category":"","date_created":"2026-02-04T13:49:33Z","date_modified":"2026-02-04T13:49:33Z","accepts_product_review_abandoned_cart_emails":false,"origin_channel_id":1,"channel_ids":null}],"meta":{"pagination":{"total":1,"count":1,"per_page":50,"current_page":1,"total_pages":1},"cursor_pagination":{"count":1,"per_page":50,"start_cursor":"eyJpZCI6NDF9","end_cursor":"eyJpZCI6NDF9","links":{}}}}
+[2026-04-13T04:25:13.572Z] ================================================================================
+[2026-04-13T04:25:13.573Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-13T04:25:13.573Z] 🕒 Timestamp: 2026-04-13T04:25:13.573Z
+[2026-04-13T04:25:13.574Z] 📥 Incoming body: {
+  "cartId": "c38de48a-f096-400d-b491-f8116230601e",
+  "address": {
+    "firstName": "test",
+    "lastName": "test test",
+    "address1": "560 Mission Street",
+    "city": "San Francisco",
+    "postalCode": "94105",
+    "countryCode": "FR",
+    "stateOrProvince": "San Francisco",
+    "phone": ""
+  }
+}
+[2026-04-13T04:25:13.574Z] 🔎 Extracted inputs: [object Object]
+[2026-04-13T04:25:13.574Z] ✅ Validation passed
+[2026-04-13T04:25:13.574Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e
+[2026-04-13T04:25:14.971Z] 📡 Checkout response status: 200
+[2026-04-13T04:25:14.973Z] 📡 Checkout raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":312,"discount_amount":31.2,"manual_discount_amount":0,"cart_amount_inc_tax":280.8,"cart_amount_ex_tax":280.8,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":31.2}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":13,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":31.2}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":312,"extended_sale_price":312,"comparison_price":24,"extended_comparison_price":312,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T04:24:52+00:00"},"billing_address":{},"consignments":[{"id":"69dc6e9816408","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"","add
+[2026-04-13T04:25:15.035Z] ✅ Checkout JSON parsed successfully
+[2026-04-13T04:25:15.091Z] 🧾 Checkout summary: [object Object]
+[2026-04-13T04:25:15.093Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-13T04:25:15.123Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "test",
+      "last_name": "test test",
+      "address1": "560 Mission Street",
+      "city": "San Francisco",
+      "state_or_province": "San Francisco",
+      "postal_code": "94105",
+      "country_code": "FR",
+      "phone": ""
+    },
+    "line_items": [
+      {
+        "item_id": "081f76cc-a489-4b71-9c1e-e30a00a5d9db",
+        "quantity": 13
+      }
+    ]
+  }
+]
+[2026-04-13T04:25:15.125Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e/consignments?include=consignments.available_shipping_options
+[2026-04-13T04:25:15.501Z] ================================================================================
+[2026-04-13T04:25:15.501Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-13T04:25:15.501Z] 🕒 Timestamp: 2026-04-13T04:25:15.501Z
+[2026-04-13T04:25:15.504Z] 📥 Incoming body: {
+  "cartId": "c38de48a-f096-400d-b491-f8116230601e",
+  "address": {
+    "firstName": "test",
+    "lastName": "test test",
+    "address1": "560 Mission Street",
+    "city": "San Francisco",
+    "postalCode": "94105",
+    "countryCode": "FR",
+    "stateOrProvince": "San Francisco",
+    "phone": "234234"
+  }
+}
+[2026-04-13T04:25:15.505Z] 🔎 Extracted inputs: [object Object]
+[2026-04-13T04:25:15.505Z] ✅ Validation passed
+[2026-04-13T04:25:15.506Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e
+[2026-04-13T04:25:15.791Z] 📡 Consignments response status: 200
+[2026-04-13T04:25:15.794Z] 📡 Consignments raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":312,"discount_amount":31.2,"manual_discount_amount":0,"cart_amount_inc_tax":280.8,"cart_amount_ex_tax":280.8,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":31.2}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":13,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":31.2}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":312,"extended_sale_price":312,"comparison_price":24,"extended_comparison_price":312,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T04:25:23+00:00"},"billing_address":{},"consignments":[{"id":"69dc7032e0b2b","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"available_shipping_options":[{"id":"4dcbf24f457dd67d5f89bcf374e0bc9b","type":"freeshipping","description":"Free Shipping","image_url":"","cost":0,"transit_time":"","additional_description":"","cost_after_discount":0},{"id":"8d74c159ada9257e3631dae799791ecd","type":"shipping_flatrate","description":"Delivery + Insurance (Protection against loss, breakage, and theft)","image_url":"","cost":2,"transit_time":"","additional_description":"","cost_after_discount":2}]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":312,"subtotal_ex_tax":312,"grand_total":280.8,"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T04:25:23+00:00","customer_message":"","staff_note":"","version":18,"total_discount":31.2,"fees":[]},"meta":{}}
+[2026-04-13T04:25:15.795Z] ✅ Consignments JSON parsed successfully
+[2026-04-13T04:25:15.795Z] 📋 Consignments summary: [object Object]
+[2026-04-13T04:25:15.800Z] 🚚 Raw available shipping options from BigCommerce: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "type": "freeshipping",
+    "description": "Free Shipping",
+    "image_url": "",
+    "cost": 0,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 0
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "type": "shipping_flatrate",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "image_url": "",
+    "cost": 2,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 2
+  }
+]
+[2026-04-13T04:25:15.806Z] ✅ Final mapped shipping options: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "description": "Free Shipping",
+    "cost": 0,
+    "type": "freeshipping",
+    "isRecommended": false,
+    "raw": {
+      "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+      "type": "freeshipping",
+      "description": "Free Shipping",
+      "image_url": "",
+      "cost": 0,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 0
+    }
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "cost": 2,
+    "type": "shipping_flatrate",
+    "isRecommended": false,
+    "raw": {
+      "id": "8d74c159ada9257e3631dae799791ecd",
+      "type": "shipping_flatrate",
+      "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+      "image_url": "",
+      "cost": 2,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 2
+    }
+  }
+]
+[2026-04-13T04:25:15.807Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "c38de48a-f096-400d-b491-f8116230601e",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 2
+}
+[2026-04-13T04:25:15.808Z] ================================================================================
+[2026-04-13T04:25:16.875Z] 📡 Checkout response status: 200
+[2026-04-13T04:25:16.876Z] 📡 Checkout raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":312,"discount_amount":31.2,"manual_discount_amount":0,"cart_amount_inc_tax":280.8,"cart_amount_ex_tax":280.8,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":31.2}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":13,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":31.2}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":312,"extended_sale_price":312,"comparison_price":24,"extended_comparison_price":312,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T04:25:23+00:00"},"billing_address":{},"consignments":[{"id":"69dc7032e0b2b","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"","add
+[2026-04-13T04:25:16.877Z] ✅ Checkout JSON parsed successfully
+[2026-04-13T04:25:16.877Z] 🧾 Checkout summary: [object Object]
+[2026-04-13T04:25:16.877Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-13T04:25:16.881Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "test",
+      "last_name": "test test",
+      "address1": "560 Mission Street",
+      "city": "San Francisco",
+      "state_or_province": "San Francisco",
+      "postal_code": "94105",
+      "country_code": "FR",
+      "phone": "234234"
+    },
+    "line_items": [
+      {
+        "item_id": "081f76cc-a489-4b71-9c1e-e30a00a5d9db",
+        "quantity": 13
+      }
+    ]
+  }
+]
+[2026-04-13T04:25:16.883Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e/consignments?include=consignments.available_shipping_options
+[2026-04-13T04:25:17.574Z] 📡 Consignments response status: 200
+[2026-04-13T04:25:17.576Z] 📡 Consignments raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":312,"discount_amount":31.2,"manual_discount_amount":0,"cart_amount_inc_tax":280.8,"cart_amount_ex_tax":280.8,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":31.2}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":13,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":31.2}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":312,"extended_sale_price":312,"comparison_price":24,"extended_comparison_price":312,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T04:25:24+00:00"},"billing_address":{},"consignments":[{"id":"69dc7034b5782","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"234234","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"234234","custom_fields":[]},"available_shipping_options":[{"id":"4dcbf24f457dd67d5f89bcf374e0bc9b","type":"freeshipping","description":"Free Shipping","image_url":"","cost":0,"transit_time":"","additional_description":"","cost_after_discount":0},{"id":"8d74c159ada9257e3631dae799791ecd","type":"shipping_flatrate","description":"Delivery + Insurance (Protection against loss, breakage, and theft)","image_url":"","cost":2,"transit_time":"","additional_description":"","cost_after_discount":2}]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":312,"subtotal_ex_tax":312,"grand_total":280.8,"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T04:25:24+00:00","customer_message":"","staff_note":"","version":19,"total_discount":31.2,"fees":[]},"meta":{}}
+[2026-04-13T04:25:17.576Z] ✅ Consignments JSON parsed successfully
+[2026-04-13T04:25:17.577Z] 📋 Consignments summary: [object Object]
+[2026-04-13T04:25:17.579Z] 🚚 Raw available shipping options from BigCommerce: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "type": "freeshipping",
+    "description": "Free Shipping",
+    "image_url": "",
+    "cost": 0,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 0
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "type": "shipping_flatrate",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "image_url": "",
+    "cost": 2,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 2
+  }
+]
+[2026-04-13T04:25:17.584Z] ✅ Final mapped shipping options: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "description": "Free Shipping",
+    "cost": 0,
+    "type": "freeshipping",
+    "isRecommended": false,
+    "raw": {
+      "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+      "type": "freeshipping",
+      "description": "Free Shipping",
+      "image_url": "",
+      "cost": 0,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 0
+    }
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "cost": 2,
+    "type": "shipping_flatrate",
+    "isRecommended": false,
+    "raw": {
+      "id": "8d74c159ada9257e3631dae799791ecd",
+      "type": "shipping_flatrate",
+      "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+      "image_url": "",
+      "cost": 2,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 2
+    }
+  }
+]
+[2026-04-13T04:25:17.585Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "c38de48a-f096-400d-b491-f8116230601e",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 2
+}
+[2026-04-13T04:25:17.586Z] ================================================================================
+[2026-04-13T04:25:17.837Z] Saving customer address - START
+[2026-04-13T04:25:17.837Z] Saving address for customer: 41
+[2026-04-13T04:25:17.837Z] Address data received: [object Object]
+[2026-04-13T04:25:18.144Z] Get addresses response status: 200
+[2026-04-13T04:25:18.148Z] Get addresses raw response: [{"id":32,"customer_id":41,"first_name":"test","last_name":"test test","company":"","street_1":"560 Mission Street","street_2":"","city":"San Francisco","state":"San Francisco","zip":"94105","country"
+[2026-04-13T04:25:18.149Z] Parsed existing addresses: 1
+[2026-04-13T04:25:18.149Z] Updating existing address: 32
+[2026-04-13T04:25:18.150Z] Address data to save to BigCommerce: [object Object]
+[2026-04-13T04:25:18.150Z] Making request to BigCommerce API: [object Object]
+[2026-04-13T04:25:18.482Z] BigCommerce response status: 200
+[2026-04-13T04:25:18.483Z] BigCommerce raw response: {"id":32,"customer_id":41,"first_name":"test","last_name":"test test","company":"","street_1":"560 Mission Street","street_2":"","city":"San Francisco","state":"San Francisco","zip":"94105","country":"France","country_iso2":"FR","phone":"234234","address_type":"residential","form_fields":null}
+[2026-04-13T04:25:18.483Z] Address saved successfully: 32
+[2026-04-13T04:25:18.484Z] Saving customer address - SUCCESS
+[2026-04-13T04:25:19.396Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-13T04:25:19.541Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T04:25:19.811Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "3fea6afd-5289-420e-973a-8ee3a93f590c",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T04:25:20.138Z]  PaymentIntent created: {
+  "id": "int_hkdmhjl4jhhk43e70ek"
+}
+[2026-04-13T04:25:20.140Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmhjl4jhhk43e70ek",
+  "request_id": "3fea6afd-5289-420e-973a-8ee3a93f590c",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-13T04:25:27+0000",
+  "updated_at": "2026-04-13T04:25:27+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWhqbDRqaGhrNDNlNzBlayIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjA1NzkyNywiaWF0IjoxNzc2MDU0MzI3fQ.oJGmKER4lItX0XMyi1WP0CiGS2Lq3VeSYHE0SdUXaJo",
+  "return_url": "http://localhost:5173",
+  "original_amount": 280.8,
+  "original_currency": "EUR"
+}
+[2026-04-13T05:00:42.395Z] ================================================================================
+[2026-04-13T05:00:42.397Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-13T05:00:42.398Z] 🕒 Timestamp: 2026-04-13T05:00:42.398Z
+[2026-04-13T05:00:42.399Z] 📥 Incoming body: {
+  "cartId": "c38de48a-f096-400d-b491-f8116230601e",
+  "address": {
+    "firstName": "test",
+    "lastName": "test test",
+    "address1": "560 Mission Street",
+    "city": "San Francisco",
+    "postalCode": "94105",
+    "countryCode": "FR",
+    "stateOrProvince": "San Francisco",
+    "phone": ""
+  }
+}
+[2026-04-13T05:00:42.399Z] 🔎 Extracted inputs: [object Object]
+[2026-04-13T05:00:42.400Z] ✅ Validation passed
+[2026-04-13T05:00:42.400Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e
+[2026-04-13T05:00:44.055Z] 📡 Checkout response status: 200
+[2026-04-13T05:00:44.060Z] 📡 Checkout raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":312,"discount_amount":31.2,"manual_discount_amount":0,"cart_amount_inc_tax":280.8,"cart_amount_ex_tax":280.8,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":31.2}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":13,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":31.2}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":312,"extended_sale_price":312,"comparison_price":24,"extended_comparison_price":312,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T04:25:24+00:00"},"billing_address":{},"consignments":[{"id":"69dc7034b5782","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"234234","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"
+[2026-04-13T05:00:44.063Z] ✅ Checkout JSON parsed successfully
+[2026-04-13T05:00:44.064Z] 🧾 Checkout summary: [object Object]
+[2026-04-13T05:00:44.065Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-13T05:00:44.075Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "test",
+      "last_name": "test test",
+      "address1": "560 Mission Street",
+      "city": "San Francisco",
+      "state_or_province": "San Francisco",
+      "postal_code": "94105",
+      "country_code": "FR",
+      "phone": ""
+    },
+    "line_items": [
+      {
+        "item_id": "081f76cc-a489-4b71-9c1e-e30a00a5d9db",
+        "quantity": 13
+      }
+    ]
+  }
+]
+[2026-04-13T05:00:44.076Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e/consignments?include=consignments.available_shipping_options
+[2026-04-13T05:00:44.858Z] 📡 Consignments response status: 200
+[2026-04-13T05:00:44.868Z] 📡 Consignments raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":312,"discount_amount":31.2,"manual_discount_amount":0,"cart_amount_inc_tax":280.8,"cart_amount_ex_tax":280.8,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":31.2}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":13,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":31.2}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":312,"extended_sale_price":312,"comparison_price":24,"extended_comparison_price":312,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T05:00:52+00:00"},"billing_address":{},"consignments":[{"id":"69dc7883e5511","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"available_shipping_options":[{"id":"4dcbf24f457dd67d5f89bcf374e0bc9b","type":"freeshipping","description":"Free Shipping","image_url":"","cost":0,"transit_time":"","additional_description":"","cost_after_discount":0},{"id":"8d74c159ada9257e3631dae799791ecd","type":"shipping_flatrate","description":"Delivery + Insurance (Protection against loss, breakage, and theft)","image_url":"","cost":2,"transit_time":"","additional_description":"","cost_after_discount":2}]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":312,"subtotal_ex_tax":312,"grand_total":280.8,"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T05:00:52+00:00","customer_message":"","staff_note":"","version":20,"total_discount":31.2,"fees":[]},"meta":{}}
+[2026-04-13T05:00:44.869Z] ✅ Consignments JSON parsed successfully
+[2026-04-13T05:00:44.874Z] 📋 Consignments summary: [object Object]
+[2026-04-13T05:00:44.894Z] 🚚 Raw available shipping options from BigCommerce: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "type": "freeshipping",
+    "description": "Free Shipping",
+    "image_url": "",
+    "cost": 0,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 0
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "type": "shipping_flatrate",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "image_url": "",
+    "cost": 2,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 2
+  }
+]
+[2026-04-13T05:00:44.903Z] ✅ Final mapped shipping options: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "description": "Free Shipping",
+    "cost": 0,
+    "type": "freeshipping",
+    "isRecommended": false,
+    "raw": {
+      "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+      "type": "freeshipping",
+      "description": "Free Shipping",
+      "image_url": "",
+      "cost": 0,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 0
+    }
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "cost": 2,
+    "type": "shipping_flatrate",
+    "isRecommended": false,
+    "raw": {
+      "id": "8d74c159ada9257e3631dae799791ecd",
+      "type": "shipping_flatrate",
+      "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+      "image_url": "",
+      "cost": 2,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 2
+    }
+  }
+]
+[2026-04-13T05:00:44.904Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "c38de48a-f096-400d-b491-f8116230601e",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 2
+}
+[2026-04-13T05:00:44.904Z] ================================================================================
+[2026-04-13T05:25:32.094Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-13T05:25:33.876Z] MongoDB connected
+[2026-04-13T05:25:33.888Z] Server running on port 4000
+[2026-04-13T05:26:55.823Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-13T05:26:57.452Z] MongoDB connected
+[2026-04-13T05:26:57.459Z] Server running on port 4000
+[2026-04-13T05:31:42.707Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-13T05:31:44.767Z] MongoDB connected
+[2026-04-13T05:31:44.777Z] Server running on port 4000
+[2026-04-13T05:51:20.683Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-13T05:51:22.636Z] MongoDB connected
+[2026-04-13T05:51:22.662Z] Server running on port 4000
+[2026-04-13T06:28:23.145Z] api cart-data called
+[2026-04-13T06:28:24.491Z] api cart-data called
+[2026-04-13T06:28:25.443Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-13T06:28:25.448Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-13T06:28:25.587Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T06:28:25.590Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T06:28:25.863Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "2c42c4c3-32dd-4670-be26-adffc6a1c3d5",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T06:28:25.866Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "eec2e143-34f8-4cec-999b-2157b2aad076",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T06:28:26.128Z]  PaymentIntent created: {
+  "id": "int_hkdmn727hhhk7hf664m"
+}
+[2026-04-13T06:28:26.140Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmn727hhhk7hf664m",
+  "request_id": "eec2e143-34f8-4cec-999b-2157b2aad076",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-13T06:28:25+0000",
+  "updated_at": "2026-04-13T06:28:25+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbW43MjdoaGhrN2hmNjY0bSIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjA2NTMwNiwiaWF0IjoxNzc2MDYxNzA2fQ.jwvUA_TGgaDFMwit4_LJoHfD1s2COjipvAlKq2CBXfo",
+  "return_url": "http://localhost:5173",
+  "original_amount": 280.8,
+  "original_currency": "EUR"
+}
+[2026-04-13T06:28:26.143Z]  PaymentIntent created: {
+  "id": "int_hkdmhjl4jhhk7hf652i"
+}
+[2026-04-13T06:28:26.146Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmhjl4jhhk7hf652i",
+  "request_id": "2c42c4c3-32dd-4670-be26-adffc6a1c3d5",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-13T06:28:25+0000",
+  "updated_at": "2026-04-13T06:28:25+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWhqbDRqaGhrN2hmNjUyaSIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjA2NTMwNiwiaWF0IjoxNzc2MDYxNzA2fQ.F_CXsOEQ8pUeuVCQgxImPB0cj6Sh9XnBN1CZ6HGMOtk",
+  "return_url": "http://localhost:5173",
+  "original_amount": 280.8,
+  "original_currency": "EUR"
+}
+[2026-04-13T06:31:57.484Z] api cart-data called
+[2026-04-13T06:31:59.143Z] api cart-data called
+[2026-04-13T06:31:59.973Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-13T06:32:00.007Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-13T06:32:00.169Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T06:32:00.202Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T06:32:00.482Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "fac70ea1-b438-4936-bc8d-a45e1923f306",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T06:32:00.521Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "f0588506-7a98-43a3-a20e-f36a21520976",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T06:32:00.672Z]  PaymentIntent created: {
+  "id": "int_hkdmhjl4jhhk7kyy61x"
+}
+[2026-04-13T06:32:00.675Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmhjl4jhhk7kyy61x",
+  "request_id": "fac70ea1-b438-4936-bc8d-a45e1923f306",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-13T06:32:00+0000",
+  "updated_at": "2026-04-13T06:32:00+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWhqbDRqaGhrN2t5eTYxeCIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjA2NTUyMCwiaWF0IjoxNzc2MDYxOTIwfQ.k6ija5hvy0q-UcBKj1Sr2jgQaoSn61NDcT-pNrjx1kw",
+  "return_url": "http://localhost:5173",
+  "original_amount": 280.8,
+  "original_currency": "EUR"
+}
+[2026-04-13T06:32:00.724Z]  PaymentIntent created: {
+  "id": "int_hkdmhjl4jhhk7kyz5js"
+}
+[2026-04-13T06:32:00.727Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmhjl4jhhk7kyz5js",
+  "request_id": "f0588506-7a98-43a3-a20e-f36a21520976",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-13T06:32:00+0000",
+  "updated_at": "2026-04-13T06:32:00+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWhqbDRqaGhrN2t5ejVqcyIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjA2NTUyMCwiaWF0IjoxNzc2MDYxOTIwfQ.3rbr6d8rLNaejsduq_CN6DbN-byQ4z6XOJI39mvn9Ek",
+  "return_url": "http://localhost:5173",
+  "original_amount": 280.8,
+  "original_currency": "EUR"
+}
+[2026-04-13T06:32:09.303Z] api cart-data called
+[2026-04-13T06:32:10.841Z] api cart-data called
+[2026-04-13T06:32:11.509Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-13T06:32:11.522Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-13T06:32:11.704Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T06:32:11.712Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T06:32:12.007Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "a9778ebc-f4e0-4b85-a06e-fcfe07835fd4",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T06:32:12.018Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "31b2d02c-c2df-46df-95c0-2e78af107687",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-13T06:32:12.205Z]  PaymentIntent created: {
+  "id": "int_hkdmhjl4jhhk7l5t95h"
+}
+[2026-04-13T06:32:12.210Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmhjl4jhhk7l5t95h",
+  "request_id": "a9778ebc-f4e0-4b85-a06e-fcfe07835fd4",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-13T06:32:12+0000",
+  "updated_at": "2026-04-13T06:32:12+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWhqbDRqaGhrN2w1dDk1aCIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjA2NTUzMiwiaWF0IjoxNzc2MDYxOTMyfQ.cPf2wSLr4dMnNFwO9JrRTFAQc5OhffmnR0lySQw6U_0",
+  "return_url": "http://localhost:5173",
+  "original_amount": 280.8,
+  "original_currency": "EUR"
+}
+[2026-04-13T06:32:12.219Z]  PaymentIntent created: {
+  "id": "int_hkdmhjl4jhhk7l5tkq7"
+}
+[2026-04-13T06:32:12.228Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmhjl4jhhk7l5tkq7",
+  "request_id": "31b2d02c-c2df-46df-95c0-2e78af107687",
+  "amount": 280.8,
+  "currency": "EUR",
+  "merchant_order_id": "c38de48a-f096-400d-b491-f8116230601e",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-13T06:32:12+0000",
+  "updated_at": "2026-04-13T06:32:12+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWhqbDRqaGhrN2w1dGtxNyIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjA2NTUzMiwiaWF0IjoxNzc2MDYxOTMyfQ._DQ_6X4qUbo4cmtYS3u5ey3dNk4_jZNaIWj4dEauQA0",
+  "return_url": "http://localhost:5173",
+  "original_amount": 280.8,
+  "original_currency": "EUR"
+}
+[2026-04-13T06:38:02.306Z] api cart-data called
+[2026-04-13T06:38:03.036Z] api cart-data called
+[2026-04-13T06:38:04.105Z] ================================================================================
+[2026-04-13T06:38:04.106Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-13T06:38:04.107Z] 🕒 Timestamp: 2026-04-13T06:38:04.106Z
+[2026-04-13T06:38:04.110Z] 📥 Incoming body: {
+  "cartId": "c38de48a-f096-400d-b491-f8116230601e",
+  "address": {
+    "firstName": "test",
+    "lastName": "test test",
+    "address1": "560 Mission Street",
+    "city": "San Francisco",
+    "postalCode": "94105",
+    "countryCode": "FR",
+    "stateOrProvince": "San Francisco",
+    "phone": ""
+  }
+}
+[2026-04-13T06:38:04.111Z] 🔎 Extracted inputs: [object Object]
+[2026-04-13T06:38:04.112Z] ✅ Validation passed
+[2026-04-13T06:38:04.114Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e
+[2026-04-13T06:38:04.523Z] 📡 Checkout response status: 200
+[2026-04-13T06:38:04.524Z] 📡 Checkout raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":312,"discount_amount":31.2,"manual_discount_amount":0,"cart_amount_inc_tax":280.8,"cart_amount_ex_tax":280.8,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":31.2}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":13,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":31.2}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":312,"extended_sale_price":312,"comparison_price":24,"extended_comparison_price":312,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T05:00:52+00:00"},"billing_address":{},"consignments":[{"id":"69dc7883e5511","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"","add
+[2026-04-13T06:38:04.525Z] ✅ Checkout JSON parsed successfully
+[2026-04-13T06:38:04.525Z] 🧾 Checkout summary: [object Object]
+[2026-04-13T06:38:04.526Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-13T06:38:04.528Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "test",
+      "last_name": "test test",
+      "address1": "560 Mission Street",
+      "city": "San Francisco",
+      "state_or_province": "San Francisco",
+      "postal_code": "94105",
+      "country_code": "FR",
+      "phone": ""
+    },
+    "line_items": [
+      {
+        "item_id": "081f76cc-a489-4b71-9c1e-e30a00a5d9db",
+        "quantity": 13
+      }
+    ]
+  }
+]
+[2026-04-13T06:38:04.528Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e/consignments?include=consignments.available_shipping_options
+[2026-04-13T06:38:04.603Z] api cart-data called
+[2026-04-13T06:38:05.238Z] api cart-data called
+[2026-04-13T06:38:05.262Z] 📡 Consignments response status: 200
+[2026-04-13T06:38:05.268Z] 📡 Consignments raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":312,"discount_amount":31.2,"manual_discount_amount":0,"cart_amount_inc_tax":280.8,"cart_amount_ex_tax":280.8,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":31.2}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":13,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":31.2}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":312,"extended_sale_price":312,"comparison_price":24,"extended_comparison_price":312,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T06:38:04+00:00"},"billing_address":{},"consignments":[{"id":"69dc8f4cc8e18","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"available_shipping_options":[{"id":"4dcbf24f457dd67d5f89bcf374e0bc9b","type":"freeshipping","description":"Free Shipping","image_url":"","cost":0,"transit_time":"","additional_description":"","cost_after_discount":0},{"id":"8d74c159ada9257e3631dae799791ecd","type":"shipping_flatrate","description":"Delivery + Insurance (Protection against loss, breakage, and theft)","image_url":"","cost":2,"transit_time":"","additional_description":"","cost_after_discount":2}]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":312,"subtotal_ex_tax":312,"grand_total":280.8,"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T06:38:04+00:00","customer_message":"","staff_note":"","version":21,"total_discount":31.2,"fees":[]},"meta":{}}
+[2026-04-13T06:38:05.269Z] ✅ Consignments JSON parsed successfully
+[2026-04-13T06:38:05.270Z] 📋 Consignments summary: [object Object]
+[2026-04-13T06:38:05.273Z] 🚚 Raw available shipping options from BigCommerce: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "type": "freeshipping",
+    "description": "Free Shipping",
+    "image_url": "",
+    "cost": 0,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 0
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "type": "shipping_flatrate",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "image_url": "",
+    "cost": 2,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 2
+  }
+]
+[2026-04-13T06:38:05.277Z] ✅ Final mapped shipping options: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "description": "Free Shipping",
+    "cost": 0,
+    "type": "freeshipping",
+    "isRecommended": false,
+    "raw": {
+      "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+      "type": "freeshipping",
+      "description": "Free Shipping",
+      "image_url": "",
+      "cost": 0,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 0
+    }
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "cost": 2,
+    "type": "shipping_flatrate",
+    "isRecommended": false,
+    "raw": {
+      "id": "8d74c159ada9257e3631dae799791ecd",
+      "type": "shipping_flatrate",
+      "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+      "image_url": "",
+      "cost": 2,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 2
+    }
+  }
+]
+[2026-04-13T06:38:05.278Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "c38de48a-f096-400d-b491-f8116230601e",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 2
+}
+[2026-04-13T06:38:05.278Z] ================================================================================
+[2026-04-13T06:38:06.258Z] ================================================================================
+[2026-04-13T06:38:06.269Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-13T06:38:06.275Z] 🕒 Timestamp: 2026-04-13T06:38:06.269Z
+[2026-04-13T06:38:06.280Z] 📥 Incoming body: {
+  "cartId": "c38de48a-f096-400d-b491-f8116230601e",
+  "address": {
+    "firstName": "test",
+    "lastName": "test test",
+    "address1": "560 Mission Street",
+    "city": "San Francisco",
+    "postalCode": "94105",
+    "countryCode": "FR",
+    "stateOrProvince": "San Francisco",
+    "phone": ""
+  }
+}
+[2026-04-13T06:38:06.280Z] 🔎 Extracted inputs: [object Object]
+[2026-04-13T06:38:06.284Z] ✅ Validation passed
+[2026-04-13T06:38:06.296Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e
+[2026-04-13T06:38:06.684Z] 📡 Checkout response status: 200
+[2026-04-13T06:38:06.686Z] 📡 Checkout raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":312,"discount_amount":31.2,"manual_discount_amount":0,"cart_amount_inc_tax":280.8,"cart_amount_ex_tax":280.8,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":31.2}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":13,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":31.2}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":312,"extended_sale_price":312,"comparison_price":24,"extended_comparison_price":312,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T06:38:04+00:00"},"billing_address":{},"consignments":[{"id":"69dc8f4cc8e18","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"","add
+[2026-04-13T06:38:06.686Z] ✅ Checkout JSON parsed successfully
+[2026-04-13T06:38:06.687Z] 🧾 Checkout summary: [object Object]
+[2026-04-13T06:38:06.687Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-13T06:38:06.688Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "test",
+      "last_name": "test test",
+      "address1": "560 Mission Street",
+      "city": "San Francisco",
+      "state_or_province": "San Francisco",
+      "postal_code": "94105",
+      "country_code": "FR",
+      "phone": ""
+    },
+    "line_items": [
+      {
+        "item_id": "081f76cc-a489-4b71-9c1e-e30a00a5d9db",
+        "quantity": 13
+      }
+    ]
+  }
+]
+[2026-04-13T06:38:06.689Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/c38de48a-f096-400d-b491-f8116230601e/consignments?include=consignments.available_shipping_options
+[2026-04-13T06:38:07.351Z] 📡 Consignments response status: 200
+[2026-04-13T06:38:07.370Z] 📡 Consignments raw response: {"data":{"id":"c38de48a-f096-400d-b491-f8116230601e","cart":{"id":"c38de48a-f096-400d-b491-f8116230601e","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":312,"discount_amount":31.2,"manual_discount_amount":0,"cart_amount_inc_tax":280.8,"cart_amount_ex_tax":280.8,"coupons":[],"discounts":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","discounted_amount":31.2}],"line_items":{"physical_items":[{"id":"081f76cc-a489-4b71-9c1e-e30a00a5d9db","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":13,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":31.2}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":312,"extended_sale_price":312,"comparison_price":24,"extended_comparison_price":312,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T06:38:07+00:00"},"billing_address":{},"consignments":[{"id":"69dc8f4eeb3bf","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["081f76cc-a489-4b71-9c1e-e30a00a5d9db"],"shipping_address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"address":{"first_name":"test","last_name":"test test","email":"","company":"","address1":"560 Mission Street","address2":"","city":"San Francisco","state_or_province":"San Francisco","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"94105","phone":"","custom_fields":[]},"available_shipping_options":[{"id":"4dcbf24f457dd67d5f89bcf374e0bc9b","type":"freeshipping","description":"Free Shipping","image_url":"","cost":0,"transit_time":"","additional_description":"","cost_after_discount":0},{"id":"8d74c159ada9257e3631dae799791ecd","type":"shipping_flatrate","description":"Delivery + Insurance (Protection against loss, breakage, and theft)","image_url":"","cost":2,"transit_time":"","additional_description":"","cost_after_discount":2}]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":312,"subtotal_ex_tax":312,"grand_total":280.8,"created_time":"2026-04-06T09:32:10+00:00","updated_time":"2026-04-13T06:38:07+00:00","customer_message":"","staff_note":"","version":22,"total_discount":31.2,"fees":[]},"meta":{}}
+[2026-04-13T06:38:07.372Z] ✅ Consignments JSON parsed successfully
+[2026-04-13T06:38:07.372Z] 📋 Consignments summary: [object Object]
+[2026-04-13T06:38:07.381Z] 🚚 Raw available shipping options from BigCommerce: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "type": "freeshipping",
+    "description": "Free Shipping",
+    "image_url": "",
+    "cost": 0,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 0
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "type": "shipping_flatrate",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "image_url": "",
+    "cost": 2,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 2
+  }
+]
+[2026-04-13T06:38:07.384Z] ✅ Final mapped shipping options: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "description": "Free Shipping",
+    "cost": 0,
+    "type": "freeshipping",
+    "isRecommended": false,
+    "raw": {
+      "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+      "type": "freeshipping",
+      "description": "Free Shipping",
+      "image_url": "",
+      "cost": 0,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 0
+    }
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "cost": 2,
+    "type": "shipping_flatrate",
+    "isRecommended": false,
+    "raw": {
+      "id": "8d74c159ada9257e3631dae799791ecd",
+      "type": "shipping_flatrate",
+      "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+      "image_url": "",
+      "cost": 2,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 2
+    }
+  }
+]
+[2026-04-13T06:38:07.385Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "c38de48a-f096-400d-b491-f8116230601e",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 2
+}
+[2026-04-13T06:38:07.386Z] ================================================================================
+[2026-04-13T07:01:00.894Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-13T07:01:02.491Z] MongoDB connected
+[2026-04-13T07:01:02.501Z] Server running on port 4000
+[2026-04-13T07:02:01.692Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-13T07:02:03.377Z] MongoDB connected
+[2026-04-13T07:02:03.388Z] Server running on port 4000
+[2026-04-13T07:02:15.189Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-13T07:02:16.755Z] MongoDB connected
+[2026-04-13T07:02:16.761Z] Server running on port 4000
+[2026-04-13T07:02:19.993Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-13T07:02:21.751Z] MongoDB connected
+[2026-04-13T07:02:21.758Z] Server running on port 4000
+[2026-04-13T07:03:41.003Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-13T07:03:42.789Z] MongoDB connected
+[2026-04-13T07:03:42.797Z] Server running on port 4000
+[2026-04-13T07:03:58.452Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-13T07:04:00.114Z] MongoDB connected
+[2026-04-13T07:04:00.139Z] Server running on port 4000
+[2026-04-13T13:32:25.322Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-13T13:32:27.202Z] MongoDB connected
+[2026-04-13T13:32:27.217Z] Server running on port 4000
+[2026-04-15T04:56:19.182Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
+[2026-04-15T04:56:21.086Z] MongoDB connected
+[2026-04-15T04:56:21.096Z] Server running on port 4000
+[2026-04-15T04:56:23.932Z] api cart-data called
+[2026-04-15T04:56:25.039Z] ERROR: Cart fetch failed: 404 {"status":404,"type":"https://developer.bigcommerce.com/api-docs/getting-started/api-status-codes"}
+[2026-04-15T04:56:25.112Z] api cart-data called
+[2026-04-15T04:56:25.465Z] ERROR: Cart fetch failed: 404 {"status":404,"type":"https://developer.bigcommerce.com/api-docs/getting-started/api-status-codes"}
+[2026-04-15T04:56:55.082Z] api cart called
+[2026-04-15T04:56:55.083Z] Fetching cart: 6c87b782-ac18-4237-8f04-167e18e416e3
+[2026-04-15T04:56:56.440Z] Cart found: [object Object]
+[2026-04-15T04:56:56.449Z] Redirecting to React app: http://localhost:5173/checkout?cartId=6c87b782-ac18-4237-8f04-167e18e416e3&cartData=%257B%2522id%2522%253A%25226c87b782-ac18-4237-8f04-167e18e416e3%2522%252C%2522lineItems%2522%253A%257B%2522physicalItems%2522%253A%255B%257B%2522id%2522%253A%2522353081bc-c6ed-4f63-920a-c574e490fd96%2522%252C%2522product_id%2522%253A199%252C%2522name%2522%253A%2522Test%2520Product%2522%252C%2522quantity%2522%253A1%252C%2522extendedSalePrice%2522%253A121%252C%2522extendedListPrice%2522%253A121%252C%2522list_price%2522%253A121%252C%2522sale_price%2522%253A121%252C%2522imageUrl%2522%253A%2522https%253A%252F%252Fcdn11.bigcommerce.com%252Fs-eapn6crf58%252Fproducts%252F199%252Fimages%252F400%252F5350012_WEB1__50663__26829.1763459431.220.290.jpg%253Fc%253D1%2522%252C%2522options%2522%253A%255B%257B%2522name%2522%253A%2522Color%2522%252C%2522nameId%2522%253A146%252C%2522value%2522%253A%2522Red%2522%252C%2522valueId%2522%253A%2522168%2522%257D%255D%257D%252C%257B%2522id%2522%253A%2522eed491be-e5d8-4579-aa5e-22f3b87db12a%2522%252C%2522product_id%2522%253A209%252C%2522name%2522%253A%2522Test%2520Product%2520-2%2522%252C%2522quantity%2522%253A2%252C%2522extendedSalePrice%2522%253A48%252C%2522extendedListPrice%2522%253A48%252C%2522list_price%2522%253A24%252C%2522sale_price%2522%253A24%252C%2522imageUrl%2522%253A%2522https%253A%252F%252Fcdn11.bigcommerce.com%252Fs-eapn6crf58%252Fproducts%252F209%252Fimages%252F411%252Fdemo-sign-cubes__12531.1763473021.220.290.jpg%253Fc%253D1%2522%252C%2522options%2522%253A%255B%257B%2522name%2522%253A%2522Color%2522%252C%2522nameId%2522%253A149%252C%2522value%2522%253A%2522Green%2522%252C%2522valueId%2522%253A%2522178%2522%257D%255D%257D%252C%257B%2522id%2522%253A%2522b3d5e1f7-6955-4afd-9a23-a1064ded8fba%2522%252C%2522product_id%2522%253A209%252C%2522name%2522%253A%2522Test%2520Product%2520-2%2522%252C%2522quantity%2522%253A1%252C%2522extendedSalePrice%2522%253A24%252C%2522extendedListPrice%2522%253A24%252C%2522list_price%2522%253A24%252C%2522sale_price%2522%253A24%252C%2522imageUrl%2522%253A%2522https%253A%252F%252Fcdn11.bigcommerce.com%252Fs-eapn6crf58%252Fproducts%252F209%252Fimages%252F411%252Fdemo-sign-cubes__12531.1763473021.220.290.jpg%253Fc%253D1%2522%252C%2522options%2522%253A%255B%257B%2522name%2522%253A%2522Color%2522%252C%2522nameId%2522%253A149%252C%2522value%2522%253A%2522Red%2522%252C%2522valueId%2522%253A%2522177%2522%257D%255D%257D%255D%252C%2522digitalItems%2522%253A%255B%255D%257D%252C%2522cartAmount%2522%253A173.7%252C%2522discountAmount%2522%253A19.3%252C%2522taxAmount%2522%253A0%252C%2522grandTotal%2522%253A173.7%252C%2522currency%2522%253A%257B%2522code%2522%253A%2522EUR%2522%257D%252C%2522customerId%2522%253A0%252C%2522coupons%2522%253A%255B%255D%257D
+[2026-04-15T04:56:57.232Z] api cart-data called
+[2026-04-15T04:56:57.653Z] api cart-data called
+[2026-04-15T06:13:55.689Z] api cart-data called
+[2026-04-15T06:13:56.839Z] api cart-data called
+[2026-04-15T06:14:14.378Z] api cart-data called
+[2026-04-15T06:14:15.052Z] api cart-data called
+[2026-04-15T06:15:04.312Z] api cart-data called
+[2026-04-15T06:15:05.031Z] api cart-data called
+[2026-04-15T06:15:17.056Z] api cart-data called
+[2026-04-15T06:15:18.489Z] api cart-data called
+[2026-04-15T06:15:37.282Z] api cart-data called
+[2026-04-15T06:15:38.785Z] api cart-data called
+[2026-04-15T06:16:24.688Z] api cart-data called
+[2026-04-15T06:16:25.324Z] api cart-data called
+[2026-04-15T06:20:21.582Z] api cart-data called
+[2026-04-15T06:20:22.271Z] api cart-data called

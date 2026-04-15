@@ -289,7 +289,7 @@ export default function OrderSummary({
                 key={item.id || index}
                 className={`flex gap-3 p-[19.5px] pt-0 ${isPopup ? 'flex-col' : ''}`}
               >
-                <div className={`flex gap-3 ${isPopup ? 'items-start' : 'items-center'}`}>
+                <div className={`flex gap-3  ${isPopup ? 'items-start' : 'items-center'}`}>
                   <img
                     src={item.imageUrl || "/product-placeholder.png"}
                     alt={item.name || "Product"}
@@ -338,7 +338,7 @@ export default function OrderSummary({
             Code Promo (optionnel)
           </label>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             <input
               type="text"
               placeholder="Entrez votre code"

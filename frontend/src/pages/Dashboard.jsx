@@ -180,7 +180,7 @@ export default function Dashboard({ environment = 'sandbox' }) {
           value={Array.isArray(data?.recentActivity) ? data.recentActivity.length : 0}
         />
         <InfoCard
-          label="Nomade Horizon"
+          label="Hike Summit"
           value="Subscriptions at convenience"
         />
       </div>

@@ -289,7 +289,7 @@ router.put('/plans/:id', requireSession, async (req, res) => {
         }
       );
 
-      logInfo('✅ New price created:', newPriceRes.data.id);
+      logInfo(' New price created:', newPriceRes.data.id);
 
       // Try to deactivate the old price (best-effort, may fail if already archived)
       try {
@@ -896,7 +896,7 @@ router.post('/payment-intents', async (req, res) => {
       }
     );
 
-    logInfo('✅ PaymentIntent created:', {
+    logInfo(' PaymentIntent created:', {
       id: airwallexRes.data?.id,
     });
 
@@ -1272,7 +1272,7 @@ router.post('/subscriptions/provision', async (req, res) => {
 
         if (plan.trialDays > 0) {
           if (subscriptionRes.data?.status === 'IN_TRIAL') {
-            log('✅ [PROVISION] Trial successfully applied:', {
+            log(' [PROVISION] Trial successfully applied:', {
               subscriptionId: subscriptionRes.data?.id,
               status: subscriptionRes.data?.status,
               trial_ends_at: subscriptionRes.data?.trial_ends_at || null,
@@ -1361,7 +1361,7 @@ router.post('/subscriptions/provision', async (req, res) => {
       });
     }
 
-    log('✅ [PROVISION] Completed successfully:', {
+    log(' [PROVISION] Completed successfully:', {
       provisionedCount: subscriptions.length,
       errorCount: errors.length,
       subscriptionIds: subscriptions.map(
@@ -1535,7 +1535,7 @@ router.post('/payment-sources/create', async (req, res) => {
           }
         );
 
-        console.log(`[payment-sources] ✅ Created payment source with ${candidate.type} ID:\n${JSON.stringify({
+        console.log(`[payment-sources]  Created payment source with ${candidate.type} ID:\n${JSON.stringify({
           id: airwallexRes.data.id,
           external_id: airwallexRes.data.external_id,
         }, null, 2)}`);
