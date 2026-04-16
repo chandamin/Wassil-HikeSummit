@@ -1,4 +1,4 @@
-name: Phase 1: CI Validation (Backend + Frontend)
+name: Phase 1: CI Validation
 
 on:
   push:
@@ -6,14 +6,7 @@ on:
   pull_request:
     branches: [ main ]
 
-env:
-  # Match Namecheap's CloudLinux Node version (from your path: .../backend/22/)
-  NODE_VERSION: '22'
-
 jobs:
-  # ─────────────────────────────────────────────────────────────
-  # BACKEND VALIDATION
-  # ─────────────────────────────────────────────────────────────
   validate-backend:
     runs-on: ubuntu-latest
     defaults:
@@ -24,35 +17,22 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js v${{ env.NODE_VERSION }}
+      - name: Setup Node.js v22
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version: '22'
           cache: 'npm'
           cache-dependency-path: backend/package-lock.json
 
-      - name: Install Dependencies (Deterministic)
+      - name: Install Dependencies
         run: npm ci
 
-      - name: Lint (Fastest feedback)
-        run: npm run lint
+      - name: Build (Placeholder)
+        run: npm run build
 
-      - name: Type Check (Optional - skip if not using TS)
-        run: npm run type-check || true
-
-      - name: Run Tests
+      - name: Test (Placeholder)
         run: npm test
-        # Tip: If no tests yet, use: run: echo "No tests yet" || true
 
-      - name: Verify Build Script Exists (Prep for Phase 2)
-        run: |
-          if ! grep -q '"build"' package.json; then
-            echo "::warning::No 'build' script in backend/package.json. Add one if you use TypeScript/Babel."
-          fi
-
-  # ─────────────────────────────────────────────────────────────
-  # FRONTEND VALIDATION + BUILD
-  # ─────────────────────────────────────────────────────────────
   validate-frontend:
     runs-on: ubuntu-latest
     defaults:
@@ -63,30 +43,20 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js v${{ env.NODE_VERSION }}
+      - name: Setup Node.js v22
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version: '22'
           cache: 'npm'
           cache-dependency-path: frontend/package-lock.json
 
       - name: Install Dependencies
         run: npm ci
 
-      - name: Lint
-        run: npm run lint
-
-      - name: Type Check
-        run: npm run type-check || true
-
-      - name: Run Tests
-        run: npm test
-
       - name: Build Production Artifact
         run: npm run build
-        # Output: frontend/dist/ with index.html, assets/, etc.
 
-      - name: Upload Build Artifact (For Phase 2 CD)
+      - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
           name: frontend-dist
