@@ -39,7 +39,7 @@ const ThankYouStep = ({
 
   const physicalItems = cart?.lineItems?.physicalItems || [];
   const digitalItems = cart?.lineItems?.digitalItems || [];
-  const hiddenProductIds = [268];
+  const hiddenProductIds = [210];
   const allItems = [...physicalItems, ...digitalItems].filter(
     (item) => !hiddenProductIds.includes(Number(item.product_id))
   );

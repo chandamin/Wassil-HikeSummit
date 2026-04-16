@@ -513,7 +513,7 @@ router.get('/:id/payment-sources', async (req, res) => {
     const token = await getAirwallexToken();
 
     const response = await axios.get(
-      'https://api.airwallex.com/api/v1/payment_sources',
+      'https://api-demo.airwallex.com/api/v1/payment_sources',
       {
         headers: { Authorization: `Bearer ${token}` },
         params: { billing_customer_id: billingCustomerId, page_size: 50 },

@@ -1,0 +1,26 @@
+# ── Dependencies & Build Artifacts ──
+node_modules/
+dist/
+build/
+
+# ── Environment & Secrets ──
+.env
+.env.*
+!.env.example
+
+# ── Logs & Temp Files ──
+*.log
+tmp/
+logs/
+.cache/
+
+# ── OS & Editor Files ──
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# ── Namecheap/Passenger Specific ──
+tmp/restart.txt

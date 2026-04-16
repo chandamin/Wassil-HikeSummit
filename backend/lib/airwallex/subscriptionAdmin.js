@@ -7,7 +7,7 @@ const SubscriptionCustomer = require('../../models/SubscriptionCustomer');
 const { getAirwallexToken } = require('./token');
 
 const STORE_HASH = process.env.BC_STORE_HASH || 'eapn6crf58';
-const AIRWALLEX_BASE_URL = 'https://api.airwallex.com/api/v1';
+const AIRWALLEX_BASE_URL = 'https://api-demo.airwallex.com/api/v1';
 
 function normaliseStatus(airwallexStatus) {
   if (!airwallexStatus) return 'pending';
@@ -93,7 +93,7 @@ async function airwallexRequest(config, retry = true) {
 async function fetchAirwallexSubscription(airwallexSubscriptionId) {
   const response = await airwallexRequest({
     method: 'GET',
-    url: `https://api.airwallex.com/api/v1/subscriptions/${airwallexSubscriptionId}`,
+    url: `https://api-demo.airwallex.com/api/v1/subscriptions/${airwallexSubscriptionId}`,
   });
 
   return response.data;
@@ -113,7 +113,7 @@ async function cancelAirwallexSubscription(airwallexSubscriptionId, options = {}
 
   const response = await airwallexRequest({
     method: 'POST',
-    url: `https://api.airwallex.com/api/v1/subscriptions/${airwallexSubscriptionId}/cancel`,
+    url: `https://api-demo.airwallex.com/api/v1/subscriptions/${airwallexSubscriptionId}/cancel`,
     data: {
       request_id: requestId,
       proration_behavior: prorationBehavior,

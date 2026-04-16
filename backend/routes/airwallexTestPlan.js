@@ -15,7 +15,7 @@ const {
 } = require('../lib/subscriptionProducts');
 dayjs.extend(utc);     // EXTEND DAYJS WITH UTC
 
-const TEST_BASE = process.env.AIRWALLEX_BASE_URL || 'https://api.airwallex.com';
+const TEST_BASE = process.env.AIRWALLEX_BASE_URL || 'https://api-demo.airwallex.com';
 
 const inspectLog = (value) => {
   try {
