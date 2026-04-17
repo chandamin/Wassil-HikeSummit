@@ -7,6 +7,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      REMOTE_BACKEND: "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.BACKEND_PATH }}"
+      REMOTE_FRONTEND: "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.FRONTEND_PATH }}"
 
     steps:
       - name: "Checkout Repository"
@@ -15,17 +18,14 @@ jobs:
       # ── BACKEND VALIDATION ──
       - name: "Backend: Install Dependencies"
         run: cd backend && npm ci
-
       - name: "Backend: Build (Placeholder)"
         run: cd backend && npm run build
-
       - name: "Backend: Test (Placeholder)"
         run: cd backend && npm test
 
       # ── FRONTEND BUILD ──
       - name: "Frontend: Install Dependencies"
         run: cd frontend && npm ci
-
       - name: "Frontend: Build Production Artifact"
         run: cd frontend && npm run build
 
@@ -39,14 +39,19 @@ jobs:
 
       - name: "Deploy Frontend to Web Root"
         run: |
-          echo "📦 Syncing frontend/dist/ contents to ${{ secrets.FRONTEND_PATH }}"
+          echo "📦 Syncing frontend/dist/ to $REMOTE_FRONTEND"
           rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }}" \
             ./frontend/dist/ \
-            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.FRONTEND_PATH }}/
+            "$REMOTE_FRONTEND/"
 
       - name: "Deploy Backend Source Code"
         run: |
-          echo "📦 Syncing backend/ source to ${{ secrets.BACKEND_PATH }}"
+          echo "📦 Syncing backend/ to $REMOTE_BACKEND"
+          
+          # 1. Ensure remote target directory exists (prevents mkdir error)
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "mkdir -p ${{ secrets.BACKEND_PATH }}"
+          
+          # 2. Sync files
           rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }}" \
             --exclude='node_modules/' \
             --exclude='.git/' \
@@ -54,7 +59,7 @@ jobs:
             --exclude='logs/' \
             --exclude='.env' \
             ./backend/ \
-            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.BACKEND_PATH }}/
+            "$REMOTE_BACKEND/"
 
       - name: "Install Backend Dependencies & Restart (Option B)"
         run: |
@@ -74,8 +79,6 @@ jobs:
         run: |
           echo "🩺 Checking Frontend..."
           curl -f --max-time 15 https://checkout.hike-summit.com/ > /dev/null 2>&1 || echo "⚠️ Frontend returned non-200"
-
           echo "🩺 Checking Backend..."
           curl -f --max-time 15 https://api.hike-summit.com/ > /dev/null 2>&1 || echo "⚠️ Backend returned non-200"
-
           echo "✅ Deployment Pipeline Complete!"
