@@ -40,26 +40,32 @@ jobs:
         working-directory: ./frontend
 
     steps:
-      - name: Checkout Repository
+      - name: "Checkout Repository"
         uses: actions/checkout@v4
 
-      - name: Setup Node.js v22
+      - name: "Setup Node.js v22"
         uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'npm'
           cache-dependency-path: frontend/package-lock.json
 
-      - name: Install Dependencies
+      - name: "Install Dependencies"
         run: npm ci
 
-      - name: Build Production Artifact
+      - name: "Build Production Artifact"
         run: npm run build
 
-      - name: Upload Build Artifact
+      - name: "Debug: Verify Disk State"
+        run: |
+          echo "📁 Contents of frontend/dist/ from runner:"
+          ls -la ./frontend/dist/
+          find ./frontend/dist/ -type f
+
+      - name: "Upload Build Artifact"
         uses: actions/upload-artifact@v4
         with:
           name: frontend-dist
-          path: frontend/dist/
+          path: ./frontend/dist
           retention-days: 1
           if-no-files-found: error
