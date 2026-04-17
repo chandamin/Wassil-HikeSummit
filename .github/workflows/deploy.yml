@@ -43,6 +43,21 @@ jobs:
           rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }}" \
             ./frontend/dist/ \
             "$REMOTE_FRONTEND/"
+      - name: "Restore React Router .htaccess"
+        run: |
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
+            cat > ${{ secrets.FRONTEND_PATH }}/.htaccess << 'EOF'
+            <IfModule mod_rewrite.c>
+              RewriteEngine On
+              RewriteBase /
+              RewriteRule ^index\.html$ - [L]
+              RewriteCond %{REQUEST_FILENAME} !-f
+              RewriteCond %{REQUEST_FILENAME} !-d
+              RewriteCond %{REQUEST_FILENAME} !-l
+              RewriteRule . /index.html [L]
+            </IfModule>
+            EOF
+          "
 
       - name: "Deploy Backend Source Code"
         run: |
