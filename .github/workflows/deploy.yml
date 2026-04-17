@@ -40,14 +40,14 @@ jobs:
       - name: "Deploy Frontend to Web Root"
         run: |
           echo "📦 Syncing frontend/dist/ contents to ${{ secrets.FRONTEND_PATH }}"
-          rsync -avz --delete \
+          rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }}" \
             ./frontend/dist/ \
             ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.FRONTEND_PATH }}/
 
       - name: "Deploy Backend Source Code"
         run: |
           echo "📦 Syncing backend/ source to ${{ secrets.BACKEND_PATH }}"
-          rsync -avz --delete \
+          rsync -avz --delete -e "ssh -p ${{ secrets.SSH_PORT }}" \
             --exclude='node_modules/' \
             --exclude='.git/' \
             --exclude='tmp/' \
