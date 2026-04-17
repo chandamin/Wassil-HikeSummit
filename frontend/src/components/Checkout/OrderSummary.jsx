@@ -222,9 +222,9 @@ export default function OrderSummary({
               }}
               className="text-[#476bef] hover:text-[#002fe1] text-sm w-[33.3%] text-start"
             >
-              Modifier le panier
+              Edit cart
             </button>
-            <h3 className="font-semibold text-gray-900 w-[33.3%] text-center text-[14px]">Récapitulatif de la commande</h3>
+            <h3 className="font-semibold text-gray-900 w-[33.3%] text-center text-[14px]">Order summary</h3>
             <button
               onClick={onClose}
               className="text-gray-500 hover:text-gray-800 text-xl font-bold leading-none w-[33.3%] flex justify-end"
@@ -235,7 +235,7 @@ export default function OrderSummary({
           </>
         ) : (
           <>
-            <h3 className="font-semibold text-gray-900">Récapitulatif de la commande</h3>
+            <h3 className="font-semibold text-gray-900">Order summary</h3>
             <button
               onClick={() => {
                 console.log("[OrderSummary] Redirecting user to cart");
@@ -243,7 +243,7 @@ export default function OrderSummary({
               }}
               className="text-[#476bef] hover:text-[#002fe1]"
             >
-              Modifier le panier
+              Edit cart
             </button>
           </>
         )}
@@ -261,7 +261,7 @@ export default function OrderSummary({
               <div className="font-medium text-gray-900 leading-snug">
                 Your cart is empty
               </div>
-              <div className="text-xs text-gray-600 mt-1">Quantité: 0</div>
+              <div className="text-xs text-gray-600 mt-1">Quantity: 0</div>
             </div>
             <div className="font-semibold text-gray-900">€0.00</div>
           </div>
@@ -302,7 +302,7 @@ export default function OrderSummary({
                     </div>
                     {!isPopup && (
                       <div className="text-xs text-gray-600 mt-1">
-                        Quantité: {quantity}
+                        Quantity: {quantity}
                       </div>
                     )}
                     {isPopup && item.options && item.options.length > 0 && (
@@ -335,13 +335,13 @@ export default function OrderSummary({
 
         <div className="px-[19.5px] pb-[19.5px]">
           <label className="block text-xs text-gray-600 mb-2">
-            Code Promo (optionnel)
+            Promo code (optional)
           </label>
 
           <div className="flex gap-2 flex-wrap">
             <input
               type="text"
-              placeholder="Entrez votre code"
+              placeholder="Enter your code"
               value={couponCode}
               onChange={(e) => setCouponCode(e.target.value)}
               className="flex-1 border rounded px-3 py-2 text-sm"
@@ -353,7 +353,7 @@ export default function OrderSummary({
               disabled={couponLoading || !couponCode.trim()}
               className="border rounded px-4 py-2 text-xs font-medium hover:bg-gray-100 disabled:opacity-50"
             >
-              {couponLoading ? "Application en cours…" : "Appliquer"}
+              {couponLoading ? "Applying…" : "Apply"}
             </button>
           </div>
 
@@ -397,7 +397,7 @@ export default function OrderSummary({
 
         <div className="space-y-2 text-gray-700 p-[19.5px] border-t">
           <div className="flex justify-between">
-            <span>Sous-total</span>
+            <span>Subtotal</span>
             <span>{formatPrice(subtotal)}</span>
           </div>
 
@@ -438,12 +438,12 @@ export default function OrderSummary({
             ))}
 
           <div className="flex justify-between font-medium">
-            <span>Remise</span>
+            <span>Discount</span>
             <span>-{formatPrice(discount)}</span>
           </div>
 
           <div className="flex justify-between">
-            <span>Livraison</span>
+            <span>Delivery</span>
             <span>{formatPrice(deliveryPrice)}</span>
           </div>
 
@@ -462,7 +462,7 @@ export default function OrderSummary({
           </div>
 
           <div className="text-xs text-gray-500 mt-1">
-            TVA incluse{subtotal > 0 ? " (estimée)" : ""}
+            VAT included{subtotal > 0 ? " (estimated)" : ""}
           </div>
         </div>
 
@@ -473,7 +473,7 @@ export default function OrderSummary({
               onClick={onClose}
               className="w-full py-[14px] bg-[#2bb04a] hover:bg-[#249c3f] text-white font-semibold text-sm uppercase rounded transition-colors"
             >
-              Fermer le récapitulatif
+              Close summary
             </button>
           </div>
         )}

@@ -225,7 +225,7 @@ export default function ClientStep({
         <div className="nr-input-field flex flex-col-reverse col-span-2 md:col-span-1">
           <input
             type="text"
-            placeholder="Prénom"
+            placeholder="First name"
             value={form.firstName}
             onChange={(e) =>
               setForm({ ...form, firstName: e.target.value })
@@ -235,14 +235,14 @@ export default function ClientStep({
             disabled={loading || isDisabled}
           />
           <label htmlFor="prénom" className="nr-input-label text-[14px] text-[#666] top-[unset]">
-            Prénom
+            First name
           </label>
         </div>
         
         <div className="nr-input-field flex flex-col-reverse col-span-2 md:col-span-1">
           <input
             type="text"
-            placeholder="Nom"
+            placeholder="Last name"
             value={form.lastName}
             onChange={(e) =>
               setForm({ ...form, lastName: e.target.value })
@@ -252,7 +252,7 @@ export default function ClientStep({
             disabled={loading || isDisabled}
           />
           <label htmlFor="nom" className="nr-input-label text-[14px] text-[#666] top-[unset]">
-            Nom
+            Last name
           </label>
         </div>
         
@@ -275,7 +275,7 @@ export default function ClientStep({
             disabled={loading || isDisabled}
           />
           <label htmlFor="email-address" className="nr-input-label text-[14px] text-[#666] top-[unset]">
-            Adresse e-mail
+            Email address
           </label>
           
           {/* {emailError && (
@@ -349,7 +349,7 @@ function Header({ step, title, onEdit,email }) {
           className="text-[13px] ml-[20px] text-gray-700 border px-[15px] py-[6.5px] rounded hover:bg-gray-100 transition"
           onClick={onEdit}
         >
-          Modifier
+          Modify
         </button>
       )}
     </div>

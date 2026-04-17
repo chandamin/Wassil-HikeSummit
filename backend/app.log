@@ -4365,3 +4365,1434 @@
 [2026-04-16T12:37:05.068Z] mongodb+srv://kaswebtester:z76V3IozxvPsZNh9@cluster0.ws8o83f.mongodb.net/subscription-app
 [2026-04-16T12:37:12.722Z] MongoDB connected
 [2026-04-16T12:37:12.733Z] Server running on port 4000
+[2026-04-17T05:48:53.794Z] mongodb+srv://kaswebtester:z76V3IozxvPsZNh9@cluster0.ws8o83f.mongodb.net/subscription-app
+[2026-04-17T05:48:54.987Z] MongoDB connected
+[2026-04-17T05:48:54.995Z] Server running on port 4000
+[2026-04-17T06:52:47.231Z] api cart-data called
+[2026-04-17T06:52:48.123Z] api cart-data called
+[2026-04-17T06:52:57.029Z] Search Customer by Email [object Object]
+[2026-04-17T06:52:57.030Z] Searching customer by email (decoded): test111@gmail.com
+[2026-04-17T06:52:58.319Z] Customer found: 41
+[2026-04-17T06:52:58.321Z] Email Search result: {"data":[{"id":41,"authentication":{"force_password_reset":false},"company":"","customer_group_id":1,"email":"test111@gmail.com","first_name":"test","last_name":"test","notes":"","phone":"","registration_ip_address":"","tax_exempt_category":"","date_created":"2026-02-04T13:49:33Z","date_modified":"2026-02-04T13:49:33Z","accepts_product_review_abandoned_cart_emails":false,"origin_channel_id":1,"channel_ids":null}],"meta":{"pagination":{"total":1,"count":1,"per_page":50,"current_page":1,"total_pages":1},"cursor_pagination":{"count":1,"per_page":50,"start_cursor":"eyJpZCI6NDF9","end_cursor":"eyJpZCI6NDF9","links":{}}}}
+[2026-04-17T06:53:00.527Z] Customer search results: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2026-04-17T06:53:00.533Z]  Found existing Airwallex customer: bcus_hkdmh4dffhgrjyz9b10
+[2026-04-17T06:53:00.714Z] Search Customer by Email [object Object]
+[2026-04-17T06:53:00.714Z] Searching customer by email (decoded): test111@gmail.com
+[2026-04-17T06:53:00.975Z] Customer found: 41
+[2026-04-17T06:53:00.988Z] Email Search result: {"data":[{"id":41,"authentication":{"force_password_reset":false},"company":"","customer_group_id":1,"email":"test111@gmail.com","first_name":"test","last_name":"test","notes":"","phone":"","registration_ip_address":"","tax_exempt_category":"","date_created":"2026-02-04T13:49:33Z","date_modified":"2026-02-04T13:49:33Z","accepts_product_review_abandoned_cart_emails":false,"origin_channel_id":1,"channel_ids":null}],"meta":{"pagination":{"total":1,"count":1,"per_page":50,"current_page":1,"total_pages":1},"cursor_pagination":{"count":1,"per_page":50,"start_cursor":"eyJpZCI6NDF9","end_cursor":"eyJpZCI6NDF9","links":{}}}}
+[2026-04-17T06:58:46.113Z] api cart-data called
+[2026-04-17T06:58:47.613Z] api cart-data called
+[2026-04-17T07:00:23.710Z] api cart-data called
+[2026-04-17T07:00:24.414Z] api cart-data called
+[2026-04-17T07:00:46.507Z] api cart-data called
+[2026-04-17T07:00:47.988Z] api cart-data called
+[2026-04-17T07:01:12.190Z] api cart-data called
+[2026-04-17T07:01:13.628Z] api cart-data called
+[2026-04-17T07:01:23.204Z] Search Customer by Email [object Object]
+[2026-04-17T07:01:23.205Z] Searching customer by email (decoded): test111@gmail.com
+[2026-04-17T07:01:24.445Z] Customer found: 41
+[2026-04-17T07:01:24.446Z] Email Search result: {"data":[{"id":41,"authentication":{"force_password_reset":false},"company":"","customer_group_id":1,"email":"test111@gmail.com","first_name":"test","last_name":"test","notes":"","phone":"","registration_ip_address":"","tax_exempt_category":"","date_created":"2026-02-04T13:49:33Z","date_modified":"2026-02-04T13:49:33Z","accepts_product_review_abandoned_cart_emails":false,"origin_channel_id":1,"channel_ids":null}],"meta":{"pagination":{"total":1,"count":1,"per_page":50,"current_page":1,"total_pages":1},"cursor_pagination":{"count":1,"per_page":50,"start_cursor":"eyJpZCI6NDF9","end_cursor":"eyJpZCI6NDF9","links":{}}}}
+[2026-04-17T07:01:26.446Z] Customer search results: [object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+[2026-04-17T07:01:26.446Z]  Found existing Airwallex customer: bcus_hkdmh4dffhgrjyz9b10
+[2026-04-17T07:01:26.606Z] Search Customer by Email [object Object]
+[2026-04-17T07:01:26.607Z] Searching customer by email (decoded): test111@gmail.com
+[2026-04-17T07:01:26.828Z] Customer found: 41
+[2026-04-17T07:01:26.830Z] Email Search result: {"data":[{"id":41,"authentication":{"force_password_reset":false},"company":"","customer_group_id":1,"email":"test111@gmail.com","first_name":"test","last_name":"test","notes":"","phone":"","registration_ip_address":"","tax_exempt_category":"","date_created":"2026-02-04T13:49:33Z","date_modified":"2026-02-04T13:49:33Z","accepts_product_review_abandoned_cart_emails":false,"origin_channel_id":1,"channel_ids":null}],"meta":{"pagination":{"total":1,"count":1,"per_page":50,"current_page":1,"total_pages":1},"cursor_pagination":{"count":1,"per_page":50,"start_cursor":"eyJpZCI6NDF9","end_cursor":"eyJpZCI6NDF9","links":{}}}}
+[2026-04-17T07:01:45.405Z] api cart-data called
+[2026-04-17T07:01:46.127Z] api cart-data called
+[2026-04-17T07:02:03.197Z] ================================================================================
+[2026-04-17T07:02:03.198Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-17T07:02:03.198Z] 🕒 Timestamp: 2026-04-17T07:02:03.198Z
+[2026-04-17T07:02:03.199Z] 📥 Incoming body: {
+  "cartId": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "address": {
+    "firstName": "Test",
+    "lastName": "Amin",
+    "address1": "Rudolstaedter Strasse 34",
+    "city": "Elsenfeld",
+    "postalCode": "63815",
+    "countryCode": "BE",
+    "stateOrProvince": "Elsenfeld",
+    "phone": "234234"
+  }
+}
+[2026-04-17T07:02:03.200Z] 🔎 Extracted inputs: [object Object]
+[2026-04-17T07:02:03.200Z] ✅ Validation passed
+[2026-04-17T07:02:03.200Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/94b3be73-face-472f-b873-f44e3f6abae4
+[2026-04-17T07:02:03.773Z] 📡 Checkout response status: 200
+[2026-04-17T07:02:03.774Z] 📡 Checkout raw response: {"data":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","cart":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":24,"discount_amount":2.4,"manual_discount_amount":0,"cart_amount_inc_tax":21.6,"cart_amount_ex_tax":21.6,"coupons":[],"discounts":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","discounted_amount":2.4}],"line_items":{"physical_items":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":1,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":2.4}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":24,"extended_sale_price":24,"comparison_price":24,"extended_comparison_price":24,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T06:48:21+00:00"},"billing_address":{},"consignments":[],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":24,"subtotal_ex_tax":24,"grand_total":21.6,"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T06:48:21+00:00","customer_message":"","staff_note":"","version":2,"total_discount":2.4,"fees":[]},"meta":{}}
+[2026-04-17T07:02:03.774Z] ✅ Checkout JSON parsed successfully
+[2026-04-17T07:02:03.775Z] 🧾 Checkout summary: [object Object]
+[2026-04-17T07:02:03.776Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-17T07:02:03.781Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "Test",
+      "last_name": "Amin",
+      "address1": "Rudolstaedter Strasse 34",
+      "city": "Elsenfeld",
+      "state_or_province": "Elsenfeld",
+      "postal_code": "63815",
+      "country_code": "BE",
+      "phone": "234234"
+    },
+    "line_items": [
+      {
+        "item_id": "c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7",
+        "quantity": 1
+      }
+    ]
+  }
+]
+[2026-04-17T07:02:03.782Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/94b3be73-face-472f-b873-f44e3f6abae4/consignments?include=consignments.available_shipping_options
+[2026-04-17T07:02:04.546Z] 📡 Consignments response status: 200
+[2026-04-17T07:02:04.550Z] 📡 Consignments raw response: {"data":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","cart":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":24,"discount_amount":2.4,"manual_discount_amount":0,"cart_amount_inc_tax":21.6,"cart_amount_ex_tax":21.6,"coupons":[],"discounts":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","discounted_amount":2.4}],"line_items":{"physical_items":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":1,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":2.4}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":24,"extended_sale_price":24,"comparison_price":24,"extended_comparison_price":24,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:02:04+00:00"},"billing_address":{},"consignments":[{"id":"69e1daec1985e","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7"],"shipping_address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"Belgium","country_code":"BE","postal_code":"63815","phone":"234234","custom_fields":[]},"address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"Belgium","country_code":"BE","postal_code":"63815","phone":"234234","custom_fields":[]},"available_shipping_options":[]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":24,"subtotal_ex_tax":24,"grand_total":21.6,"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:02:04+00:00","customer_message":"","staff_note":"","version":3,"total_discount":2.4,"fees":[]},"meta":{}}
+[2026-04-17T07:02:04.551Z] ✅ Consignments JSON parsed successfully
+[2026-04-17T07:02:04.554Z] 📋 Consignments summary: [object Object]
+[2026-04-17T07:02:04.555Z] 🚚 Raw available shipping options from BigCommerce: []
+[2026-04-17T07:02:04.556Z] ✅ Final mapped shipping options: []
+[2026-04-17T07:02:04.560Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 0
+}
+[2026-04-17T07:02:04.561Z] ================================================================================
+[2026-04-17T07:02:06.541Z] ================================================================================
+[2026-04-17T07:02:06.542Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-17T07:02:06.542Z] 🕒 Timestamp: 2026-04-17T07:02:06.542Z
+[2026-04-17T07:02:06.544Z] 📥 Incoming body: {
+  "cartId": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "address": {
+    "firstName": "Test",
+    "lastName": "Amin",
+    "address1": "Rudolstaedter Strasse 34",
+    "city": "Elsenfeld",
+    "postalCode": "63815",
+    "countryCode": "FR",
+    "stateOrProvince": "Elsenfeld",
+    "phone": "234234"
+  }
+}
+[2026-04-17T07:02:06.545Z] 🔎 Extracted inputs: [object Object]
+[2026-04-17T07:02:06.545Z] ✅ Validation passed
+[2026-04-17T07:02:06.546Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/94b3be73-face-472f-b873-f44e3f6abae4
+[2026-04-17T07:02:06.959Z] 📡 Checkout response status: 200
+[2026-04-17T07:02:06.963Z] 📡 Checkout raw response: {"data":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","cart":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":24,"discount_amount":2.4,"manual_discount_amount":0,"cart_amount_inc_tax":21.6,"cart_amount_ex_tax":21.6,"coupons":[],"discounts":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","discounted_amount":2.4}],"line_items":{"physical_items":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":1,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":2.4}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":24,"extended_sale_price":24,"comparison_price":24,"extended_comparison_price":24,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:02:04+00:00"},"billing_address":{},"consignments":[{"id":"69e1daec1985e","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7"],"shipping_address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"Belgium","country_code":"BE","postal_code":"63815","phone":"234234","custom_fields":[]},"address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolst
+[2026-04-17T07:02:06.964Z] ✅ Checkout JSON parsed successfully
+[2026-04-17T07:02:06.965Z] 🧾 Checkout summary: [object Object]
+[2026-04-17T07:02:06.966Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-17T07:02:06.972Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "Test",
+      "last_name": "Amin",
+      "address1": "Rudolstaedter Strasse 34",
+      "city": "Elsenfeld",
+      "state_or_province": "Elsenfeld",
+      "postal_code": "63815",
+      "country_code": "FR",
+      "phone": "234234"
+    },
+    "line_items": [
+      {
+        "item_id": "c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7",
+        "quantity": 1
+      }
+    ]
+  }
+]
+[2026-04-17T07:02:06.973Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/94b3be73-face-472f-b873-f44e3f6abae4/consignments?include=consignments.available_shipping_options
+[2026-04-17T07:02:07.710Z] 📡 Consignments response status: 200
+[2026-04-17T07:02:07.721Z] 📡 Consignments raw response: {"data":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","cart":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":24,"discount_amount":2.4,"manual_discount_amount":0,"cart_amount_inc_tax":21.6,"cart_amount_ex_tax":21.6,"coupons":[],"discounts":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","discounted_amount":2.4}],"line_items":{"physical_items":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":1,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":2.4}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":24,"extended_sale_price":24,"comparison_price":24,"extended_comparison_price":24,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:02:07+00:00"},"billing_address":{},"consignments":[{"id":"69e1daef4dc2c","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7"],"shipping_address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"63815","phone":"234234","custom_fields":[]},"address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"63815","phone":"234234","custom_fields":[]},"available_shipping_options":[{"id":"4dcbf24f457dd67d5f89bcf374e0bc9b","type":"freeshipping","description":"Free Shipping","image_url":"","cost":0,"transit_time":"","additional_description":"","cost_after_discount":0},{"id":"8d74c159ada9257e3631dae799791ecd","type":"shipping_flatrate","description":"Delivery + Insurance (Protection against loss, breakage, and theft)","image_url":"","cost":2,"transit_time":"","additional_description":"","cost_after_discount":2}]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":24,"subtotal_ex_tax":24,"grand_total":21.6,"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:02:07+00:00","customer_message":"","staff_note":"","version":4,"total_discount":2.4,"fees":[]},"meta":{}}
+[2026-04-17T07:02:07.726Z] ✅ Consignments JSON parsed successfully
+[2026-04-17T07:02:07.728Z] 📋 Consignments summary: [object Object]
+[2026-04-17T07:02:07.736Z] 🚚 Raw available shipping options from BigCommerce: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "type": "freeshipping",
+    "description": "Free Shipping",
+    "image_url": "",
+    "cost": 0,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 0
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "type": "shipping_flatrate",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "image_url": "",
+    "cost": 2,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 2
+  }
+]
+[2026-04-17T07:02:07.751Z] ✅ Final mapped shipping options: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "description": "Free Shipping",
+    "cost": 0,
+    "type": "freeshipping",
+    "isRecommended": false,
+    "raw": {
+      "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+      "type": "freeshipping",
+      "description": "Free Shipping",
+      "image_url": "",
+      "cost": 0,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 0
+    }
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "cost": 2,
+    "type": "shipping_flatrate",
+    "isRecommended": false,
+    "raw": {
+      "id": "8d74c159ada9257e3631dae799791ecd",
+      "type": "shipping_flatrate",
+      "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+      "image_url": "",
+      "cost": 2,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 2
+    }
+  }
+]
+[2026-04-17T07:02:07.753Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 2
+}
+[2026-04-17T07:02:07.753Z] ================================================================================
+[2026-04-17T07:02:54.295Z] api cart-data called
+[2026-04-17T07:02:55.733Z] api cart-data called
+[2026-04-17T07:03:13.500Z] ================================================================================
+[2026-04-17T07:03:13.500Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-17T07:03:13.501Z] 🕒 Timestamp: 2026-04-17T07:03:13.500Z
+[2026-04-17T07:03:13.503Z] 📥 Incoming body: {
+  "cartId": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "address": {
+    "firstName": "Test",
+    "lastName": "Amin",
+    "address1": "Rudolstaedter Strasse 34",
+    "city": "Elsenfeld",
+    "postalCode": "63815",
+    "countryCode": "BE",
+    "stateOrProvince": "Elsenfeld",
+    "phone": "234234"
+  }
+}
+[2026-04-17T07:03:13.504Z] 🔎 Extracted inputs: [object Object]
+[2026-04-17T07:03:13.505Z] ✅ Validation passed
+[2026-04-17T07:03:13.506Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/94b3be73-face-472f-b873-f44e3f6abae4
+[2026-04-17T07:03:14.552Z] ================================================================================
+[2026-04-17T07:03:14.553Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-17T07:03:14.553Z] 🕒 Timestamp: 2026-04-17T07:03:14.553Z
+[2026-04-17T07:03:14.555Z] 📥 Incoming body: {
+  "cartId": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "address": {
+    "firstName": "Test",
+    "lastName": "Amin",
+    "address1": "Rudolstaedter Strasse 34",
+    "city": "Elsenfeld",
+    "postalCode": "63815",
+    "countryCode": "FR",
+    "stateOrProvince": "Elsenfeld",
+    "phone": "234234"
+  }
+}
+[2026-04-17T07:03:14.555Z] 🔎 Extracted inputs: [object Object]
+[2026-04-17T07:03:14.556Z] ✅ Validation passed
+[2026-04-17T07:03:14.556Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/94b3be73-face-472f-b873-f44e3f6abae4
+[2026-04-17T07:03:14.938Z] 📡 Checkout response status: 200
+[2026-04-17T07:03:14.939Z] 📡 Checkout raw response: {"data":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","cart":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":24,"discount_amount":2.4,"manual_discount_amount":0,"cart_amount_inc_tax":21.6,"cart_amount_ex_tax":21.6,"coupons":[],"discounts":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","discounted_amount":2.4}],"line_items":{"physical_items":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":1,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":2.4}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":24,"extended_sale_price":24,"comparison_price":24,"extended_comparison_price":24,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:02:07+00:00"},"billing_address":{},"consignments":[{"id":"69e1daef4dc2c","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7"],"shipping_address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"63815","phone":"234234","custom_fields":[]},"address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolsta
+[2026-04-17T07:03:14.940Z] ✅ Checkout JSON parsed successfully
+[2026-04-17T07:03:14.940Z] 🧾 Checkout summary: [object Object]
+[2026-04-17T07:03:14.940Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-17T07:03:14.942Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "Test",
+      "last_name": "Amin",
+      "address1": "Rudolstaedter Strasse 34",
+      "city": "Elsenfeld",
+      "state_or_province": "Elsenfeld",
+      "postal_code": "63815",
+      "country_code": "BE",
+      "phone": "234234"
+    },
+    "line_items": [
+      {
+        "item_id": "c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7",
+        "quantity": 1
+      }
+    ]
+  }
+]
+[2026-04-17T07:03:14.944Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/94b3be73-face-472f-b873-f44e3f6abae4/consignments?include=consignments.available_shipping_options
+[2026-04-17T07:03:15.152Z] 📡 Checkout response status: 200
+[2026-04-17T07:03:15.153Z] 📡 Checkout raw response: {"data":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","cart":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":24,"discount_amount":2.4,"manual_discount_amount":0,"cart_amount_inc_tax":21.6,"cart_amount_ex_tax":21.6,"coupons":[],"discounts":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","discounted_amount":2.4}],"line_items":{"physical_items":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":1,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":2.4}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":24,"extended_sale_price":24,"comparison_price":24,"extended_comparison_price":24,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:02:07+00:00"},"billing_address":{},"consignments":[{"id":"69e1daef4dc2c","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7"],"shipping_address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"63815","phone":"234234","custom_fields":[]},"address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolsta
+[2026-04-17T07:03:15.154Z] ✅ Checkout JSON parsed successfully
+[2026-04-17T07:03:15.154Z] 🧾 Checkout summary: [object Object]
+[2026-04-17T07:03:15.154Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-17T07:03:15.156Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "Test",
+      "last_name": "Amin",
+      "address1": "Rudolstaedter Strasse 34",
+      "city": "Elsenfeld",
+      "state_or_province": "Elsenfeld",
+      "postal_code": "63815",
+      "country_code": "FR",
+      "phone": "234234"
+    },
+    "line_items": [
+      {
+        "item_id": "c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7",
+        "quantity": 1
+      }
+    ]
+  }
+]
+[2026-04-17T07:03:15.157Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/94b3be73-face-472f-b873-f44e3f6abae4/consignments?include=consignments.available_shipping_options
+[2026-04-17T07:03:15.625Z] 📡 Consignments response status: 200
+[2026-04-17T07:03:15.628Z] 📡 Consignments raw response: {"data":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","cart":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":24,"discount_amount":2.4,"manual_discount_amount":0,"cart_amount_inc_tax":21.6,"cart_amount_ex_tax":21.6,"coupons":[],"discounts":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","discounted_amount":2.4}],"line_items":{"physical_items":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":1,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":2.4}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":24,"extended_sale_price":24,"comparison_price":24,"extended_comparison_price":24,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:03:15+00:00"},"billing_address":{},"consignments":[{"id":"69e1db333d332","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7"],"shipping_address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"Belgium","country_code":"BE","postal_code":"63815","phone":"234234","custom_fields":[]},"address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"Belgium","country_code":"BE","postal_code":"63815","phone":"234234","custom_fields":[]},"available_shipping_options":[]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":24,"subtotal_ex_tax":24,"grand_total":21.6,"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:03:15+00:00","customer_message":"","staff_note":"","version":5,"total_discount":2.4,"fees":[]},"meta":{}}
+[2026-04-17T07:03:15.628Z] ✅ Consignments JSON parsed successfully
+[2026-04-17T07:03:15.628Z] 📋 Consignments summary: [object Object]
+[2026-04-17T07:03:15.629Z] 🚚 Raw available shipping options from BigCommerce: []
+[2026-04-17T07:03:15.629Z] ✅ Final mapped shipping options: []
+[2026-04-17T07:03:15.630Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 0
+}
+[2026-04-17T07:03:15.631Z] ================================================================================
+[2026-04-17T07:03:15.866Z] 📡 Consignments response status: 200
+[2026-04-17T07:03:15.869Z] 📡 Consignments raw response: {"data":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","cart":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":24,"discount_amount":2.4,"manual_discount_amount":0,"cart_amount_inc_tax":21.6,"cart_amount_ex_tax":21.6,"coupons":[],"discounts":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","discounted_amount":2.4}],"line_items":{"physical_items":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":1,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":2.4}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":24,"extended_sale_price":24,"comparison_price":24,"extended_comparison_price":24,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:03:15+00:00"},"billing_address":{},"consignments":[{"id":"69e1db3379e65","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7"],"shipping_address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"63815","phone":"234234","custom_fields":[]},"address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"63815","phone":"234234","custom_fields":[]},"available_shipping_options":[{"id":"4dcbf24f457dd67d5f89bcf374e0bc9b","type":"freeshipping","description":"Free Shipping","image_url":"","cost":0,"transit_time":"","additional_description":"","cost_after_discount":0},{"id":"8d74c159ada9257e3631dae799791ecd","type":"shipping_flatrate","description":"Delivery + Insurance (Protection against loss, breakage, and theft)","image_url":"","cost":2,"transit_time":"","additional_description":"","cost_after_discount":2}]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":24,"subtotal_ex_tax":24,"grand_total":21.6,"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:03:15+00:00","customer_message":"","staff_note":"","version":5,"total_discount":2.4,"fees":[]},"meta":{}}
+[2026-04-17T07:03:15.869Z] ✅ Consignments JSON parsed successfully
+[2026-04-17T07:03:15.870Z] 📋 Consignments summary: [object Object]
+[2026-04-17T07:03:15.872Z] 🚚 Raw available shipping options from BigCommerce: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "type": "freeshipping",
+    "description": "Free Shipping",
+    "image_url": "",
+    "cost": 0,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 0
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "type": "shipping_flatrate",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "image_url": "",
+    "cost": 2,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 2
+  }
+]
+[2026-04-17T07:03:15.874Z] ✅ Final mapped shipping options: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "description": "Free Shipping",
+    "cost": 0,
+    "type": "freeshipping",
+    "isRecommended": false,
+    "raw": {
+      "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+      "type": "freeshipping",
+      "description": "Free Shipping",
+      "image_url": "",
+      "cost": 0,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 0
+    }
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "cost": 2,
+    "type": "shipping_flatrate",
+    "isRecommended": false,
+    "raw": {
+      "id": "8d74c159ada9257e3631dae799791ecd",
+      "type": "shipping_flatrate",
+      "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+      "image_url": "",
+      "cost": 2,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 2
+    }
+  }
+]
+[2026-04-17T07:03:15.875Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 2
+}
+[2026-04-17T07:03:15.875Z] ================================================================================
+[2026-04-17T07:03:57.319Z] api cart-data called
+[2026-04-17T07:03:58.485Z] api cart-data called
+[2026-04-17T07:04:03.092Z] api cart-data called
+[2026-04-17T07:04:04.501Z] api cart-data called
+[2026-04-17T07:04:48.867Z] ================================================================================
+[2026-04-17T07:04:48.868Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-17T07:04:48.868Z] 🕒 Timestamp: 2026-04-17T07:04:48.868Z
+[2026-04-17T07:04:48.869Z] 📥 Incoming body: {
+  "cartId": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "address": {
+    "firstName": "Test",
+    "lastName": "Amin",
+    "address1": "Rudolstaedter Strasse 34",
+    "city": "Elsenfeld",
+    "postalCode": "63815",
+    "countryCode": "FR",
+    "stateOrProvince": "Elsenfeld",
+    "phone": ""
+  }
+}
+[2026-04-17T07:04:48.870Z] 🔎 Extracted inputs: [object Object]
+[2026-04-17T07:04:48.870Z] ✅ Validation passed
+[2026-04-17T07:04:48.870Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/94b3be73-face-472f-b873-f44e3f6abae4
+[2026-04-17T07:04:49.810Z] ================================================================================
+[2026-04-17T07:04:49.810Z] 🚚 SHIPPING QUOTES API HIT
+[2026-04-17T07:04:49.811Z] 🕒 Timestamp: 2026-04-17T07:04:49.810Z
+[2026-04-17T07:04:49.820Z] 📥 Incoming body: {
+  "cartId": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "address": {
+    "firstName": "Test",
+    "lastName": "Amin",
+    "address1": "Rudolstaedter Strasse 34",
+    "city": "Elsenfeld",
+    "postalCode": "63815",
+    "countryCode": "FR",
+    "stateOrProvince": "Elsenfeld",
+    "phone": ""
+  }
+}
+[2026-04-17T07:04:49.821Z] 🔎 Extracted inputs: [object Object]
+[2026-04-17T07:04:49.821Z] ✅ Validation passed
+[2026-04-17T07:04:49.823Z] 📤 Fetching checkout from BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/94b3be73-face-472f-b873-f44e3f6abae4
+[2026-04-17T07:04:50.253Z] 📡 Checkout response status: 200
+[2026-04-17T07:04:50.255Z] 📡 Checkout raw response: {"data":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","cart":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":24,"discount_amount":2.4,"manual_discount_amount":0,"cart_amount_inc_tax":21.6,"cart_amount_ex_tax":21.6,"coupons":[],"discounts":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","discounted_amount":2.4}],"line_items":{"physical_items":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":1,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":2.4}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":24,"extended_sale_price":24,"comparison_price":24,"extended_comparison_price":24,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:03:15+00:00"},"billing_address":{},"consignments":[{"id":"69e1db3379e65","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7"],"shipping_address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"63815","phone":"234234","custom_fields":[]},"address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolsta
+[2026-04-17T07:04:50.255Z] ✅ Checkout JSON parsed successfully
+[2026-04-17T07:04:50.255Z] 🧾 Checkout summary: [object Object]
+[2026-04-17T07:04:50.256Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-17T07:04:50.257Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "Test",
+      "last_name": "Amin",
+      "address1": "Rudolstaedter Strasse 34",
+      "city": "Elsenfeld",
+      "state_or_province": "Elsenfeld",
+      "postal_code": "63815",
+      "country_code": "FR",
+      "phone": ""
+    },
+    "line_items": [
+      {
+        "item_id": "c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7",
+        "quantity": 1
+      }
+    ]
+  }
+]
+[2026-04-17T07:04:50.257Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/94b3be73-face-472f-b873-f44e3f6abae4/consignments?include=consignments.available_shipping_options
+[2026-04-17T07:04:50.999Z] 📡 Consignments response status: 200
+[2026-04-17T07:04:51.000Z] 📡 Consignments raw response: {"data":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","cart":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":24,"discount_amount":2.4,"manual_discount_amount":0,"cart_amount_inc_tax":21.6,"cart_amount_ex_tax":21.6,"coupons":[],"discounts":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","discounted_amount":2.4}],"line_items":{"physical_items":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":1,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":2.4}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":24,"extended_sale_price":24,"comparison_price":24,"extended_comparison_price":24,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:04:50+00:00"},"billing_address":{},"consignments":[{"id":"69e1db928adc9","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7"],"shipping_address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"63815","phone":"","custom_fields":[]},"address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"63815","phone":"","custom_fields":[]},"available_shipping_options":[{"id":"4dcbf24f457dd67d5f89bcf374e0bc9b","type":"freeshipping","description":"Free Shipping","image_url":"","cost":0,"transit_time":"","additional_description":"","cost_after_discount":0},{"id":"8d74c159ada9257e3631dae799791ecd","type":"shipping_flatrate","description":"Delivery + Insurance (Protection against loss, breakage, and theft)","image_url":"","cost":2,"transit_time":"","additional_description":"","cost_after_discount":2}]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":24,"subtotal_ex_tax":24,"grand_total":21.6,"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:04:50+00:00","customer_message":"","staff_note":"","version":6,"total_discount":2.4,"fees":[]},"meta":{}}
+[2026-04-17T07:04:51.001Z] ✅ Consignments JSON parsed successfully
+[2026-04-17T07:04:51.001Z] 📋 Consignments summary: [object Object]
+[2026-04-17T07:04:51.003Z] 🚚 Raw available shipping options from BigCommerce: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "type": "freeshipping",
+    "description": "Free Shipping",
+    "image_url": "",
+    "cost": 0,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 0
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "type": "shipping_flatrate",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "image_url": "",
+    "cost": 2,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 2
+  }
+]
+[2026-04-17T07:04:51.005Z] ✅ Final mapped shipping options: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "description": "Free Shipping",
+    "cost": 0,
+    "type": "freeshipping",
+    "isRecommended": false,
+    "raw": {
+      "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+      "type": "freeshipping",
+      "description": "Free Shipping",
+      "image_url": "",
+      "cost": 0,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 0
+    }
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "cost": 2,
+    "type": "shipping_flatrate",
+    "isRecommended": false,
+    "raw": {
+      "id": "8d74c159ada9257e3631dae799791ecd",
+      "type": "shipping_flatrate",
+      "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+      "image_url": "",
+      "cost": 2,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 2
+    }
+  }
+]
+[2026-04-17T07:04:51.005Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 2
+}
+[2026-04-17T07:04:51.006Z] ================================================================================
+[2026-04-17T07:04:51.244Z] 📡 Checkout response status: 200
+[2026-04-17T07:04:51.247Z] 📡 Checkout raw response: {"data":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","cart":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":24,"discount_amount":2.4,"manual_discount_amount":0,"cart_amount_inc_tax":21.6,"cart_amount_ex_tax":21.6,"coupons":[],"discounts":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","discounted_amount":2.4}],"line_items":{"physical_items":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":1,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":2.4}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":24,"extended_sale_price":24,"comparison_price":24,"extended_comparison_price":24,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:04:50+00:00"},"billing_address":{},"consignments":[{"id":"69e1db928adc9","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7"],"shipping_address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"63815","phone":"","custom_fields":[]},"address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter 
+[2026-04-17T07:04:51.248Z] ✅ Checkout JSON parsed successfully
+[2026-04-17T07:04:51.249Z] 🧾 Checkout summary: [object Object]
+[2026-04-17T07:04:51.249Z] 🛒 Checkout line items summary: [object Object]
+[2026-04-17T07:04:51.256Z] 📦 Consignment payload to BigCommerce: [
+  {
+    "shipping_address": {
+      "first_name": "Test",
+      "last_name": "Amin",
+      "address1": "Rudolstaedter Strasse 34",
+      "city": "Elsenfeld",
+      "state_or_province": "Elsenfeld",
+      "postal_code": "63815",
+      "country_code": "FR",
+      "phone": ""
+    },
+    "line_items": [
+      {
+        "item_id": "c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7",
+        "quantity": 1
+      }
+    ]
+  }
+]
+[2026-04-17T07:04:51.257Z] 📤 Posting consignments to BigCommerce: https://api.bigcommerce.com/stores/eapn6crf58/v3/checkouts/94b3be73-face-472f-b873-f44e3f6abae4/consignments?include=consignments.available_shipping_options
+[2026-04-17T07:04:51.892Z] 📡 Consignments response status: 200
+[2026-04-17T07:04:51.896Z] 📡 Consignments raw response: {"data":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","cart":{"id":"94b3be73-face-472f-b873-f44e3f6abae4","customer_id":0,"channel_id":1,"email":"","currency":{"code":"EUR"},"tax_included":false,"base_amount":24,"discount_amount":2.4,"manual_discount_amount":0,"cart_amount_inc_tax":21.6,"cart_amount_ex_tax":21.6,"coupons":[],"discounts":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","discounted_amount":2.4}],"line_items":{"physical_items":[{"id":"c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7","parent_id":null,"variant_id":279,"product_id":209,"sku":"GINGERBREADQ1","name":"Test Product -2","url":"https:\/\/kasweb-c4.mybigcommerce.com\/test-product-2\/","quantity":1,"is_taxable":true,"image_url":"https:\/\/cdn11.bigcommerce.com\/s-eapn6crf58\/products\/209\/images\/411\/demo-sign-cubes__12531.1763473021.220.290.jpg?c=1","discounts":[{"id":1,"discounted_amount":2.4}],"coupons":[],"discount_amount":0,"coupon_amount":0,"original_price":24,"list_price":24,"sale_price":24,"extended_list_price":24,"extended_sale_price":24,"comparison_price":24,"extended_comparison_price":24,"is_require_shipping":true,"gift_wrapping":null,"added_by_promotion":false,"is_mutable":true,"is_custom_price":false}],"digital_items":[],"gift_certificates":[],"custom_items":[]},"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:04:51+00:00"},"billing_address":{},"consignments":[{"id":"69e1db938513b","shipping_cost_inc_tax":0,"shipping_cost_ex_tax":0,"handling_cost_inc_tax":0,"handling_cost_ex_tax":0,"coupon_discounts":[],"discounts":[],"line_item_ids":["c2a81466-a67a-468c-b9f2-1cb6a7c5d5d7"],"shipping_address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"63815","phone":"","custom_fields":[]},"address":{"first_name":"Test","last_name":"Amin","email":"","company":"","address1":"Rudolstaedter Strasse 34","address2":"","city":"Elsenfeld","state_or_province":"Elsenfeld","state_or_province_code":"","country":"France","country_code":"FR","postal_code":"63815","phone":"","custom_fields":[]},"available_shipping_options":[{"id":"4dcbf24f457dd67d5f89bcf374e0bc9b","type":"freeshipping","description":"Free Shipping","image_url":"","cost":0,"transit_time":"","additional_description":"","cost_after_discount":0},{"id":"8d74c159ada9257e3631dae799791ecd","type":"shipping_flatrate","description":"Delivery + Insurance (Protection against loss, breakage, and theft)","image_url":"","cost":2,"transit_time":"","additional_description":"","cost_after_discount":2}]}],"taxes":[{"name":"Tax","amount":0}],"coupons":[],"order_id":null,"shipping_cost_total_inc_tax":0,"shipping_cost_total_ex_tax":0,"handling_cost_total_inc_tax":0,"handling_cost_total_ex_tax":0,"tax_total":0,"subtotal_inc_tax":24,"subtotal_ex_tax":24,"grand_total":21.6,"created_time":"2026-04-17T06:48:21+00:00","updated_time":"2026-04-17T07:04:51+00:00","customer_message":"","staff_note":"","version":7,"total_discount":2.4,"fees":[]},"meta":{}}
+[2026-04-17T07:04:51.897Z] ✅ Consignments JSON parsed successfully
+[2026-04-17T07:04:51.897Z] 📋 Consignments summary: [object Object]
+[2026-04-17T07:04:51.902Z] 🚚 Raw available shipping options from BigCommerce: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "type": "freeshipping",
+    "description": "Free Shipping",
+    "image_url": "",
+    "cost": 0,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 0
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "type": "shipping_flatrate",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "image_url": "",
+    "cost": 2,
+    "transit_time": "",
+    "additional_description": "",
+    "cost_after_discount": 2
+  }
+]
+[2026-04-17T07:04:51.910Z] ✅ Final mapped shipping options: [
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "description": "Free Shipping",
+    "cost": 0,
+    "type": "freeshipping",
+    "isRecommended": false,
+    "raw": {
+      "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+      "type": "freeshipping",
+      "description": "Free Shipping",
+      "image_url": "",
+      "cost": 0,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 0
+    }
+  },
+  {
+    "id": "8d74c159ada9257e3631dae799791ecd",
+    "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+    "cost": 2,
+    "type": "shipping_flatrate",
+    "isRecommended": false,
+    "raw": {
+      "id": "8d74c159ada9257e3631dae799791ecd",
+      "type": "shipping_flatrate",
+      "description": "Delivery + Insurance (Protection against loss, breakage, and theft)",
+      "image_url": "",
+      "cost": 2,
+      "transit_time": "",
+      "additional_description": "",
+      "cost_after_discount": 2
+    }
+  }
+]
+[2026-04-17T07:04:51.911Z] 📤 Responding to frontend with: {
+  "success": true,
+  "checkoutId": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "consignmentsCount": 1,
+  "shippingOptionsCount": 2
+}
+[2026-04-17T07:04:51.912Z] ================================================================================
+[2026-04-17T07:05:00.206Z] Saving customer address - START
+[2026-04-17T07:05:00.207Z] Saving address for customer: 41
+[2026-04-17T07:05:00.207Z] Address data received: [object Object]
+[2026-04-17T07:05:01.471Z] Get addresses response status: 200
+[2026-04-17T07:05:01.472Z] Get addresses raw response: [{"id":32,"customer_id":41,"first_name":"Test","last_name":"Amin","company":"","street_1":"Rudolstaedter Strasse 34","street_2":"","city":"Elsenfeld","state":"Elsenfeld","zip":"63815","country":"Franc
+[2026-04-17T07:05:01.472Z] Parsed existing addresses: 1
+[2026-04-17T07:05:01.473Z] Updating existing address: 32
+[2026-04-17T07:05:01.473Z] Address data to save to BigCommerce: [object Object]
+[2026-04-17T07:05:01.473Z] Making request to BigCommerce API: [object Object]
+[2026-04-17T07:05:01.797Z] BigCommerce response status: 200
+[2026-04-17T07:05:01.799Z] BigCommerce raw response: {"id":32,"customer_id":41,"first_name":"Test","last_name":"Amin","company":"","street_1":"Rudolstaedter Strasse 34","street_2":"","city":"Elsenfeld","state":"Elsenfeld","zip":"63815","country":"France","country_iso2":"FR","phone":"","address_type":"residential","form_fields":null}
+[2026-04-17T07:05:01.799Z] Address saved successfully: 32
+[2026-04-17T07:05:01.802Z] Saving customer address - SUCCESS
+[2026-04-17T07:05:02.726Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:05:02.901Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:05:03.183Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "085a1769-fb70-4ba5-9b9c-cf96b71fb01a",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:05:03.208Z] api cart-data called
+[2026-04-17T07:05:03.478Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhon9cq55g"
+}
+[2026-04-17T07:05:03.484Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhon9cq55g",
+  "request_id": "085a1769-fb70-4ba5-9b9c-cf96b71fb01a",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:05:03+0000",
+  "updated_at": "2026-04-17T07:05:03+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbjljcTU1ZyIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxMzEwMywiaWF0IjoxNzc2NDA5NTAzfQ.jJErHZXAdmHuLwoFeACIyRGKlUfu3GOaj_n4Bma4eyw",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:05:51.459Z] Saving customer address - START
+[2026-04-17T07:05:51.459Z] Saving address for customer: 41
+[2026-04-17T07:05:51.460Z] Address data received: [object Object]
+[2026-04-17T07:05:52.723Z] Get addresses response status: 200
+[2026-04-17T07:05:52.724Z] Get addresses raw response: [{"id":32,"customer_id":41,"first_name":"Test","last_name":"Amin","company":"","street_1":"Rudolstaedter Strasse 34","street_2":"","city":"Elsenfeld","state":"Elsenfeld","zip":"63815","country":"Franc
+[2026-04-17T07:05:52.725Z] Parsed existing addresses: 1
+[2026-04-17T07:05:52.725Z] Updating existing address: 32
+[2026-04-17T07:05:52.726Z] Address data to save to BigCommerce: [object Object]
+[2026-04-17T07:05:52.726Z] Making request to BigCommerce API: [object Object]
+[2026-04-17T07:05:53.077Z] BigCommerce response status: 200
+[2026-04-17T07:05:53.078Z] BigCommerce raw response: {"id":32,"customer_id":41,"first_name":"Test","last_name":"Amin","company":"","street_1":"Rudolstaedter Strasse 34","street_2":"","city":"Elsenfeld","state":"Elsenfeld","zip":"63815","country":"France","country_iso2":"FR","phone":"","address_type":"residential","form_fields":null}
+[2026-04-17T07:05:53.081Z] Address saved successfully: 32
+[2026-04-17T07:05:53.082Z] Saving customer address - SUCCESS
+[2026-04-17T07:05:53.918Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:05:54.075Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:05:54.448Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "40d9c380-c3b0-4a29-9d3d-bd077e6a89c7",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:05:54.649Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhona790lf"
+}
+[2026-04-17T07:05:54.654Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhona790lf",
+  "request_id": "40d9c380-c3b0-4a29-9d3d-bd077e6a89c7",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:05:54+0000",
+  "updated_at": "2026-04-17T07:05:54+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbmE3OTBsZiIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxMzE1NCwiaWF0IjoxNzc2NDA5NTU0fQ.7au2CIGm4-kB-0jIBZC_E8aPt8zSmWLKAkzZeaF5KRw",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:06:48.438Z] api cart-data called
+[2026-04-17T07:06:49.137Z] api cart-data called
+[2026-04-17T07:06:49.872Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:06:49.932Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:06:50.032Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:06:50.087Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:06:50.301Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "ec484d1a-4317-4e06-a5f5-304f440b821c",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:06:50.372Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "f49c16c5-d72f-4f2e-a4ba-94fa9c8901e8",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:06:50.506Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhonb4i7fj"
+}
+[2026-04-17T07:06:50.508Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhonb4i7fj",
+  "request_id": "ec484d1a-4317-4e06-a5f5-304f440b821c",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:06:50+0000",
+  "updated_at": "2026-04-17T07:06:50+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbmI0aTdmaiIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxMzIxMCwiaWF0IjoxNzc2NDA5NjEwfQ.0mAKsqbFbUisCw8YvTLDnwUpev4qbDcABHo_Nm8PzK0",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:06:50.567Z]  PaymentIntent created: {
+  "id": "int_hkdmbg8f2hhonb4jits"
+}
+[2026-04-17T07:06:50.575Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmbg8f2hhonb4jits",
+  "request_id": "f49c16c5-d72f-4f2e-a4ba-94fa9c8901e8",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:06:50+0000",
+  "updated_at": "2026-04-17T07:06:50+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWJnOGYyaGhvbmI0aml0cyIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxMzIxMCwiaWF0IjoxNzc2NDA5NjEwfQ.CfTSZEhEb53JVgU2DhhQeHdud2vav0oNRhEMnXujQLY",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:12:03.360Z] api cart-data called
+[2026-04-17T07:12:04.037Z] api cart-data called
+[2026-04-17T07:12:04.766Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:12:04.777Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:12:04.926Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:12:04.935Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:12:05.206Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "1986f57c-603e-41e7-8988-647a86c9d4e1",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:12:05.221Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "e00c7676-070d-4cb6-9cec-629e7b266b3a",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:12:05.408Z]  PaymentIntent created: {
+  "id": "int_hkdmbg8f2hhongbzwir"
+}
+[2026-04-17T07:12:05.410Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmbg8f2hhongbzwir",
+  "request_id": "e00c7676-070d-4cb6-9cec-629e7b266b3a",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:12:05+0000",
+  "updated_at": "2026-04-17T07:12:05+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWJnOGYyaGhvbmdiendpciIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxMzUyNSwiaWF0IjoxNzc2NDA5OTI1fQ.fBKVn48qq71vXo80fLfk9nS3SPB-TwB2ZNFq4KPgkuQ",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:12:05.417Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhongbzmwt"
+}
+[2026-04-17T07:12:05.420Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhongbzmwt",
+  "request_id": "1986f57c-603e-41e7-8988-647a86c9d4e1",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:12:05+0000",
+  "updated_at": "2026-04-17T07:12:05+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbmdiem13dCIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxMzUyNSwiaWF0IjoxNzc2NDA5OTI1fQ.zh3QZYAFtUsd0mekrupqFOmHfLJSA5T9A2LBnR49Y-I",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:13:30.460Z] api cart-data called
+[2026-04-17T07:13:31.308Z] api cart-data called
+[2026-04-17T07:13:31.946Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:13:31.973Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:13:32.102Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:13:32.243Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:13:32.384Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "53d5dd2e-afb5-48b0-9e84-811e156efa13",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:13:32.512Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "58ea5987-07d6-4a6d-8b7f-2a37f2ec646e",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:13:32.566Z]  PaymentIntent created: {
+  "id": "int_hkdmbg8f2hhonhrw1tk"
+}
+[2026-04-17T07:13:32.571Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmbg8f2hhonhrw1tk",
+  "request_id": "53d5dd2e-afb5-48b0-9e84-811e156efa13",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:13:32+0000",
+  "updated_at": "2026-04-17T07:13:32+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWJnOGYyaGhvbmhydzF0ayIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxMzYxMiwiaWF0IjoxNzc2NDEwMDEyfQ.4-guZPTeqLu7rgoxWNYyZK10f0ysjYjKQ5r9dl27t_Q",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:13:32.720Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhonhrys9l"
+}
+[2026-04-17T07:13:32.727Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhonhrys9l",
+  "request_id": "58ea5987-07d6-4a6d-8b7f-2a37f2ec646e",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:13:32+0000",
+  "updated_at": "2026-04-17T07:13:32+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbmhyeXM5bCIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxMzYxMiwiaWF0IjoxNzc2NDEwMDEyfQ.2Rnq050nN-3Pq0OV9WqLolCkcdied1U8HFgVA5_ps2E",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:26:54.868Z] api cart-data called
+[2026-04-17T07:26:56.700Z] api cart-data called
+[2026-04-17T07:26:57.473Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:26:57.631Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:26:57.921Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "1c344c59-87d9-44c8-a187-287a5b470856",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:26:58.046Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:26:58.123Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:26:58.133Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhonv3hrrh"
+}
+[2026-04-17T07:26:58.136Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhonv3hrrh",
+  "request_id": "1c344c59-87d9-44c8-a187-287a5b470856",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:26:58+0000",
+  "updated_at": "2026-04-17T07:26:58+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbnYzaHJyaCIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNDQxOCwiaWF0IjoxNzc2NDEwODE4fQ.jEM1eWTF3JEZCS7-WXGcqk5o1ECdXfxfAgHce_SrzRo",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:26:58.389Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "07426fd0-0801-455c-a8f2-dc32b88beb43",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:26:58.594Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhonv3rxi8"
+}
+[2026-04-17T07:26:58.596Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhonv3rxi8",
+  "request_id": "07426fd0-0801-455c-a8f2-dc32b88beb43",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:26:58+0000",
+  "updated_at": "2026-04-17T07:26:58+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbnYzcnhpOCIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNDQxOCwiaWF0IjoxNzc2NDEwODE4fQ.PSUQfMY9nAQrBqdOb9vdsnoRRI8DUqtHCxNxHKgE324",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:27:35.088Z] api cart-data called
+[2026-04-17T07:27:35.758Z] api cart-data called
+[2026-04-17T07:27:36.454Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:27:36.458Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:27:36.647Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:27:36.650Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:27:36.928Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "83de63e8-b8bf-4405-bbd5-6ae3981d48cb",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:27:36.932Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "521c8dff-c606-4859-9e76-0304f4ff32e3",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:27:37.120Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhonvqpqq7"
+}
+[2026-04-17T07:27:37.123Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhonvqpqq7",
+  "request_id": "83de63e8-b8bf-4405-bbd5-6ae3981d48cb",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:27:37+0000",
+  "updated_at": "2026-04-17T07:27:37+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbnZxcHFxNyIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNDQ1NywiaWF0IjoxNzc2NDEwODU3fQ.yA7G0soz6o6GLyBD2-bp3QrA0gIUZmCHFxHjjJcCkOY",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:27:37.140Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhonvqq65u"
+}
+[2026-04-17T07:27:37.144Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhonvqq65u",
+  "request_id": "521c8dff-c606-4859-9e76-0304f4ff32e3",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:27:37+0000",
+  "updated_at": "2026-04-17T07:27:37+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbnZxcTY1dSIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNDQ1NywiaWF0IjoxNzc2NDEwODU3fQ.xNZshvSmnY1se0xSsF0IalFMtrAN2x7FNiePyUtqGGA",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:37:36.071Z] api cart-data called
+[2026-04-17T07:37:37.569Z] api cart-data called
+[2026-04-17T07:37:38.437Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:37:38.529Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:37:38.612Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:37:38.615Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:37:38.869Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "568c29d7-c2f2-4c9b-9507-f40abba49cbe",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:37:38.880Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "983c93ed-fc89-4116-a750-42aa0fbb7ad4",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:37:39.216Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhoo5p4sok"
+}
+[2026-04-17T07:37:39.240Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhoo5p4sok",
+  "request_id": "983c93ed-fc89-4116-a750-42aa0fbb7ad4",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:37:39+0000",
+  "updated_at": "2026-04-17T07:37:39+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbzVwNHNvayIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNTA1OSwiaWF0IjoxNzc2NDExNDU5fQ.iyuSbmoiN9prBXF6fAOd3e3JL69NrBRbc_GO-fVTNe4",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:37:39.243Z]  PaymentIntent created: {
+  "id": "int_hkdmbg8f2hhoo5p54kk"
+}
+[2026-04-17T07:37:39.247Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmbg8f2hhoo5p54kk",
+  "request_id": "568c29d7-c2f2-4c9b-9507-f40abba49cbe",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:37:39+0000",
+  "updated_at": "2026-04-17T07:37:39+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWJnOGYyaGhvbzVwNTRrayIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNTA1OSwiaWF0IjoxNzc2NDExNDU5fQ.wDd_c1s3mMnnjps2O_Pg9FRaqvqTWBQYRHBB9L8997U",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:38:04.161Z] api cart-data called
+[2026-04-17T07:38:04.824Z] api cart-data called
+[2026-04-17T07:38:05.495Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:38:05.496Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:38:05.664Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:38:05.667Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:38:05.964Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "bba669e6-8df6-455e-986b-3d6c8d135be3",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:38:05.981Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "5d987d13-f5e5-4d25-9b73-baf7155eab73",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:38:06.159Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhoo658cwd"
+}
+[2026-04-17T07:38:06.163Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhoo658cwd",
+  "request_id": "bba669e6-8df6-455e-986b-3d6c8d135be3",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:38:06+0000",
+  "updated_at": "2026-04-17T07:38:06+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbzY1OGN3ZCIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNTA4NiwiaWF0IjoxNzc2NDExNDg2fQ.MCCZa_Tha4YI3sWtf5U2Liyhdz5S-tWiDCPMOVfK0wg",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:38:06.166Z]  PaymentIntent created: {
+  "id": "int_hkdmbg8f2hhoo658mhd"
+}
+[2026-04-17T07:38:06.169Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmbg8f2hhoo658mhd",
+  "request_id": "5d987d13-f5e5-4d25-9b73-baf7155eab73",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:38:06+0000",
+  "updated_at": "2026-04-17T07:38:06+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWJnOGYyaGhvbzY1OG1oZCIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNTA4NiwiaWF0IjoxNzc2NDExNDg2fQ.INn0gyYob1EYJbY4OxU02_Psnq5dF-C1xOZgFx--uWw",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:41:48.245Z] api cart-data called
+[2026-04-17T07:41:49.746Z] api cart-data called
+[2026-04-17T07:41:50.440Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:41:50.458Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:41:50.615Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:41:50.650Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:41:50.911Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "64e1fcd9-8d0d-46c9-a479-52536c3da84f",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:41:50.918Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "ff882b68-98bc-4a39-9fa0-dd404342bb6a",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:41:51.130Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhoo9v626u"
+}
+[2026-04-17T07:41:51.133Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhoo9v626u",
+  "request_id": "ff882b68-98bc-4a39-9fa0-dd404342bb6a",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:41:51+0000",
+  "updated_at": "2026-04-17T07:41:51+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbzl2NjI2dSIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNTMxMSwiaWF0IjoxNzc2NDExNzExfQ.4hBzsfVhUnceRpow4fpIGguBmsZ-VZ9eOoGirdhMx2s",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:41:51.135Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhoo9v5z3p"
+}
+[2026-04-17T07:41:51.138Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhoo9v5z3p",
+  "request_id": "64e1fcd9-8d0d-46c9-a479-52536c3da84f",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:41:51+0000",
+  "updated_at": "2026-04-17T07:41:51+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvbzl2NXozcCIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNTMxMSwiaWF0IjoxNzc2NDExNzExfQ.iCZlQiP70N39n8gDFS_GLPgbqh7FN4QkKEH-YHsxIxc",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:42:45.243Z] api cart-data called
+[2026-04-17T07:42:46.881Z] api cart-data called
+[2026-04-17T07:42:47.648Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:42:47.655Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:42:47.800Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:42:47.809Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:42:48.081Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "ad826dd2-752a-4572-bf35-e6981c0e2808",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:42:48.092Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "409e38b6-b078-4e9a-9986-2a275b1ac50c",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:42:48.270Z]  PaymentIntent created: {
+  "id": "int_hkdmbg8f2hhooat72uv"
+}
+[2026-04-17T07:42:48.271Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmbg8f2hhooat72uv",
+  "request_id": "ad826dd2-752a-4572-bf35-e6981c0e2808",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:42:48+0000",
+  "updated_at": "2026-04-17T07:42:48+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWJnOGYyaGhvb2F0NzJ1diIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNTM2OCwiaWF0IjoxNzc2NDExNzY4fQ.YljCCjkR2sXwdGpog8I3iKY4sx01de9zJuTpsbBn6kU",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:42:48.301Z]  PaymentIntent created: {
+  "id": "int_hkdmbg8f2hhooat7ldm"
+}
+[2026-04-17T07:42:48.305Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmbg8f2hhooat7ldm",
+  "request_id": "409e38b6-b078-4e9a-9986-2a275b1ac50c",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:42:48+0000",
+  "updated_at": "2026-04-17T07:42:48+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWJnOGYyaGhvb2F0N2xkbSIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNTM2OCwiaWF0IjoxNzc2NDExNzY4fQ.sQhQefs06Nz9QSaSjgVF8c4HviFkqcusM6S_mvb49gA",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:58:57.379Z] api cart-data called
+[2026-04-17T07:59:00.601Z] api cart-data called
+[2026-04-17T07:59:02.516Z] api cart-data called
+[2026-04-17T07:59:03.179Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:59:03.183Z] Reusing existing payment customer: cus_hkdmx5xjchgzvb82y1w
+[2026-04-17T07:59:03.321Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:59:03.328Z] 📥 [payment-intents/create] Incoming request: {
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "payment_customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:59:03.596Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "c693a454-43bf-447f-ae26-388d69fb1e3a",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:59:03.643Z] 📤 [payment-intents/create] Payload: {
+  "request_id": "6dc132fb-08c3-4d9e-bbc5-347946e581b3",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "return_url": "http://localhost:5173",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w"
+}
+[2026-04-17T07:59:03.794Z]  PaymentIntent created: {
+  "id": "int_hkdmbg8f2hhooqxzyo8"
+}
+[2026-04-17T07:59:03.797Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmbg8f2hhooqxzyo8",
+  "request_id": "c693a454-43bf-447f-ae26-388d69fb1e3a",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:59:03+0000",
+  "updated_at": "2026-04-17T07:59:03+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWJnOGYyaGhvb3F4enlvOCIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNjM0MywiaWF0IjoxNzc2NDEyNzQzfQ.eGEf6UXPJk3sBpfNKsXANcZNpSrlsFq1_ggd5lxQUY8",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}
+[2026-04-17T07:59:03.847Z]  PaymentIntent created: {
+  "id": "int_hkdmjljtvhhooqy0xu1"
+}
+[2026-04-17T07:59:03.850Z] 📥 Airwallex payment intent response: {
+  "id": "int_hkdmjljtvhhooqy0xu1",
+  "request_id": "6dc132fb-08c3-4d9e-bbc5-347946e581b3",
+  "amount": 21.6,
+  "currency": "EUR",
+  "merchant_order_id": "94b3be73-face-472f-b873-f44e3f6abae4",
+  "customer_id": "cus_hkdmx5xjchgzvb82y1w",
+  "descriptor": "test_store",
+  "status": "REQUIRES_PAYMENT_METHOD",
+  "captured_amount": 0,
+  "created_at": "2026-04-17T07:59:03+0000",
+  "updated_at": "2026-04-17T07:59:03+0000",
+  "client_secret": "eyJraWQiOiJjNDRjODVkMDliMDc0NmNlYTIwZmI4NjZlYzI4YWY3ZSIsImFsZyI6IkhTMjU2In0.eyJ0eXBlIjoiY2xpZW50LXNlY3JldCIsImFjY291bnRfaWQiOiIwMjU1ZjAzZi02NDM0LTQxNTgtODZhNi1hNGVlMjc5Mjc2OGYiLCJpbnRlbnRfaWQiOiJpbnRfaGtkbWpsanR2aGhvb3F5MHh1MSIsImN1c3RvbWVyX2lkIjoiY3VzX2hrZG14NXhqY2hnenZiODJ5MXciLCJidXNpbmVzc19uYW1lIjoiQ1JNIEhvbGRpbmdzIExpbWl0ZWQgKEhLKSIsImFwaV92ZXJzaW9uIjoiMjAyNS0wMi0xNCIsInBhZGMiOiJISyIsImV4cCI6MTc3NjQxNjM0MywiaWF0IjoxNzc2NDEyNzQzfQ.VTVxH6XlZ3ObejgFK6Wp3vRuYubz6AT7c0lk86CU_8A",
+  "return_url": "http://localhost:5173",
+  "original_amount": 21.6,
+  "original_currency": "EUR"
+}

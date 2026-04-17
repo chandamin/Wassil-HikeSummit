@@ -1,0 +1,69 @@
+name: "Phase 2: CD Deployment"
+
+on:
+  push:
+    branches: [ main ]  # Only runs on main to protect production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout Repository"
+        uses: actions/checkout@v4
+
+      - name: "Download Frontend Artifact"
+        uses: actions/download-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend/dist/
+
+      - name: "Setup SSH Key"
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts 2>/dev/null || true
+
+      - name: "Deploy Frontend to Web Root"
+        run: |
+          echo "📦 Syncing frontend/dist/ contents to ${{ secrets.FRONTEND_PATH }}"
+          rsync -avz --delete \
+            ./frontend/dist/ \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.FRONTEND_PATH }}/
+
+      - name: "Deploy Backend Source Code"
+        run: |
+          echo "📦 Syncing backend/ source to ${{ secrets.BACKEND_PATH }}"
+          rsync -avz --delete \
+            --exclude='node_modules/' \
+            --exclude='.git/' \
+            --exclude='tmp/' \
+            --exclude='logs/' \
+            --exclude='.env' \
+            ./backend/ \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.BACKEND_PATH }}/
+
+      - name: "Install Backend Dependencies & Restart (Option B)"
+        run: |
+          echo "🔧 Installing production dependencies via direct nodevenv path..."
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
+            cd ${{ secrets.BACKEND_PATH }} && \
+            mkdir -p tmp && \
+            /home/hikeamoa/nodevenv/checkout.hike-summit.com/Wassil-HikeSummit/backend/22/bin/npm ci --production
+          "
+
+          echo "🔄 Triggering Passenger restart..."
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
+            touch ${{ secrets.BACKEND_PATH }}/tmp/restart.txt
+          "
+
+      - name: "Verify Deployment (Health Checks)"
+        run: |
+          echo "🩺 Checking Frontend..."
+          curl -f --max-time 15 https://checkout.hike-summit.com/ > /dev/null 2>&1 || echo "⚠️ Frontend returned non-200 (check manually)"
+
+          echo "🩺 Checking Backend..."
+          curl -f --max-time 15 https://api.hike-summit.com/ > /dev/null 2>&1 || echo "⚠️ Backend returned non-200 (check manually)"
+
+          echo "✅ Deployment Pipeline Complete!"

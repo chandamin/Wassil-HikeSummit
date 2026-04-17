@@ -774,12 +774,12 @@ export default function CheckoutLayout({
             <div className="nr-date-time-wr text-white bg-[#3b4450] rounded-[5px] flex-wrap py-[20px] px-[10px] gap-[5px] text-center flex justify-center align-middle">
               {isTimeUp ? (
                 <p className="text-[14px] md:text-[16px] font-[600]">
-                  Poursuivre votre commande
+                  Continue your order
                 </p>
               ) : (
                 <>
                   <p className="nr-date-time-txt-fir text-[14px] md:text-[16px] font-[600]">
-                    Votre commande est réservée pour
+                    Your order is reserved for
                   </p>
 
                   <p className="nr-date-time-txt-sec text-[13px] md:text-[16px]">
@@ -873,14 +873,14 @@ export default function CheckoutLayout({
                 {isPlacingOrder && (
                   <div className="w-full bg-[#2fb34a] text-white font-semibold py-3 rounded flex items-center justify-center gap-2">
                     <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
-                    TRAITEMENT DE LA COMMANDE…
+                    PROCESSING THE ORDER…
                   </div>
                 )}
 
 
                 <div className="text-xs text-gray-600 text-center mt-3 flex items-center gap-[5px] justify-center">
                   <img src="../images/ssl.webp" alt="lock" className="h-[15px]" />
-                  Cryptage SSL sécurisé
+                  Secure SSL encryption
                 </div>
 
                 <div className="flex justify-center gap-6 mt-4">
@@ -896,7 +896,7 @@ export default function CheckoutLayout({
                 {/* Warrantly Subscription section */}
 
 
-                <div className="nr-wrranty-wr py-[10px] px-[12px] border border-[#ccc] hidden md:block">
+                <div className="nr-wrranty-wr py-[10px] px-[12px] border border-[#ccc]">
                   <div className="nr-checkbox-wr bg-[#3b4450] gap-[10px] p-[10px] rounded-[4px] flex items-center my-[10px]">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="26px" height="auto" viewBox="0 0 1200.000000 1100.000000" preserveAspectRatio="xMidYMid meet">
                       <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#FFF" stroke="none">
@@ -917,7 +917,7 @@ export default function CheckoutLayout({
                         />
                       </div>
                       <label htmlFor="vip-club" className="text-[16px] text-white">
-                        ACCÈS AU CLUB VIP
+                        VIP CLUB - ACCESS
                       </label>
                     </div>
                   </div>
@@ -937,9 +937,7 @@ export default function CheckoutLayout({
                     </p> */}
 
                     <p className="text-[13px]">
-                      En cochant cette case, j'active mon essai gratuit de 30 jours au CLUB VIP, ce qui me donne accès à des avantages exclusifs sur Hike-Summit. À l'issue de la période d'essai, l'abonnement se renouvelle automatiquement au tarif de 12,99€ par mois. Cet abonnement est sans engagement et peut être résilié à tout moment en contactant le service client. Consultez les conditions générales du {" "}
-                      /club-vip
-                      {" "}pour plus d'informations.
+                      By ticking this box, I am activating my 30-day free trial of the VIP CLUB, which gives me access to exclusive benefits on Hike-Summit. At the end of the trial period, the subscription will automatically renew at a rate of £12.99 per month. This subscription is non-binding and can be cancelled at any time by contacting customer service. See the /vip-club terms and conditions for more information.
                     </p>
 
                     {isVipLoading && (
@@ -989,7 +987,7 @@ export default function CheckoutLayout({
               <img src="../images/shield-2.webp" alt="shield" className="h-[40px] w-[40px] object-contain" />
               <h3>Service Client</h3>
             </div>
-            <p className="pb-[20px] text-[15px] text-[#747474]">Vous pouvez nous joindre du lundi au vendredi, de 8h00 à 17h00.</p>
+            <p className="pb-[20px] text-[15px] text-[#747474]">You can reach us from Monday to Friday, from 8:00 AM to 5:00 PM.</p>
             <div className="nr-contact-info">
               <div className="nr-info-item flex gap-[8px] align-middle pb-[16px]">
                 <img src="../images/phone-icon.webp" alt="phone" className="h-[24px] w-[24px] object-contain" />
@@ -1003,7 +1001,7 @@ export default function CheckoutLayout({
           </div>
 
           {activeStep === "payment" && (
-            <div className="nr-wrranty-wr py-[10px] px-[12px] border border-[#ccc] md:hidden">
+            <div className="nr-wrranty-wr py-[10px] px-[12px] border border-[#ccc] hidden">
               <div className="nr-checkbox-wr bg-[#3b4450] gap-[10px] p-[10px] rounded-[4px] flex items-center my-[10px]">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="26px" height="auto" viewBox="0 0 1200.000000 1100.000000" preserveAspectRatio="xMidYMid meet">
                   <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#FFF" stroke="none">
@@ -1031,16 +1029,14 @@ export default function CheckoutLayout({
               </div>
 
               <div className="nr-wrranty-text pt-[15px] relative">
-                {/* <p className="text-[13px]">
-                  By checking this box, I activate my 30-day free trial to the VIP CLUB, giving me access to exclusive benefits on Hike-Summit. After the trial, the subscription renews automatically at £12.99/month. This membership is non-binding and can be cancelled at any time by contacting support. Consult the {" "}
-                  vip-club 
-                  policy for more information.
-                </p> */}
                 <p className="text-[13px]">
-                En cochant cette case, j'active mon essai gratuit de 30 jours au CLUB VIP, ce qui me donne accès à des avantages exclusifs sur Hike-Summit. À l'issue de la période d'essai, l'abonnement se renouvelle automatiquement au tarif de 12,99€ par mois. Cet abonnement est sans engagement et peut être résilié à tout moment en contactant le service client. Consultez les conditions générales du {" "}
+                  By checking this box, I activate my 30-day free trial of the VIP CLUB, which gives me access to exclusive benefits on Hike-Summit. After the trial period, the subscription automatically renews at a rate of €12.99 per month. This subscription is non-binding and can be cancelled at any time by contacting customer service. See the terms and conditions of the /club-vip.
+                </p>
+                {/* <p className="text-[13px]">
+                En cochant cette case, j'active mon essai gratuit de 30 jours au CLUB VIP, ce qui me donne accès à des avantages exclusifs sur Hike-Summit. À l'issue de la période d'essai, l'abonnement se renouvelle automatiquement au tarif de 12,99€ par mois. Cet abonnement est sans engagement et peut être résilié à tout moment en contactant le service client. Consultez les Terms and Conditions du {" "}
                 /club-vip
                 {" "}pour plus d'informations.
-              </p>
+              </p> */}
 
                 {/* Overlay Loader - Shows when isVipLoading is true */}
                 {isVipLoading && (
@@ -1055,17 +1051,17 @@ export default function CheckoutLayout({
           <div className="nr-rght-bottom-info-cntnt py-[30px] border-b">
             <div className="nr-info-hed-prt flex gap-[8px] items-center text-[18px] font-[600] pb-[8px]">
               <img src="../images/calendar-2.webp" alt="shield" className="h-[40px] w-[40px] object-contain" />
-              <h3>Expérience d'achat</h3>
+              <h3>Shopping experience</h3>
             </div>
-            <p className="text-[15px] text-[#747474]">Profitez d'une expérience d'achat exceptionnelle, retours sous 30 jours.</p>
+            <p className="text-[15px] text-[#747474]">Enjoy an exceptional shopping experience, 30-day returns.</p>
           </div>
           {/* third-part */}
           <div className="nr-rght-bottom-info-cntnt py-[30px]">
             <div className="nr-info-hed-prt flex gap-[8px] items-center text-[18px] font-[600] pb-[8px]">
               <img src="../images/delivery-truck-icon.webp" alt="shield" className="h-[40px] w-[40px] object-contain" />
-              <h3>Suivi de commande</h3>
+              <h3>Order tracking</h3>
             </div>
-            <p className="text-[15px] text-[#747474]">Bénéficiez du suivi de votre commande en temps réel.</p>
+            <p className="text-[15px] text-[#747474]">Benefit from real-time tracking of your order.</p>
           </div>
 
             
@@ -1101,10 +1097,10 @@ export default function CheckoutLayout({
               <h2 className="text-center font-[600]">Policies</h2>
             </div> */}
             <div className="nr-footer-links flex flex-col gap-[10px] items-center justify-between">
-              <a href="https://kasweb-c4.mybigcommerce.com/conditions-generales/" className="liks text-[12px] text-[#656565]">Conditions Générales</a>
-              <a href="https://kasweb-c4.mybigcommerce.com/politique-d-expedition/" className="liks text-[12px] text-[#656565]">Politiques et Tarifs D'expédition</a>
-              <a href="https://kasweb-c4.mybigcommerce.com/politique-de-confidentialite/" className="liks text-[12px] text-[#656565]">Politique de confidentialité</a>
-              <a href="https://kasweb-c4.mybigcommerce.com/politique-de-retour-et-de-remboursement/" className="liks text-[12px] text-[#656565]">Échange et Retour</a>
+              <a href="https://kasweb-c4.mybigcommerce.com/conditions-generales/" className="liks text-[12px] text-[#656565]">Terms and Conditions</a>
+              <a href="https://kasweb-c4.mybigcommerce.com/politique-d-expedition/" className="liks text-[12px] text-[#656565]">Shipping Policies and Rates</a>
+              <a href="https://kasweb-c4.mybigcommerce.com/politique-de-confidentialite/" className="liks text-[12px] text-[#656565]">Privacy Policy</a>
+              <a href="https://kasweb-c4.mybigcommerce.com/politique-de-retour-et-de-remboursement/" className="liks text-[12px] text-[#656565]">Exchange and Returns</a>
             </div>
           </footer>
         </aside>
@@ -1135,7 +1131,7 @@ export default function CheckoutLayout({
                     )}
                     <div className="nr-mobile-order-bar-info">
                       <span className="nr-mobile-order-bar-count block text-[18px] font-[600]">{totalQty} article{totalQty > 1 ? 's' : ''}</span>
-                      <span className="nr-mobile-order-bar-link block text-[#476bef] text-[13px]">Afficher les détails</span>
+                      <span className="nr-mobile-order-bar-link block text-[#476bef] text-[13px]">Show details</span>
                     </div>
                   </div>
                   <span className="nr-mobile-order-bar-total text-[25px] font-[600]">€{barTotal.toFixed(2)}</span>
