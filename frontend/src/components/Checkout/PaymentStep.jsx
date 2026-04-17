@@ -127,7 +127,7 @@ export default function PaymentStep({
         await init({
           env: "demo",
           enabledElements: ["payments"],
-          locale: "fr",
+          locale: "en",
         });
 
         const element = await createElement("dropIn", {
@@ -405,20 +405,20 @@ export default function PaymentStep({
   if (!active) {
     return (
       <section className="pb-4">
-        <Header step={3} title="Paiement" />
+        <Header step={3} title="Payment" />
       </section>
     );
   }
 
   return (
     <section>
-      <Header step={3} title="Paiement" />
+      <Header step={3} title="Payment" />
 
       <div className="mt-4">
         <div className="border rounded p-4 bg-[#f5f5f5] pb-[35px]">
           <label className="flex items-center gap-2 text-sm font-medium mb-4">
             <input type="radio" checked readOnly />
-            Carte
+            Card
           </label>
 
           {/* {loading && (
@@ -467,7 +467,7 @@ export default function PaymentStep({
           </div>
 
           <div className="flex items-center gap-2 mt-[24px] text-[14px] md:text-[16px] text-gray-600 pl-0 md:pl-[58.5px] pr-[29.5px]">
-            🔒 Paiement sécurisé - Vos informations sont 100% confidentielles.
+            🔒 Secure payment – Your information is 100% confidential.
           </div>
 
           {/* {intent?.id && (
