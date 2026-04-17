@@ -289,29 +289,30 @@ export default function OrderSummary({
                 key={item.id || index}
                 className={`flex gap-3 p-[19.5px] pt-0 ${isPopup ? 'flex-col' : ''}`}
               >
-                <div className={`flex gap-3  ${isPopup ? 'items-start' : 'items-center'}`}>
-                  <img
-                    src={item.imageUrl || "/product-placeholder.png"}
-                    alt={item.name || "Product"}
-                    className={`border rounded object-cover ${isPopup ? 'w-[70px] h-[70px]' : 'w-16 h-16'}`}
-                  />
-
-                  <div className="flex-1">
-                    <div className="font-semibold text-gray-900">
-                      {isPopup && `${quantity} x `}{item.name || "Unnamed product"}
+                <div className={`flex gap-3 w-[100%] justify-between ${isPopup ? 'items-start' : 'items-start'}`}>
+                  <div className="nr-rght-pro-inner-wr flex gap-3">
+                    <img
+                      src={item.imageUrl || "/product-placeholder.png"}
+                      alt={item.name || "Product"}
+                      className={`border rounded object-cover ${isPopup ? 'w-[70px] h-[70px]' : 'w-16 h-16'}`}
+                    />
+                    <div className="flex-1">
+                      <div className="font-semibold text-gray-900">
+                        {isPopup && `${quantity} x `}{item.name || "Unnamed product"}
+                      </div>
+                      {!isPopup && (
+                        <div className="text-xs text-gray-600 mt-1">
+                          Quantity: {quantity}
+                        </div>
+                      )}
+                      {isPopup && item.options && item.options.length > 0 && (
+                        <div className="text-xs text-gray-500 mt-1">
+                          {item.options.map((opt, i) => (
+                            <div key={i}>{opt.name} {opt.value}</div>
+                          ))}
+                        </div>
+                      )}
                     </div>
-                    {!isPopup && (
-                      <div className="text-xs text-gray-600 mt-1">
-                        Quantity: {quantity}
-                      </div>
-                    )}
-                    {isPopup && item.options && item.options.length > 0 && (
-                      <div className="text-xs text-gray-500 mt-1">
-                        {item.options.map((opt, i) => (
-                          <div key={i}>{opt.name} {opt.value}</div>
-                        ))}
-                      </div>
-                    )}
                   </div>
 
                   <div className="font-semibold text-gray-900 text-right whitespace-nowrap">
