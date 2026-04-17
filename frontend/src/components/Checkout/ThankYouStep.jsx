@@ -1,15 +1,5 @@
 import React from "react";
-
-const formatPrice = (value, currency = "EUR") => {
-  try {
-    return new Intl.NumberFormat("en-US", {
-      style: "currency",
-      currency,
-    }).format(Number(value || 0));
-  } catch {
-    return `${Number(value || 0).toFixed(2)} ${currency}`;
-  }
-};
+import { formatPrice } from "../../utils/formatPrice";
 
 
 const getItemImage = (item) => {
@@ -35,11 +25,11 @@ const ThankYouStep = ({
     "Customer";
 
   const orderId = order?.orderId || order?.id || "-";
-  const currency = cart?.currency?.code || order?.currency_code || "EUR";
+  const currency = cart?.currency?.code || order?.currency_code || "GBP";
 
   const physicalItems = cart?.lineItems?.physicalItems || [];
   const digitalItems = cart?.lineItems?.digitalItems || [];
-  const hiddenProductIds = [210];
+  const hiddenProductIds = [271];
   const allItems = [...physicalItems, ...digitalItems].filter(
     (item) => !hiddenProductIds.includes(Number(item.product_id))
   );

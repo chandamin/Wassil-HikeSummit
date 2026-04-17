@@ -49,7 +49,7 @@ export default function PaymentStep({
 
     //  Calculate the unique key for this payment session
     const expectedAmount = Number(cart.cartAmount) + Number(deliveryData?.price || 0);
-    const currency = cart?.currency?.code || 'EUR';
+    const currency = cart?.currency?.code || 'GBP';
     const amountKey = `${expectedAmount}-${currency}`;
 
     // Skip only if we already have an element for THIS exact amount+currency
@@ -64,7 +64,7 @@ export default function PaymentStep({
         setLoading(true);
         setError("");
 
-        const currency = cart?.currency?.code || "EUR";
+        const currency = cart?.currency?.code || "GBP";
 
         // 1. Create a payment customer (cus_) required for payment consent
         let paymentCustomerId = null;
@@ -125,7 +125,7 @@ export default function PaymentStep({
         setIntent(result);
 
         await init({
-          env: "demo",
+          env: "prod",
           enabledElements: ["payments"],
           locale: "en",
         });

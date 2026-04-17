@@ -1,9 +1,10 @@
 import { useMemo, useState } from "react";
+import { formatPrice } from "../../utils/formatPrice";
 
 export default function OrderSummary({
   cart,
   deliveryPrice = 1.99,
-  hiddenProductIds = [210],
+  hiddenProductIds = [271],
   onCartUpdate,
   onApplyCheckoutCoupon,
   onRemoveCheckoutCoupon,
@@ -28,7 +29,7 @@ export default function OrderSummary({
     cartAmount: 43.98,
     discountAmount: 0,
     taxAmount: 0,
-    currency: { code: "EUR" },
+    currency: { code: "GBP" },
     coupons: [],
     discounts: [],
   };
@@ -56,7 +57,7 @@ export default function OrderSummary({
   // const total = subtotal + Number(deliveryPrice || 0) - discount + tax;
   // const total = subtotal + Number(deliveryPrice || 0) + tax;
   const total = subtotal - discount + Number(deliveryPrice || 0) + Number(tax || 0)
-  const currency = displayCart.currency?.code || "EUR";
+  const currency = displayCart.currency?.code || "GBP";
 
   const coupons = Array.isArray(displayCart.coupons) ? displayCart.coupons : [];
   const discounts = Array.isArray(displayCart.discounts) ? displayCart.discounts : [];
@@ -72,7 +73,7 @@ export default function OrderSummary({
     return first?.code || first?.coupon_code || "";
   }, [coupons]);
 
-  const formatPrice = (value) => `€${Number(value || 0).toFixed(2)}`;
+  const fmt = (value) => formatPrice(value, currency);
 
   const handleApplyCoupon = async () => {
     if (!displayCart?.id || !couponCode.trim() || !onApplyCheckoutCoupon) return;
@@ -218,7 +219,7 @@ export default function OrderSummary({
             <button
               onClick={() => {
                 console.log("[OrderSummary] Redirecting user to cart");
-                window.location.href = "https://kasweb-c4.mybigcommerce.com/cart.php";
+                window.location.href = "https://hike-summit.com/cart.php";
               }}
               className="text-[#476bef] hover:text-[#002fe1] text-sm w-[33.3%] text-start"
             >
@@ -239,7 +240,7 @@ export default function OrderSummary({
             <button
               onClick={() => {
                 console.log("[OrderSummary] Redirecting user to cart");
-                window.location.href = "https://kasweb-c4.mybigcommerce.com/cart.php";
+                window.location.href = "https://hike-summit.com/cart.php";
               }}
               className="text-[#476bef] hover:text-[#002fe1]"
             >
@@ -263,7 +264,7 @@ export default function OrderSummary({
               </div>
               <div className="text-xs text-gray-600 mt-1">Quantity: 0</div>
             </div>
-            <div className="font-semibold text-gray-900">€0.00</div>
+            <div className="font-semibold text-gray-900">{fmt(0)}</div>
           </div>
         ) : (
           items.map((item, index) => {
@@ -316,9 +317,9 @@ export default function OrderSummary({
                   </div>
 
                   <div className="font-semibold text-gray-900 text-right whitespace-nowrap">
-                    <div>{formatPrice(itemPrice)}</div>
+                    <div>{fmt(itemPrice)}</div>
                     {isPopup && hasDiscount && (
-                      <div className="text-xs text-gray-400 line-through">{formatPrice(originalPrice)}</div>
+                      <div className="text-xs text-gray-400 line-through">{fmt(originalPrice)}</div>
                     )}
                   </div>
                 </div>
@@ -330,7 +331,7 @@ export default function OrderSummary({
         {isPopup && (
           <div className="flex items-center gap-2 px-[19.5px] pb-[8px] text-sm text-gray-600">
             <span>{items.length} articles</span>
-            <span className="font-semibold text-gray-900">| {formatPrice(total)}</span>
+            <span className="font-semibold text-gray-900">| {fmt(total)}</span>
           </div>
         )}
 
@@ -399,7 +400,7 @@ export default function OrderSummary({
         <div className="space-y-2 text-gray-700 p-[19.5px] border-t">
           <div className="flex justify-between">
             <span>Subtotal</span>
-            <span>{formatPrice(subtotal)}</span>
+            <span>{fmt(subtotal)}</span>
           </div>
 
           {coupons.length > 0 &&
@@ -410,7 +411,7 @@ export default function OrderSummary({
               >
                 <span>Coupon {coupon.code || coupon.coupon_code || ""}</span>
                 <span>
-                  -{formatPrice(coupon.discounted_amount || coupon.amount || 0)}
+                  -{fmt(coupon.discounted_amount || coupon.amount || 0)}
                 </span>
               </div>
             ))}
@@ -423,7 +424,7 @@ export default function OrderSummary({
               >
                 <span>{entry.name || entry.description || "Discount"}</span>
                 <div className="flex items-center gap-3">
-                  <span>-{formatPrice(entry.discounted_amount || entry.amount || 0)}</span>
+                  <span>-{fmt(entry.discounted_amount || entry.amount || 0)}</span>
                   {onRemoveCheckoutDiscount && (
                     <button
                       type="button"
@@ -440,18 +441,18 @@ export default function OrderSummary({
 
           <div className="flex justify-between font-medium">
             <span>Discount</span>
-            <span>-{formatPrice(discount)}</span>
+            <span>-{fmt(discount)}</span>
           </div>
 
           <div className="flex justify-between">
             <span>Delivery</span>
-            <span>{formatPrice(deliveryPrice)}</span>
+            <span>{fmt(deliveryPrice)}</span>
           </div>
 
           {tax > 0 && (
             <div className="flex justify-between">
               <span>Tax</span>
-              <span>{formatPrice(tax)}</span>
+              <span>{fmt(tax)}</span>
             </div>
           )}
         </div>
@@ -459,7 +460,7 @@ export default function OrderSummary({
         <div className="nr-total-prt p-[19.5px] border-t">
           <div className="flex justify-between items-center text-base font-semibold text-gray-900">
             <span>Total ({currency})</span>
-            <span className="text-[30px]">{formatPrice(total)}</span>
+            <span className="text-[30px]">{fmt(total)}</span>
           </div>
 
           <div className="text-xs text-gray-500 mt-1">

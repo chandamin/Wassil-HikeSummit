@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ThankYouStep from "../components/Checkout/ThankYouStep";
 
-const STORE_URL = "https://kasweb-c4.mybigcommerce.com/";
+const STORE_URL = "https://hike-summit.com/";
 
 export default function ThankYou() {
   const { state } = useLocation();

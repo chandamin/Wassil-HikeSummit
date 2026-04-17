@@ -12,7 +12,7 @@
 
 const axios = require('axios');
 
-const AIRWALLEX_BASE_URL = 'https://api-demo.airwallex.com'; // sandbox
+const AIRWALLEX_BASE_URL = 'https://api.airwallex.com'; // sandbox
 const CLIENT_ID = process.env.AIRWALLEX_CLIENT_ID;
 const API_KEY = process.env.AIRWALLEX_API_KEY;
 

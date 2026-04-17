@@ -1,11 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-const STORE_HASH = 'eapn6crf58';
+// const STORE_HASH = 'eapn6crf58';
 // const STORE_HASH = '9feeyc5orh';
+const STORE_HASH = 'rnt2jw80we';
 const MANAGEMENT_API_TOKEN = process.env.BC_API_TOKEN;
 const FRONTEND_CHECKOUT_URL = (process.env.FRONTEND_URL || 'http://localhost:5173').replace(/\/+$/, '') + '/checkout';
-const VIP_PRODUCT_ID = 210;
+const VIP_PRODUCT_ID = 271;
 const SubscriptionCustomer = require('../models/SubscriptionCustomer');
 const {
   findDistinctSubscriptionProducts,
@@ -101,7 +102,7 @@ function transformCartResponse(cartData) {
     discountAmount: cartData.data.discount_amount || 0,
     taxAmount: cartData.data.tax_amount || 0,
     grandTotal: cartData.data.cart_amount,   // already after discounts
-    currency: cartData.data.currency || { code: 'EUR' },
+    currency: cartData.data.currency || { code: 'GBP' },
     customerId: cartData.data.customer_id,
     coupons: cartData.data.coupons || []
   };
@@ -979,6 +980,146 @@ router.post('/customer/address', async (req, res) => {
       success: false,
       error: 'Server error',
       message: err.message
+    });
+  }
+});
+
+router.get('/store/currencies', async (req, res) => {
+  console.log('Fetching store currencies');
+  try {
+    const currenciesRes = await fetch(
+      `https://api.bigcommerce.com/stores/${STORE_HASH}/v2/currencies`,
+      { headers: bcGetHeaders }
+    );
+
+    if (!currenciesRes.ok) {
+      const errorText = await currenciesRes.text();
+      console.warn('Currencies fetch failed:', currenciesRes.status, errorText);
+      return res.json({ success: true, currencies: [] });
+    }
+
+    const currencies = await currenciesRes.json();
+    const defaultCurrency = currencies.find(c => c.is_default) || currencies[0];
+
+    const mapped = currencies.map(c => ({
+      code: c.currency_code,
+      name: c.name || c.currency_code,
+      exchangeRate: parseFloat(c.currency_exchange_rate) || 1,
+      isDefault: !!c.is_default,
+      symbol: c.token || c.currency_code,
+      symbolLocation: c.token_location || 'left',
+      decimalPlaces: c.decimal_places ?? 2,
+    }));
+
+    console.log('Store currencies found:', mapped.length, mapped.map(c => c.code));
+
+    return res.json({
+      success: true,
+      currencies: mapped,
+      defaultCurrency: defaultCurrency?.currency_code || 'GBP',
+      count: mapped.length,
+    });
+  } catch (err) {
+    console.error('Store currencies error:', err);
+    return res.status(500).json({
+      success: false,
+      error: 'Server error',
+      message: err.message,
+    });
+  }
+});
+
+router.get('/shipping/countries', async (req, res) => {
+  console.log('Fetching available shipping countries from zones');
+  try {
+    // 1. Fetch all shipping zones
+    const zonesRes = await fetch(
+      `https://api.bigcommerce.com/stores/${STORE_HASH}/v2/shipping/zones`,
+      { headers: bcGetHeaders }
+    );
+
+    if (!zonesRes.ok) {
+      const errorText = await zonesRes.text();
+      console.warn('Shipping zones fetch failed:', zonesRes.status, errorText);
+      return res.json({ success: true, countries: [] });
+    }
+
+    const zones = await zonesRes.json();
+
+    // 2. Extract unique country names from zone locations
+    const countrySet = new Set();
+    for (const zone of zones) {
+      const locations = zone.locations || [];
+      for (const loc of locations) {
+        // BigCommerce zone locations have country_iso2 and optionally state_iso2
+        if (loc.country_iso2) {
+          countrySet.add(loc.country_iso2);
+        }
+      }
+    }
+
+    if (countrySet.size === 0) {
+      console.log('No countries found in shipping zones');
+      return res.json({ success: true, countries: [] });
+    }
+
+    console.log('Country ISO2 codes from zones:', [...countrySet]);
+
+    // 3. Fetch country details from BC to get full names
+    //    BC v2/countries supports ?country_iso2:in= filter but it's paginated.
+    //    We'll fetch all and filter locally for reliability.
+    let allCountries = [];
+    let page = 1;
+    const limit = 250;
+    let keepFetching = true;
+
+    while (keepFetching) {
+      const countriesRes = await fetch(
+        `https://api.bigcommerce.com/stores/${STORE_HASH}/v2/countries?limit=${limit}&page=${page}`,
+        { headers: bcGetHeaders }
+      );
+
+      if (!countriesRes.ok) {
+        console.warn('Countries API failed on page', page, ':', countriesRes.status);
+        break;
+      }
+
+      const batch = await countriesRes.json();
+      if (!Array.isArray(batch) || batch.length === 0) {
+        keepFetching = false;
+      } else {
+        allCountries = allCountries.concat(batch);
+        if (batch.length < limit) {
+          keepFetching = false;
+        } else {
+          page++;
+        }
+      }
+    }
+
+    // 4. Match zone countries with the full country list
+    const matchedCountries = allCountries
+      .filter(c => countrySet.has(c.country_iso2))
+      .map(c => ({
+        country: c.country,
+        country_iso2: c.country_iso2,
+        id: c.id,
+      }))
+      .sort((a, b) => a.country.localeCompare(b.country));
+
+    console.log('Matched shipping countries:', matchedCountries.length);
+
+    return res.json({
+      success: true,
+      countries: matchedCountries,
+      count: matchedCountries.length,
+    });
+  } catch (err) {
+    console.error('Shipping countries error:', err);
+    return res.status(500).json({
+      success: false,
+      error: 'Server error',
+      message: err.message,
     });
   }
 });

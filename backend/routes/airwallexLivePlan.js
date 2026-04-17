@@ -13,7 +13,7 @@ const {
 } = require('../lib/subscriptionProducts');
 dayjs.extend(utc);
 
-const LIVE_BASE = process.env.AIRWALLEX_LIVE_BASE_URL || 'https://api-demo.airwallex.com';
+const LIVE_BASE = process.env.AIRWALLEX_LIVE_BASE_URL || 'https://api.airwallex.com';
 
 async function getAirwallexToken() {
   try {

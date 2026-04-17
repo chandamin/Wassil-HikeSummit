@@ -15,7 +15,7 @@ function logToken(label, payload = null) {
 
 async function loginAirwallex() {
   const loginUrl = `${
-    process.env.AIRWALLEX_BASE_URL || 'https://api-demo.airwallex.com'
+    process.env.AIRWALLEX_BASE_URL || 'https://api.airwallex.com'
   }/api/v1/authentication/login`
 
   logToken('requesting new token', {

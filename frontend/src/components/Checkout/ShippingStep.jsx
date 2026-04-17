@@ -1,4 +1,5 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
+import { formatPrice } from "../../utils/formatPrice";
 
 export default function ShippingStep({
   active,
@@ -15,8 +16,51 @@ export default function ShippingStep({
   shippingOptions = [],
   setShippingOptions,
 }) {
+  const [availableCountries, setAvailableCountries] = useState([]);
+  const [isLoadingCountries, setIsLoadingCountries] = useState(true);
+
+  // Fetch available shipping countries on mount
+  useEffect(() => {
+    let cancelled = false;
+    const fetchCountries = async () => {
+      try {
+        setIsLoadingCountries(true);
+        const res = await fetch(
+          `${import.meta.env.VITE_BACKEND_URL}/api/shipping/countries`,
+          {
+            headers: {
+              Accept: "application/json",
+              "ngrok-skip-browser-warning": "true",
+            },
+          }
+        );
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const json = await res.json();
+        if (!cancelled && json.success && Array.isArray(json.countries)) {
+          setAvailableCountries(json.countries);
+          console.log("🌍 Available shipping countries loaded:", json.countries.length);
+        }
+      } catch (err) {
+        console.error("❌ Failed to load shipping countries:", err);
+      } finally {
+        if (!cancelled) setIsLoadingCountries(false);
+      }
+    };
+    fetchCountries();
+    return () => { cancelled = true; };
+  }, []);
+
+  // Build a dynamic country → ISO2 map from the fetched data
+  const countryCodeMap = useMemo(() => {
+    const map = {};
+    for (const c of availableCountries) {
+      map[c.country] = c.country_iso2;
+    }
+    return map;
+  }, [availableCountries]);
+
   const [form, setForm] = useState({
-    country: "France",
+    country: "",
     firstName: "",
     lastName: "",
     address: "",
@@ -111,13 +155,6 @@ export default function ShippingStep({
 
   useEffect(() => {
     const shouldFetch = active && cart?.id && hasRequiredAddressForQuotes;
-
-    const countryCodeMap = {
-      France: "FR",
-      Belgium: "BE",
-      Luxembourg: "LU",
-      Switzerland: "CH",
-    };
 
     const payload = {
       cartId: cart?.id,
@@ -330,13 +367,16 @@ export default function ShippingStep({
                   onChange={(e) =>
                     setForm({ ...form, country: e.target.value })
                   }
-                  disabled={isLoading}
+                  disabled={isLoading || isLoadingCountries}
                 >
-                  <option value="Select a country">Select a country</option>
-                  <option value="France">France</option>
-                  <option value="Belgium">Belgium</option>
-                  <option value="Luxembourg">Luxembourg</option>
-                  <option value="Switzerland">Switzerland</option>
+                  <option value="">
+                    {isLoadingCountries ? "Loading countries..." : "Select a country"}
+                  </option>
+                  {availableCountries.map((c) => (
+                    <option key={c.country_iso2} value={c.country}>
+                      {c.country}
+                    </option>
+                  ))}
                 </select>
                 <label className="block nr-input-label text-[14px] text-[#666] top-[unset]">
                   Country
@@ -507,7 +547,7 @@ export default function ShippingStep({
                                 {option.description}
                               </p>
                               <span className="font-[700] text-[15px]">
-                                €{Number(option.cost || 0).toFixed(2)}
+                                {formatPrice(option.cost, cart?.currency?.code || "GBP")}
                               </span>
                             </div>
                           </div>
@@ -544,7 +584,7 @@ export default function ShippingStep({
                           </p>
                         </div>
                         <span className="font-medium">
-                          €{Number(option.cost || 0).toFixed(2)}
+                          {formatPrice(option.cost, cart?.currency?.code || "GBP")}
                         </span>
                       </>
                     )}
@@ -611,6 +651,7 @@ export default function ShippingStep({
           methodLabel={data.methodLabel}
           price={data.price}
           addressId={data.addressId}
+          currencyCode={cart?.currency?.code || "GBP"}
         />
       </section>
     );
@@ -626,7 +667,7 @@ export default function ShippingStep({
 
 /* ================= SHARED HEADER ================= */
 
-function Header({ step, title, onEdit, firstName, lastName, phone, addressLine, method, methodLabel, price, addressId }) {
+function Header({ step, title, onEdit, firstName, lastName, phone, addressLine, method, methodLabel, price, addressId, currencyCode = "GBP" }) {
   return (
     <div className="flex items-start justify-between flex-wrap sm:flex-nowrap gap-y-[10px] sm:gap-y-[0]">
       <h2 className="nr-step-hed-wr flex items-center gap-2 font-[700] text-[25px] text-[#333]">
@@ -652,7 +693,7 @@ function Header({ step, title, onEdit, firstName, lastName, phone, addressLine, 
                 {methodLabel || method}
               </div>
               <div className="font-semibold text-gray-900 mt-1">
-                {typeof price === "number" ? `€${price.toFixed(2)}` : "€0.00"}
+                {formatPrice(price, currencyCode)}
               </div>
             </div>
           )}
@@ -692,7 +733,7 @@ function Header({ step, title, onEdit, firstName, lastName, phone, addressLine, 
                 {methodLabel || method}
               </div>
               <div className="font-semibold text-gray-900 mt-1">
-                {typeof price === "number" ? `€${price.toFixed(2)}` : "€0.00"}
+                {formatPrice(price, currencyCode)}
               </div>
             </div>
           )}

@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { formatPrice } from "../../utils/formatPrice";
 import ClientStep from "./ClientStep";
 import ShippingStep from "./ShippingStep";
 import PaymentStep from "./PaymentStep";
@@ -69,7 +70,9 @@ export default function CheckoutLayout({
   const [shippingOptions, setShippingOptions] = useState(savedState?.shippingOptions || []);
   const [orderComplete, setOrderComplete] = useState(false);
   const [createdOrder, setCreatedOrder] = useState(null);
-  const [checkoutCart, setCheckoutCart] = useState(cart);
+  const normalizedCart = cart ? { ...cart, currency: { code: "GBP" } } : null;
+  const [checkoutCart, setCheckoutCart] = useState(normalizedCart);
+  // const [checkoutCart, setCheckoutCart] = useState(cart);
   const [isVipChecked, setIsVipChecked] = useState(true);
   const [isVipLoading, setIsVipLoading] = useState(false);
   const [isVipUiChecked, setIsVipUiChecked] = useState(false);
@@ -77,10 +80,13 @@ export default function CheckoutLayout({
 
   
 
+  // useEffect(() => {
+  //   setCheckoutCart(prev => prev ?? cart);
+  // }, [cart]);
   useEffect(() => {
-    setCheckoutCart(prev => prev ?? cart);
-  }, [cart]);
-  const VIP_PRODUCT_ID = 210; // replace
+  setCheckoutCart(prev => prev ?? normalizedCart);
+}, [cart, normalizedCart]);
+  const VIP_PRODUCT_ID = 271; // replace
   const fallbackSubscriptionProductIds = [...new Set([
     VIP_PRODUCT_ID,
     ...(import.meta.env.VITE_SUBSCRIPTION_PRODUCT_IDS || '')
@@ -339,7 +345,7 @@ export default function CheckoutLayout({
         setIsVipUiChecked(true);
         if (!vipSelected && cart?.id) {
           // VIP not in cart yet — actually add it via API so it appears in the real cart
-          console.log('🛒 Auto-adding VIP product 210 to cart (pre-selected by default)');
+          console.log('🛒 Auto-adding VIP product 271 to cart (pre-selected by default)');
           handleVipToggle(true);
         }
       } 
@@ -558,7 +564,7 @@ export default function CheckoutLayout({
         paid: true,
         transaction_id: intentId,
         amount: latestCart?.cartAmount || 0,
-        currency: latestCart?.currency?.code || "EUR",
+        currency: latestCart?.currency?.code || "GBP",
       }
       : null;
 
@@ -926,7 +932,7 @@ export default function CheckoutLayout({
                     {/* <p className="text-[13px]">
                       By checking this box, I activate my 30-day free trial to the VIP CLUB, giving me access to exclusive benefits on Hike-Summit. After the trial, the subscription renews automatically at £12.99/month. This membership is non-binding and can be cancelled at any time by contacting support. Consult the {" "}
                       <a
-                        href="https://kasweb-c4.mybigcommerce.com/vip-club/"
+                        href="https://hike-summit.com/vip-club/"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color: "#007bff", textDecoration: "underline" }}
@@ -1097,10 +1103,10 @@ export default function CheckoutLayout({
               <h2 className="text-center font-[600]">Policies</h2>
             </div> */}
             <div className="nr-footer-links flex flex-col gap-[10px] items-center justify-between">
-              <a href="https://kasweb-c4.mybigcommerce.com/conditions-generales/" className="liks text-[12px] text-[#656565]">Terms and Conditions</a>
-              <a href="https://kasweb-c4.mybigcommerce.com/politique-d-expedition/" className="liks text-[12px] text-[#656565]">Shipping Policies and Rates</a>
-              <a href="https://kasweb-c4.mybigcommerce.com/politique-de-confidentialite/" className="liks text-[12px] text-[#656565]">Privacy Policy</a>
-              <a href="https://kasweb-c4.mybigcommerce.com/politique-de-retour-et-de-remboursement/" className="liks text-[12px] text-[#656565]">Exchange and Returns</a>
+              <a href="https://hike-summit.com/terms-of-service/" className="liks text-[12px] text-[#656565]">Terms Of Sale</a>
+              <a href="https://hike-summit.com/shipping-policy/" className="liks text-[12px] text-[#656565]">Shipping Policy</a>
+              <a href="https://hike-summit.com/privacy-policy/" className="liks text-[12px] text-[#656565]">Privacy Policy</a>
+              <a href="https://hike-summit.com/return-and-refund-policy/" className="liks text-[12px] text-[#656565]">Exchange and Returns</a>
             </div>
           </footer>
         </aside>
@@ -1115,7 +1121,7 @@ export default function CheckoutLayout({
               const allBarItems = [
                 ...(checkoutCart?.lineItems?.physicalItems || []),
                 ...(checkoutCart?.lineItems?.digitalItems || []),
-              ].filter(item => ![210].includes(Number(item.product_id)));
+              ].filter(item => ![271].includes(Number(item.product_id)));
               const firstItem = allBarItems[0];
               const totalQty = allBarItems.reduce((sum, item) => sum + (item.quantity || 1), 0);
               const barTotal = Number(checkoutCart?.cartAmount || 0);
@@ -1134,7 +1140,7 @@ export default function CheckoutLayout({
                       <span className="nr-mobile-order-bar-link block text-[#476bef] text-[13px]">Show details</span>
                     </div>
                   </div>
-                  <span className="nr-mobile-order-bar-total text-[25px] font-[600]">€{barTotal.toFixed(2)}</span>
+                  <span className="nr-mobile-order-bar-total text-[25px] font-[600]">{formatPrice(barTotal, checkoutCart?.currency?.code || "GBP")}</span>
                 </>
               );
             })()}

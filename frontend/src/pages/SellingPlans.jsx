@@ -209,7 +209,7 @@ function CreatePlanForm({ onClose, onCreated, environment }) {
     name: '',
     description: '',
     amount: '',
-    currency: 'EUR',
+    currency: 'GBP',
     interval: 'MONTH',
     trialDays: 30,
     bigcommerceProductId: '',
@@ -287,9 +287,9 @@ function CreatePlanForm({ onClose, onCreated, environment }) {
             onChange={handleChange}
             className="w-full rounded-lg border border-gray-300 px-4 py-2 bg-white focus:ring-2 focus:ring-gray-400 outline-none"
           >
+            <option value="GBP">GBP (£)</option>
             <option value="EUR">EUR (€)</option>
             <option value="USD">USD ($)</option>
-            <option value="GBP">GBP (£)</option>
           </select>
 
           {/* Bigcommerce Product Id */}
@@ -432,9 +432,9 @@ function EditPlanModal({ plan, onClose, onUpdated, environment }) {
               onChange={handleChange}
               className="w-full rounded-lg border border-gray-300 px-4 py-2 bg-white focus:ring-2 focus:ring-gray-400 outline-none"
             >
+              <option value="GBP">GBP (£)</option>
               <option value="EUR">EUR (€)</option>
               <option value="USD">USD ($)</option>
-              <option value="GBP">GBP (£)</option>
             </select>
           </div>
 

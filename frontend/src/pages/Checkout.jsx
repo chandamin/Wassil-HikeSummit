@@ -4,7 +4,7 @@ import CheckoutLayout from "../components/Checkout/CheckoutLayout";
 
 // export function ErrorPage() {
 //   useEffect(() => {
-//     window.location.replace("https://kasweb-c4.mybigcommerce.com/cart.php");
+//     window.location.replace("https://hike-summit.com/cart.php");
 //   }, []);
 
 //   return null;
@@ -66,7 +66,7 @@ export default function Checkout() {
   }, [searchParams]);
 
 
-  const VIP_PRODUCT_ID = 210; // replace with real BC product ID
+  const VIP_PRODUCT_ID = 271; // replace with real BC product ID
 
 const refreshCart = async (cartId) => {
   await fetchCartById(cartId);
@@ -670,7 +670,7 @@ const removeVipFromCart = async (cartId) => {
   //         <h2 className="text-xl font-semibold text-red-800 mb-2">Checkout Error</h2>
   //         <p className="text-red-600 mb-4">{error}</p>
   //         <a 
-  //           href="https://kasweb-c4.mybigcommerce.com/cart.php" 
+  //           href="https://hike-summit.com/cart.php" 
   //           className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
   //         >
   //           Return to Cart
@@ -680,7 +680,7 @@ const removeVipFromCart = async (cartId) => {
   //   );
   // }
   if (error) {
-    window.location.replace("https://kasweb-c4.mybigcommerce.com/cart.php");
+    window.location.replace("https://hike-summit.com/cart.php");
     return null;
   }
 

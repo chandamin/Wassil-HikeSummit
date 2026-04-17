@@ -15,7 +15,7 @@ const {
 } = require('../lib/subscriptionProducts');
 dayjs.extend(utc);     // EXTEND DAYJS WITH UTC
 
-const TEST_BASE = process.env.AIRWALLEX_BASE_URL || 'https://api-demo.airwallex.com';
+const TEST_BASE = process.env.AIRWALLEX_BASE_URL || 'https://api.airwallex.com';
 
 const inspectLog = (value) => {
   try {
@@ -115,7 +115,7 @@ router.post('/plans', requireSession, async (req, res) => {
       name,
       description,
       amount,
-      currency = 'EUR',
+      currency = 'GBP',
       interval = 'MONTH',
       trialDays = 14,
       active,
