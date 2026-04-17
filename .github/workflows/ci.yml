@@ -58,14 +58,15 @@ jobs:
 
       - name: "Debug: Verify Disk State"
         run: |
-          echo "📁 Contents of frontend/dist/ from runner:"
-          ls -la ./frontend/dist/
-          find ./frontend/dist/ -type f
+          echo "📍 Current Directory: $(pwd)"
+          echo "📁 Contents of dist/ (relative to cwd):"
+          ls -la dist/
+          find dist/ -type f | head -10
 
       - name: "Upload Build Artifact"
         uses: actions/upload-artifact@v4
         with:
           name: frontend-dist
-          path: ./frontend/dist
+          path: frontend/dist
           retention-days: 1
           if-no-files-found: error
