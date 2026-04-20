@@ -1225,6 +1225,10 @@ router.post('/subscriptions/provision', async (req, res) => {
             period_unit: plan.interval,
             period: 1,
           },
+          recurring: {
+            period_unit: plan.interval,
+            period: 1,
+          },
           ...(trialEndsAt && { trial_ends_at: trialEndsAt }),
           legal_entity_id: process.env.AIRWALLEX_LEGAL_ENTITY_ID,
           linked_payment_account_id: process.env.AIRWALLEX_LINKED_PAYMENT_ACCOUNT_ID,
@@ -1242,6 +1246,7 @@ router.post('/subscriptions/provision', async (req, res) => {
           currency: subscriptionPayload.currency,
           items: subscriptionPayload.items,
           duration: subscriptionPayload.duration,
+          recurring: subscriptionPayload.recurring,
           trial_ends_at: subscriptionPayload.trial_ends_at || null,
           legal_entity_id: subscriptionPayload.legal_entity_id,
           linked_payment_account_id: subscriptionPayload.linked_payment_account_id,

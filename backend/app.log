@@ -8557,3 +8557,7 @@
 [2026-04-17T13:53:16.757Z] mongodb+srv://bigfrsvj_db_user:tNBX3ntnTjSrOQrE@subscriptioncheckout.8wa7ndm.mongodb.net/HikeSummit
 [2026-04-17T13:53:18.617Z] MongoDB connected
 [2026-04-17T13:53:18.633Z] Server running on port 4000
+[2026-04-17T14:24:11.639Z] api cart-data called
+[2026-04-17T14:24:12.435Z] ERROR: Cart fetch failed: 403 {"status":403,"title":"You don't have a required scope to access the endpoint","type":"https://developer.bigcommerce.com/api-docs/getting-started/api-status-codes","errors":{}}
+[2026-04-17T14:24:12.520Z] api cart-data called
+[2026-04-17T14:24:13.101Z] ERROR: Cart fetch failed: 403 {"status":403,"title":"You don't have a required scope to access the endpoint","type":"https://developer.bigcommerce.com/api-docs/getting-started/api-status-codes","errors":{}}
