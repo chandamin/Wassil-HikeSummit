@@ -1221,10 +1221,10 @@ router.post('/subscriptions/provision', async (req, res) => {
               quantity: 1,
             },
           ],
-          duration: {
-            period_unit: plan.interval,
-            period: 1,
-          },
+          // duration: {
+          //   period_unit: plan.interval,
+          //   period: 1,
+          // },
           // recurring: {
           //   period_unit: plan.interval,
           //   period: 1,
@@ -1245,7 +1245,7 @@ router.post('/subscriptions/provision', async (req, res) => {
           collection_method: subscriptionPayload.collection_method,
           currency: subscriptionPayload.currency,
           items: subscriptionPayload.items,
-          duration: subscriptionPayload.duration,
+          // duration: subscriptionPayload.duration,
           // recurring: subscriptionPayload.recurring,
           trial_ends_at: subscriptionPayload.trial_ends_at || null,
           legal_entity_id: subscriptionPayload.legal_entity_id,
