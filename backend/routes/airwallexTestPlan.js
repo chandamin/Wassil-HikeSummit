@@ -880,6 +880,7 @@ router.post('/payment-intents', async (req, res) => {
       currency,
       merchant_order_id,
       return_url: `${process.env.FRONTEND_URL}`,
+      auto_capture: true,
       ...(payment_customer_id && { customer_id: payment_customer_id }),
     };
 
