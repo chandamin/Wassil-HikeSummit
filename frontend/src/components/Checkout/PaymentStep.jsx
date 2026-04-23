@@ -135,7 +135,7 @@ export default function PaymentStep({
           client_secret: result.client_secret,
           currency: result.currency,
           methods: ["card"],
-          autoCapture: false,
+          autoCapture: true,
           // showConfirmButton: false,
           // Plain container ID (not CSS selector) — renders 3DS auth challenge inline
           authFormContainer: "airwallex-auth-container",
