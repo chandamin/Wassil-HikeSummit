@@ -6,6 +6,7 @@ import PaymentStep from "./PaymentStep";
 import OrderSummary from "./OrderSummary";
 import ThankYouStep from "./ThankYouStep";
 import { useNavigate } from "react-router-dom";
+import { buildGAPayload, fireGAEvent} from '../../utils/gaUtils';
 
 
 // Session storage utilities for checkout persistence
@@ -661,6 +662,24 @@ export default function CheckoutLayout({
         const result = JSON.parse(responseText);
         if (result.success) {
           console.log(' Order created:', result);
+
+          // === [GOOGLE ANALYTICS] Fire purchase event ===
+          try {
+            const gaPayload = buildGAPayload({
+              order: result.order,
+              orderId: result.orderId,
+              cart: latestCart,
+              clientData,
+              deliveryData,
+              bigcommerceCustomer,
+              customerId
+            });
+            
+            fireGAEvent(gaPayload);
+          } catch (gaErr) {
+            console.warn("⚠️ GA event failed (non-blocking):", gaErr.message);
+          }
+          // === [END GOOGLE ANALYTICS] ===
 
           if (subscriptionProducts.length > 0 && awCustomer && bigcommerceCustomer) {
             try {
