@@ -2,7 +2,7 @@
 
 export const formatVariant = (options = []) => {
   const values = options.filter(opt => opt?.value).map(opt => opt.value);
-  return values.length > 0 ? values.join(", ") : "Defaut";
+  return values.length > 0 ? values.join(", ") : "Default";
 };
 
 export const normalizeAddress = (addressData) => {
@@ -68,7 +68,7 @@ export const buildGAPayload = ({
   return {
     event: "purchase_checkout2",
     ecommerce: {
-      currency: cart?.currency?.code || "EUR",
+      currency: cart?.currency?.code || "GBP",
       transaction_id: String(orderId),
       value: String(totalInc),
       total_tax_inc: String(totalInc),
