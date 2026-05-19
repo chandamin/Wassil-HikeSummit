@@ -949,7 +949,7 @@ export default function CheckoutLayout({
 
                   <div className="nr-wrranty-text pt-[15px] relative">
                     {/* <p className="text-[13px]">
-                      By checking this box, I activate my 30-day free trial to the VIP CLUB, giving me access to exclusive benefits on Hike-Summit. After the trial, the subscription renews automatically at £12.99/month. This membership is non-binding and can be cancelled at any time by contacting support. Consult the {" "}
+                      By checking this box, I activate my 30-day free trial to the VIP CLUB, giving me access to exclusive benefits on Hike-Summit. After the trial, the subscription renews automatically at £24.99/month. This membership is non-binding and can be cancelled at any time by contacting support. Consult the {" "}
                       <a
                         href="https://hike-summit.com/vip-club/"
                         target="_blank"
@@ -962,7 +962,7 @@ export default function CheckoutLayout({
                     </p> */}
 
                     <p className="text-[13px]">
-                      By ticking this box, I am activating my 30-day free trial of the VIP CLUB, which gives me access to exclusive benefits on Hike-Summit. At the end of the trial period, the subscription will automatically renew at a rate of £12.99 per month. This subscription is non-binding and can be cancelled at any time by contacting customer service. See the /vip-club terms and conditions for more information.
+                      By ticking this box, I am activating my 30-day free trial of the VIP CLUB, which gives me access to exclusive benefits on Hike-Summit. At the end of the trial period, the subscription will automatically renew at a rate of £24.99 per month. This subscription is non-binding and can be cancelled at any time by contacting customer service. See the /vip-club terms and conditions for more information.
                     </p>
 
                     {isVipLoading && (
@@ -1055,7 +1055,7 @@ export default function CheckoutLayout({
 
               <div className="nr-wrranty-text pt-[15px] relative">
                 <p className="text-[13px]">
-                  By checking this box, I activate my 30-day free trial of the VIP CLUB, which gives me access to exclusive benefits on Hike-Summit. After the trial period, the subscription automatically renews at a rate of £12.99 per month. This subscription is non-binding and can be cancelled at any time by contacting customer service. See the terms and conditions of the /club-vip.
+                  By checking this box, I activate my 30-day free trial of the VIP CLUB, which gives me access to exclusive benefits on Hike-Summit. After the trial period, the subscription automatically renews at a rate of £24.99 per month. This subscription is non-binding and can be cancelled at any time by contacting customer service. See the terms and conditions of the /club-vip.
                 </p>
                 {/* <p className="text-[13px]">
                 En cochant cette case, j'active mon essai gratuit de 30 jours au CLUB VIP, ce qui me donne accès à des avantages exclusifs sur Hike-Summit. À l'issue de la période d'essai, l'abonnement se renouvelle automatiquement au tarif de 12,99€ par mois. Cet abonnement est sans engagement et peut être résilié à tout moment en contactant le service client. Consultez les Terms and Conditions du {" "}
@@ -1120,7 +1120,7 @@ export default function CheckoutLayout({
 
               <div className="nr-wrranty-text pt-[15px] relative">
                 <p className="text-[13px]">
-                  By checking this box, I activate my 30-day free trial of the VIP CLUB, which gives me access to exclusive benefits on Hike-Summit. After the trial period, the subscription automatically renews at a rate of £12.99 per month. This subscription is non-binding and can be cancelled at any time by contacting customer service. See the terms and conditions of the /club-vip.
+                  By checking this box, I activate my 30-day free trial of the VIP CLUB, which gives me access to exclusive benefits on Hike-Summit. After the trial period, the subscription automatically renews at a rate of £24.99 per month. This subscription is non-binding and can be cancelled at any time by contacting customer service. See the terms and conditions of the /club-vip.
                 </p>
                 {/* <p className="text-[13px]">
                 En cochant cette case, j'active mon essai gratuit de 30 jours au CLUB VIP, ce qui me donne accès à des avantages exclusifs sur Hike-Summit. À l'issue de la période d'essai, l'abonnement se renouvelle automatiquement au tarif de 12,99€ par mois. Cet abonnement est sans engagement et peut être résilié à tout moment en contactant le service client. Consultez les Terms and Conditions du {" "}
