@@ -1113,7 +1113,7 @@ export default function CheckoutLayout({
                     />
                   </div>
                   <label htmlFor="vip-club-mobile" className="text-[16px] text-white">
-                    ACCÈS AU CLUB VIP
+                    VIP CLUB - ACCESS
                   </label>
                 </div>
               </div>
