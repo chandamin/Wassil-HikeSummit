@@ -791,7 +791,7 @@ export default function CheckoutLayout({
 
 
       {/* ================= MAIN CONTENT ================= */}
-      <main className="max-w-[1200px] mx-auto py-8 px-[28px] md:px-[35px] flex pt-0 flex-col md:flex-row flex-wrap pb-[70px] md:pb-[0px]">
+      <main className="max-w-[1200px] mx-auto py-8 px-[28px] md:px-[35px] flex pt-0 flex-col md:flex-row flex-wrap pb-[100px] md:pb-[0px]">
         {/* ================= LEFT COLUMN ================= */}
         <section className="nr-lft-prt w-[100%] lg:w-[66.6666666667%] lg:pr-[78px] pr-0 md:w-[58.3333333333%]">
           {/* ================= PROMO BANNER (using old styles but new logic) ================= */}
