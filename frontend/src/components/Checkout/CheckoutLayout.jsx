@@ -921,7 +921,7 @@ export default function CheckoutLayout({
                 {/* Warranty Subscription section for testing */}
 
  
-                <div className="nr-wrranty-wr py-[10px] px-[12px] border border-[#ccc] hidden md:block"  style={{ display: "none" }}>
+                <div className="nr-wrranty-wr py-[10px] px-[12px] border border-[#ccc] hidden">
                   <div className="nr-checkbox-wr bg-[#3b4450] gap-[10px] p-[10px] rounded-[4px] flex items-center my-[10px]">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="26px" height="auto" viewBox="0 0 1200.000000 1100.000000" preserveAspectRatio="xMidYMid meet">
                       <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#FFF" stroke="none">
