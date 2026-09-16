@@ -1010,7 +1010,7 @@ export default function CheckoutLayout({
           <div className="nr-rght-bottom-info-cntnt pt-[30px] pb-[30px] border-b ">
             <div className="nr-info-hed-prt flex gap-[8px] items-center text-[18px] font-[600] pb-[8px]">
               <img src="../images/shield-2.webp" alt="shield" className="h-[40px] w-[40px] object-contain" />
-              <h3>Service Client</h3>
+              <h3>Customer service</h3>
             </div>
             <p className="pb-[20px] text-[15px] text-[#747474]">You can reach us from Monday to Friday, from 8:00 AM to 5:00 PM.</p>
             <div className="nr-contact-info">
