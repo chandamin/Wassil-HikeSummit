@@ -1,8 +1,5 @@
 function isUsdBillingEnabled(env = process.env) {
-  return isUsdCheckoutTestEnabled(env) || (env.ENABLE_GBP_USD_BILLING === 'true'
-    && env.ENABLE_RENEWAL_FX_WORKER === 'true'
-    && env.AIRWALLEX_RENEWAL_SANDBOX_VERIFIED === 'true'
-    && Boolean(env.AIRWALLEX_BILLING_WEBHOOK_SECRET));
+  return isUsdCheckoutEnabled(env);
 }
 
 function isUsdCheckoutTestEnabled(env = process.env) {
@@ -17,7 +14,21 @@ function isUsdCheckoutTestEnabled(env = process.env) {
 }
 
 function isUsdCheckoutEnabled(env = process.env) {
-  return isUsdBillingEnabled(env);
+  try {
+    const url = new URL(env.AIRWALLEX_BASE_URL || '');
+    if (url.protocol !== 'https:') return false;
+    if (url.hostname === 'api.airwallex.com') return true;
+    return isUsdCheckoutTestEnabled(env);
+  } catch {
+    return false;
+  }
+}
+
+function isRenewalFxWorkerEnabled(env = process.env) {
+  return isUsdCheckoutEnabled(env)
+    && env.ENABLE_RENEWAL_FX_WORKER === 'true'
+    && env.AIRWALLEX_RENEWAL_SANDBOX_VERIFIED === 'true'
+    && Boolean(env.AIRWALLEX_BILLING_WEBHOOK_SECRET);
 }
 
 function isUsdBigCommerceOrderEnabled(env = process.env) {
@@ -44,5 +55,6 @@ function assertUsdCheckoutConfiguration(env = process.env) {
 
 module.exports = {
   isUsdBillingEnabled, isUsdCheckoutEnabled, isUsdCheckoutTestEnabled,
+  isRenewalFxWorkerEnabled,
   isUsdBigCommerceOrderEnabled, assertUsdBigCommerceOrdersEnabled, assertUsdCheckoutConfiguration,
 };
