@@ -156,6 +156,12 @@ app.get('/api/health', (req, res) => {
 connectDB()
   .then(() => {
     console.log('MongoDB connected');
+    if (require('./lib/usdBillingConfig').isUsdBillingEnabled()) {
+      const { refreshUsdRenewalPrices } = require('./jobs/refreshUsdRenewalPrices');
+      const runRenewalRefresh = () => refreshUsdRenewalPrices().catch(err => console.error('[renewal-fx] worker error', err));
+      runRenewalRefresh();
+      setInterval(runRenewalRefresh, 60 * 60 * 1000).unref();
+    }
     const PORT = process.env.PORT || 4000;
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT}`);

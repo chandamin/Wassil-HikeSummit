@@ -601,6 +601,8 @@ export default function CheckoutLayout({
           })) || [],
         })),
         paymentMethod: paymentMethod,
+        cartId: latestCart?.id || cart?.id,
+        paymentIntentId: intentId,
         shippingMethod: deliveryData?.shippingOptionId
           ? {
             id: deliveryData.shippingOptionId,
@@ -668,7 +670,12 @@ export default function CheckoutLayout({
             const gaPayload = buildGAPayload({
               order: result.order,
               orderId: result.orderId,
-              cart: latestCart,
+              cart: {
+                ...latestCart,
+                currency: { code: 'GBP' },
+                shippingAmount: Number(deliveryData?.price || 0),
+                handlingAmount: 0,
+              },
               clientData,
               deliveryData,
               bigcommerceCustomer,

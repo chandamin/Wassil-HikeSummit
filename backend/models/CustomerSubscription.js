@@ -46,6 +46,13 @@ const CustomerSubscriptionSchema = new mongoose.Schema(
 
     amount: Number,
     currency: String,
+    displayAmountGbp: Number,
+    billingAmountUsd: Number,
+    fxRate: Number,
+    fxTimestamp: Date,
+    airwallexItemId: String,
+    renewalFxEnabled: { type: Boolean, default: false },
+    renewalFxStatus: String,
     interval: String,
 
     trialDays: Number,
