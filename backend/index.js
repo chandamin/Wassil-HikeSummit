@@ -156,7 +156,7 @@ app.get('/api/health', (req, res) => {
 connectDB()
   .then(() => {
     console.log('MongoDB connected');
-    if (require('./lib/usdBillingConfig').isRenewalFxWorkerEnabled()) {
+    if (require('./lib/usdBillingConfig').isUsdBillingEnabled()) {
       const { refreshUsdRenewalPrices } = require('./jobs/refreshUsdRenewalPrices');
       const runRenewalRefresh = () => refreshUsdRenewalPrices().catch(err => console.error('[renewal-fx] worker error', err));
       runRenewalRefresh();
