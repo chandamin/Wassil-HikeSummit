@@ -8,13 +8,6 @@ const MANAGEMENT_API_TOKEN = process.env.BC_API_TOKEN;
 const FRONTEND_CHECKOUT_URL = (process.env.FRONTEND_URL || 'http://localhost:5173').replace(/\/+$/, '') + '/checkout';
 const VIP_PRODUCT_ID = 271;
 const SubscriptionCustomer = require('../models/SubscriptionCustomer');
-const CheckoutPayment = require('../models/CheckoutPayment');
-const { fetchCheckoutGbp, assertOrderMatchesCart } = require('../lib/checkoutPricing');
-const { verifyPaidIntent } = require('../lib/paymentVerification');
-const { buildUsdOrderPricing } = require('../lib/usdOrderPricing');
-const { assertUsdOrderMatchesPayment, buildUsdOrderFields, requiresUsdOrderVerification, classifyOrderCreateFailure } = require('../lib/usdOrderReconciliation');
-const { isUsdCheckoutEnabled, isUsdBigCommerceOrderEnabled } = require('../lib/usdBillingConfig');
-const axios = require('axios');
 const {
   findDistinctSubscriptionProducts,
   getEnabledSubscriptionProductIds,
@@ -1463,8 +1456,6 @@ router.post('/orders/create', async (req, res) => {
       products,
       shippingMethod,
       paymentMethod,
-      paymentIntentId,
-      cartId,
       statusId = 1
     } = req.body;
 
@@ -1480,52 +1471,8 @@ router.post('/orders/create', async (req, res) => {
       return res.status(400).json({ success: false, error: 'At least one product is required' });
     }
 
-    let verifiedCheckoutPayment = null;
-    let verifiedShippingCost = null;
-    let verifiedCheckoutPricing = null;
-    const storedUsdPayment = paymentIntentId
-      ? await CheckoutPayment.findOne({ intentId: paymentIntentId })
-      : null;
-    if (requiresUsdOrderVerification(isUsdCheckoutEnabled(), storedUsdPayment, isUsdBigCommerceOrderEnabled())) {
-      if (!paymentIntentId || !cartId) {
-        return res.status(400).json({ success: false, error: 'Payment intent and cart are required' });
-      }
-      verifiedCheckoutPayment = storedUsdPayment;
-      if (!verifiedCheckoutPayment || verifiedCheckoutPayment.cartId !== cartId ||
-          verifiedCheckoutPayment.bigcommerceOrderId ||
-          verifiedCheckoutPayment.reconciliationStatus === 'required' ||
-          verifiedCheckoutPayment.orderCreationStatus === 'created') {
-        return res.status(409).json({ success: false, error: 'Payment was not found or order already exists' });
-      }
-      verifiedCheckoutPricing = await fetchCheckoutGbp({
-        cartId,
-        shippingOptionId: verifiedCheckoutPayment.shippingOptionId,
-        storeHash: STORE_HASH,
-        apiToken: MANAGEMENT_API_TOKEN,
-      });
-      verifiedShippingCost = verifiedCheckoutPricing.shippingCost;
-      assertOrderMatchesCart(verifiedCheckoutPricing.lineItems, products);
-      if (shippingMethod?.id !== verifiedCheckoutPayment.shippingOptionId) {
-        return res.status(409).json({ success: false, error: 'Shipping option changed after payment' });
-      }
-      const authResponse = await axios.post(
-        `${process.env.AIRWALLEX_BASE_URL || 'https://api.airwallex.com'}/api/v1/authentication/login`,
-        {},
-        { headers: { 'x-api-key': process.env.AIRWALLEX_API_KEY, 'x-client-id': process.env.AIRWALLEX_CLIENT_ID } }
-      );
-      const intentResponse = await axios.get(
-        `${process.env.AIRWALLEX_BASE_URL || 'https://api.airwallex.com'}/api/v1/pa/payment_intents/${encodeURIComponent(paymentIntentId)}`,
-        { headers: { Authorization: `Bearer ${authResponse.data.token}` } }
-      );
-      try {
-        verifyPaidIntent(intentResponse.data, verifiedCheckoutPayment, verifiedCheckoutPricing.fingerprint);
-      } catch (verificationError) {
-        return res.status(409).json({ success: false, error: verificationError.message });
-      }
-    }
-
     // Fetch authoritative prices from BigCommerce — never trust client-submitted prices
-    const verifiedProducts = verifiedCheckoutPayment ? [] : await Promise.all(
+    const verifiedProducts = await Promise.all(
       products.map(async (product) => {
         const productId = product.product_id || product.productId;
         const bcProductRes = await fetch(
@@ -1583,32 +1530,13 @@ router.post('/orders/create', async (req, res) => {
     }
 
     if (shippingMethod) {
-      orderData.shipping_cost_inc_tax = verifiedCheckoutPayment ? verifiedShippingCost : (shippingMethod.costIncTax || shippingMethod.cost_inc_tax);
-      orderData.shipping_cost_ex_tax = verifiedCheckoutPayment ? verifiedShippingCost : (shippingMethod.costExTax || shippingMethod.cost_ex_tax);
+      orderData.shipping_cost_inc_tax = shippingMethod.costIncTax || shippingMethod.cost_inc_tax;
+      orderData.shipping_cost_ex_tax = shippingMethod.costExTax || shippingMethod.cost_ex_tax;
       // orderData.shipping_method = shippingMethod.name || shippingMethod.method;
     }
 
-    if (verifiedCheckoutPayment) {
-      orderData.payment_method = 'Airwallex Credit Card';
-    } else if (paymentMethod) {
+    if (paymentMethod) {
       orderData.payment_method = paymentMethod.name || paymentMethod.method;
-    }
-
-    if (verifiedCheckoutPayment) {
-      const usdPricing = buildUsdOrderPricing({
-        checkoutPricing: verifiedCheckoutPricing,
-        payment: verifiedCheckoutPayment,
-      });
-      Object.assign(orderData, buildUsdOrderFields(usdPricing));
-    }
-
-    if (verifiedCheckoutPayment) {
-      const claim = await CheckoutPayment.findOneAndUpdate(
-        { _id: verifiedCheckoutPayment._id, bigcommerceOrderId: { $exists: false }, orderCreationStatus: { $ne: 'creating' } },
-        { $set: { orderCreationStatus: 'creating' } },
-        { new: true }
-      );
-      if (!claim) return res.status(409).json({ success: false, error: 'Order creation is already in progress' });
     }
 
 
@@ -1629,87 +1557,29 @@ router.post('/orders/create', async (req, res) => {
     console.log('BigCommerce Orders raw response:', responseText.substring(0, 1000));
 
     if (!createOrderRes.ok) {
-      let apiError;
+      let errorMessage = `Failed to create order: ${createOrderRes.status}`;
       try {
         const errorData = JSON.parse(responseText);
-        apiError = errorData.title || errorData.detail;
-      } catch (_) {
-        // Some BigCommerce failures are plain text rather than JSON.
-      }
-      const failure = classifyOrderCreateFailure({ paidUsd: Boolean(verifiedCheckoutPayment), httpStatus: createOrderRes.status, apiError });
-      if (verifiedCheckoutPayment) {
-        await CheckoutPayment.updateOne({ _id: verifiedCheckoutPayment._id }, { $set: {
-          orderCreationStatus: 'failed',
-          reconciliationStatus: 'required',
-          reconciliationReason: `BigCommerce order creation returned HTTP ${createOrderRes.status}`,
-        } });
-      }
-      return res.status(failure.status).json({
+        errorMessage = errorData.title || errorData.detail || errorMessage;
+      } catch (e) {}
+
+      return res.status(400).json({
         success: false,
-        error: failure.error,
+        error: errorMessage,
         details: responseText.substring(0, 200)
       });
     }
 
     if (!responseText.trim()) {
-      if (verifiedCheckoutPayment) {
-        await CheckoutPayment.updateOne({ _id: verifiedCheckoutPayment._id }, { $set: {
-          orderCreationStatus: 'failed',
-          reconciliationStatus: 'required',
-          reconciliationReason: 'BigCommerce returned an empty order creation response',
-        } });
-        return res.status(409).json({ success: false, error: 'Payment succeeded but BigCommerce order response was empty; manual review required' });
-      }
       return res.status(500).json({
         success: false,
         error: 'Empty response from BigCommerce API'
       });
     }
 
-    let createdOrder;
-    try {
-      createdOrder = JSON.parse(responseText);
-    } catch (parseError) {
-      if (verifiedCheckoutPayment) {
-        await CheckoutPayment.updateOne({ _id: verifiedCheckoutPayment._id }, { $set: {
-          orderCreationStatus: 'failed',
-          reconciliationStatus: 'required',
-          reconciliationReason: 'BigCommerce returned an invalid order creation response',
-        } });
-        return res.status(409).json({ success: false, error: 'Payment succeeded but BigCommerce order response was invalid; manual review required' });
-      }
-      throw parseError;
-    }
+    const createdOrder = JSON.parse(responseText);
 
-    if (verifiedCheckoutPayment) {
-      verifiedCheckoutPayment.bigcommerceOrderId = createdOrder.id;
-      verifiedCheckoutPayment.orderCreationStatus = 'created';
-      try {
-        assertUsdOrderMatchesPayment(createdOrder, verifiedCheckoutPayment);
-        verifiedCheckoutPayment.reconciliationStatus = 'matched';
-        verifiedCheckoutPayment.reconciliationReason = null;
-        await verifiedCheckoutPayment.save();
-      } catch (reconciliationError) {
-        verifiedCheckoutPayment.reconciliationStatus = 'required';
-        verifiedCheckoutPayment.reconciliationReason = reconciliationError.message;
-        await verifiedCheckoutPayment.save();
-        console.error('PAID ORDER RECONCILIATION REQUIRED', {
-          orderId: createdOrder.id,
-          intentId: paymentIntentId,
-          expectedUsd: verifiedCheckoutPayment.usdAmount,
-          actualTotal: createdOrder.total_inc_tax,
-          actualCurrency: createdOrder.default_currency_code,
-          reason: reconciliationError.message,
-        });
-        return res.status(409).json({
-          success: false,
-          error: 'Payment succeeded but BigCommerce USD order did not reconcile; manual review required',
-          orderId: createdOrder.id,
-        });
-      }
-    }
-
-    if ((verifiedCheckoutPayment || (paymentMethod && paymentMethod.paid)) && createdOrder.id) {
+    if (paymentMethod && paymentMethod.paid && createdOrder.id) {
       console.log(
         `Airwallex payment already confirmed for order ${createdOrder.id}, updating order status in BigCommerce`
       );

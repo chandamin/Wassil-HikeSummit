@@ -50,7 +50,7 @@ export default function PaymentStep({
     //  Calculate the unique key for this payment session
     const expectedAmount = Number(cart.cartAmount) + Number(deliveryData?.price || 0);
     const currency = cart?.currency?.code || 'GBP';
-    const amountKey = `${cart.id}-${expectedAmount}-${currency}-${deliveryData?.shippingOptionId || ''}`;
+    const amountKey = `${expectedAmount}-${currency}`;
 
     // Skip only if we already have an element for THIS exact amount+currency
     if (lastAmountKeyRef.current === amountKey && elementRef.current) {
@@ -107,8 +107,6 @@ export default function PaymentStep({
               "ngrok-skip-browser-warning": "true",
             },
             body: JSON.stringify({
-              cartId: cart.id,
-              shippingOptionId: deliveryData?.shippingOptionId || null,
               amount: Number(cart.cartAmount) + Number(deliveryData?.price || 0),
               currency,
               merchant_order_id: cart.id,
@@ -402,7 +400,7 @@ export default function PaymentStep({
       elementRef.current = null;
       lastAmountKeyRef.current = null;
     };
-  }, [active, isDisabled, cart?.id, cart?.cartAmount, deliveryData?.price, deliveryData?.shippingOptionId, cart?.currency?.code, airwallexCustomerId]);
+  }, [active, isDisabled, cart?.id, cart?.cartAmount, deliveryData?.price, cart?.currency?.code, airwallexCustomerId]);
   
   if (!active) {
     return (
