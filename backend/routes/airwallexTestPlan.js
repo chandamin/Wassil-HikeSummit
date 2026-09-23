@@ -5,12 +5,6 @@ const requireSession = require('../middleware/requireSession');
 const SubscriptionPlan = require('../models/SubscriptionPlan.js');
 // const BillingCustomer = require('../models/BillingCustomer.js');
 const CustomerSubscription = require('../models/CustomerSubscription.js');
-const CheckoutPayment = require('../models/CheckoutPayment.js');
-const { fetchCheckoutGbp } = require('../lib/checkoutPricing');
-const { quoteUsdOrderAmount } = require('../lib/usdOrderPricing');
-const { getGbpToUsdRate } = require('../lib/bigcommerce/fx');
-const { buildUsdBillingPrice } = require('../lib/airwallex/renewalPricing');
-const { isUsdBillingEnabled, isUsdCheckoutEnabled, assertUsdBigCommerceOrdersEnabled, assertUsdCheckoutConfiguration } = require('../lib/usdBillingConfig');
 const dayjs = require('dayjs');
 const crypto = require('crypto');
 const utc = require('dayjs/plugin/utc');  //  ADD UTC PLUGIN
@@ -869,51 +863,22 @@ router.post('/payment-consents', async (req, res) => {
 router.post('/payment-intents', async (req, res) => {
   try {
     const { amount, currency, merchant_order_id, payment_customer_id } = req.body;
-    const usdBillingEnabled = isUsdCheckoutEnabled();
-    assertUsdCheckoutConfiguration();
 
     logInfo('📥 [payment-intents/create] Incoming request:', req.body);
 
-    if ((!amount && !usdBillingEnabled) || (!merchant_order_id && !req.body.cartId)) {
+    if (!amount || !merchant_order_id) {
       return res.status(400).json({
         error: 'amount and merchant_order_id are required',
       });
     }
 
-    if (usdBillingEnabled) assertUsdBigCommerceOrdersEnabled();
-
     const token = await getAirwallexToken();
-    let checkoutPricing = null;
-    let fx = null;
-    let chargeAmount = amount;
-    let chargeCurrency = currency;
-    let cartId = merchant_order_id;
-
-    if (usdBillingEnabled) {
-      cartId = req.body.cartId;
-      if (!cartId || (merchant_order_id && merchant_order_id !== cartId)) {
-        return res.status(400).json({ error: 'Valid cartId is required' });
-      }
-      checkoutPricing = await fetchCheckoutGbp({
-        cartId,
-        shippingOptionId: req.body.shippingOptionId,
-        storeHash: process.env.BC_STORE_HASH || 'rnt2jw80we',
-        apiToken: process.env.BC_API_TOKEN,
-      });
-      fx = await getGbpToUsdRate({
-        storeHash: process.env.BC_STORE_HASH || 'rnt2jw80we',
-        apiToken: process.env.BC_API_TOKEN,
-        http: axios,
-      });
-      chargeAmount = quoteUsdOrderAmount({ checkoutPricing, rate: fx.rate });
-      chargeCurrency = 'USD';
-    }
 
     const createPayload = {
       request_id: crypto.randomUUID(),
-      amount: chargeAmount,
-      currency: chargeCurrency,
-      merchant_order_id: cartId,
+      amount,
+      currency,
+      merchant_order_id,
       return_url: `${process.env.FRONTEND_URL}`,
       ...(payment_customer_id && { customer_id: payment_customer_id }),
     };
@@ -937,20 +902,6 @@ router.post('/payment-intents', async (req, res) => {
 
     logInfo('📥 Airwallex payment intent response:', airwallexRes.data);
 
-    if (usdBillingEnabled) {
-      await CheckoutPayment.create({
-        intentId: airwallexRes.data.id,
-        cartId,
-        shippingOptionId: req.body.shippingOptionId || null,
-        fingerprint: checkoutPricing.fingerprint,
-        gbpAmount: checkoutPricing.gbpAmount,
-        usdAmount: chargeAmount,
-        fxRate: fx.rate,
-        fxSource: fx.source,
-        fxTimestamp: new Date(fx.timestamp),
-      });
-    }
-
     return res.json(airwallexRes.data);
   } catch (err) {
     logError('❌ Create payment intent error:', err, {
@@ -958,8 +909,8 @@ router.post('/payment-intents', async (req, res) => {
       requestBody: req.body,
     });
 
-    return res.status(err.status || err.response?.status || 500).json({
-      error: err.status ? err.message : (err.response?.data || 'Failed to create payment intent'),
+    return res.status(err.response?.status || 500).json({
+      error: err.response?.data || 'Failed to create payment intent',
     });
   }
 });
@@ -1259,39 +1210,14 @@ router.post('/subscriptions/provision', async (req, res) => {
           });
         }
 
-        let renewalPriceId = plan.airwallexPriceId;
-        let renewalAmountUsd = null;
-        let renewalFx = null;
-        const usdBillingEnabled = isUsdBillingEnabled();
-        if (usdBillingEnabled) {
-          if (plan.currency !== 'GBP') throw new Error('Subscription plan must have a GBP display price');
-          renewalFx = await getGbpToUsdRate({
-            storeHash: process.env.BC_STORE_HASH || 'rnt2jw80we',
-            apiToken: process.env.BC_API_TOKEN,
-            http: axios,
-          });
-          const renewalPricePayload = buildUsdBillingPrice({
-            productId: plan.airwallexProductId,
-            gbpAmount: Number(plan.amount),
-            rate: renewalFx.rate,
-            interval: plan.interval,
-            requestId: crypto.randomUUID(),
-          });
-          const renewalPriceResponse = await axios.post(`${TEST_BASE}/api/v1/prices/create`, renewalPricePayload, {
-            headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json', 'x-api-version': '2026-02-27' },
-          });
-          renewalPriceId = renewalPriceResponse.data.id;
-          renewalAmountUsd = renewalPricePayload.flat_amount;
-        }
-
         const subscriptionPayload = {
           request_id: crypto.randomUUID(),
           billing_customer_id: airwallexCustomerId,
           collection_method: 'AUTO_CHARGE',
-          currency: usdBillingEnabled ? 'USD' : plan.currency,
+          currency: plan.currency,
           items: [
             {
-              price_id: renewalPriceId,
+              price_id: plan.airwallexPriceId,
               quantity: 1,
             },
           ],
@@ -1381,19 +1307,12 @@ router.post('/subscriptions/provision', async (req, res) => {
           bigcommerceProductId: productId,
           airwallexCustomerId,
           airwallexProductId: plan.airwallexProductId,
-          airwallexPriceId: renewalPriceId,
+          airwallexPriceId: plan.airwallexPriceId,
           airwallexSubscriptionId: awSubscription.id,
           planName: plan.name,
           status: awSubscription.status || 'active',
-          amount: usdBillingEnabled ? renewalAmountUsd : plan.amount,
-          currency: usdBillingEnabled ? 'USD' : plan.currency,
-          displayAmountGbp: usdBillingEnabled ? Number(plan.amount) : null,
-          billingAmountUsd: renewalAmountUsd,
-          fxRate: renewalFx?.rate,
-          fxTimestamp: renewalFx?.timestamp ? new Date(renewalFx.timestamp) : null,
-          airwallexItemId: awSubscription.items?.[0]?.id,
-          renewalFxEnabled: usdBillingEnabled,
-          renewalFxStatus: usdBillingEnabled ? 'pending' : null,
+          amount: plan.amount,
+          currency: plan.currency,
           interval: plan.interval,
           trialDays: plan.trialDays,
           startedAt: awSubscription.created_at
@@ -1401,7 +1320,7 @@ router.post('/subscriptions/provision', async (req, res) => {
             : new Date(),
           nextBillingAt: awSubscription.next_billing_at
             ? dayjs(awSubscription.next_billing_at).toDate()
-            : (trialEndsAt ? dayjs(trialEndsAt).toDate() : null),
+            : null,
           metadata: {
             source: 'bigcommerce-checkout',
           },

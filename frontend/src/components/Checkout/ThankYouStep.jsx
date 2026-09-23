@@ -25,8 +25,7 @@ const ThankYouStep = ({
     "Customer";
 
   const orderId = order?.orderId || order?.id || "-";
-  const hasGbpCart = cart?.currency?.code === 'GBP' && Number.isFinite(Number(cart?.cartAmount));
-  const currency = 'GBP';
+  const currency = cart?.currency?.code || order?.currency_code || "GBP";
 
   const physicalItems = cart?.lineItems?.physicalItems || [];
   const digitalItems = cart?.lineItems?.digitalItems || [];
@@ -35,18 +34,30 @@ const ThankYouStep = ({
     (item) => !hiddenProductIds.includes(Number(item.product_id))
   );
   // const allItems = [...physicalItems, ...digitalItems];
-  const discountAmount = Number(cart?.discountAmount || 0);
+  const discountAmount = Number(cart?.discountAmount || order?.discount_amount || 0);
 
   let subtotalPreDiscount = Number(cart?.baseAmount || 0);
   if (!subtotalPreDiscount && cart?.cartAmount) {
     subtotalPreDiscount = Number(cart.cartAmount) + discountAmount;
   }
+  if (!subtotalPreDiscount && order?.subtotal_inc_tax) {
+    subtotalPreDiscount = Number(order.subtotal_inc_tax);
+  }
 
-  const shipping = Number(cart?.shippingAmount || 0);
+  const shipping =
+    Number(cart?.shippingAmount || 0) ||
+    Number(order?.shipping_cost_inc_tax || 0) ||
+    0;
 
-  const handling = Number(cart?.handlingAmount || 0);
+  const handling =
+    Number(order?.handling_cost_inc_tax || 0) ||
+    Number(cart?.handlingAmount || 0) ||
+    0;
 
-  const total = Number(cart?.cartAmount || 0) + shipping + handling;
+  const total =
+    Number(cart?.cartAmount || 0) ||
+    Number(order?.total_inc_tax || 0) ||
+    0;
 
   return (
     <div className="nr-thanks min-h-screen bg-[#fff]">
@@ -111,11 +122,6 @@ const ThankYouStep = ({
                 Print
               </button>
             </div>
-
-            {!hasGbpCart ? (
-              <div className="px-6 py-6 text-[#666]">GBP summary unavailable. Your order number is shown above.</div>
-            ) : (
-              <>
 
             <div className="border-b border-[#e5e5e5] px-6 py-5">
               <div className="mb-5 text-[20px] text-black">
@@ -200,8 +206,6 @@ const ThankYouStep = ({
                 <span className="text-[25px] font-[600]">{formatPrice(total, currency)}</span>
               </div>
             </div>
-              </>
-            )}
           </aside>
         </div>
       </div>
